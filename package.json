@@ -1,0 +1,35 @@
+{
+  "name": "kajgrant.github.io",
+  "version": "1.0.0",
+  "description": "website",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "package.json"
+  ],
+  "engines": {
+    "node": ">=14.20.0"
+  },
+  "scripts": {
+    "start": "node server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kajgrant/kajgrant.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kajgrant/kajgrant.github.io/issues"
+  },
+  "homepage": "https://github.com/kajgrant/kajgrant.github.io#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "eslint": "8.30.0",
+    "eslint-config-prettier": "^8.5.0",
+    "prettier": "2.8.1"
+  }
+}
