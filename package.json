@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "website",
   "main": "index.js",
+  "proxy": "http://localhost:3001",
   "files": [
     "index.js",
     "package.json"
@@ -11,7 +12,8 @@
     "node": ">=14.20.0"
   },
   "scripts": {
-    "start": "node server/index.js"
+    "start": "node server/index.js",
+    "build": "cd client && npm install && npm run build"
   },
   "repository": {
     "type": "git",
