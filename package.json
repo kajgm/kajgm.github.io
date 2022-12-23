@@ -4,10 +4,21 @@
   "description": "website",
   "main": "index.js",
   "proxy": "http://localhost:3001",
+  "homepage": "https://kajgrant.github.io/",
   "files": [
     "index.js",
     "package.json"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kajgrant/kajgrant.github.io.git"
+  },
+  "keywords": ["Kaj Grant"],
+  "author": "Kaj Grant",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kajgrant/kajgrant.github.io/issues"
+  },
   "engines": {
     "node": ">=14.20.0"
   },
@@ -15,17 +26,6 @@
     "start": "node server/index.js",
     "build": "cd client && npm install && npm run build"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kajgrant/kajgrant.github.io.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/kajgrant/kajgrant.github.io/issues"
-  },
-  "homepage": "https://github.com/kajgrant/kajgrant.github.io#readme",
   "dependencies": {
     "express": "^4.18.2"
   },
