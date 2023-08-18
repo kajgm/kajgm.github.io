@@ -1,35 +1,56 @@
+
 .App {
   background-color: #ffffff;
 }
 
-.Intro-Text {
+.intro-text {
   margin: 0;
 }
 
-.Main-Content {
+.main-content {
   left: 20vmin;
   position: absolute;
 }
 
-#App-logo {
+.socials-logos {
   pointer-events: none;
+  height: auto;
+  max-width: 2vmin;
+  padding: 8px;
+  justify-content: center;
+  filter: grayscale(1);
+}
+
+#socials-container {
+  display: flex;
+  justify-content: center;
+}
+
+#logos-container {
   position: absolute;
   left: 5vmin;
   top: 5vmin;
+  max-width: 10vmin;
+}
+
+#personal-logo {
+  pointer-events: none;
   height: auto;
   max-width: 10vmin;
 }
 
-#Name-Title {
+#name-title {
   color: black;
   font-size: calc(15px + 3vmin);
   position: relative;
-  top: 10vmin;
+  top: 3vmin;
 }
 
-#About-Text {
+#about-text {
   color: #494949;
+  font-weight: lighter;
+  font-style: oblique;
   font-size: calc(5px + 1vmin);
   position: absolute;
-  left: 1vmin;
+  left: 0.5vmin;
 }
