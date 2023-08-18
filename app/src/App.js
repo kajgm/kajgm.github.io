@@ -4,10 +4,15 @@ import './App.css';
 function App() {
     return (
         <div className="App">
-            <header className="App-header">
-                <h1 className="Main-Title">Kaj Grant-Mathiasen</h1>
-                <img src={logo} className="App-logo" alt="logo" />
-            </header>
+            <div className="Main-Content">
+                <div id="Name-Title">
+                    <h1 className="Intro-Text">Kaj Grant-Mathiasen</h1>
+                    <h2 id="About-Text" className="Intro-Text">
+                        Student - Computer Engineer - Software Engineer
+                    </h2>
+                </div>
+            </div>
+            <img src={logo} id="App-logo" alt="logo" />
         </div>
     );
 }

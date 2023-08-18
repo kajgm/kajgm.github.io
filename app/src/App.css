@@ -1,28 +1,35 @@
 .App {
-  text-align: center;
+  background-color: #ffffff;
 }
 
-.App-logo {
+.Intro-Text {
+  margin: 0;
+}
+
+.Main-Content {
+  left: 20vmin;
+  position: absolute;
+}
+
+#App-logo {
   pointer-events: none;
-  position:absolute;
+  position: absolute;
   left: 5vmin;
   top: 5vmin;
   height: auto;
   max-width: 10vmin;
 }
 
-.App-header {
-  background-color: #ffffff;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#Name-Title {
+  color: black;
+  font-size: calc(15px + 3vmin);
+  position: relative;
+  top: 10vmin;
 }
 
-.Main-Title {
-  color: black;
-  font-size: calc(10px + 15vmin);
+#About-Text {
+  color: #494949;
+  font-size: calc(5px + 1vmin);
+  position: absolute;
+  left: 1vmin;
 }
