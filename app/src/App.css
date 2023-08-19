@@ -13,12 +13,11 @@
 }
 
 .socials-logos {
-  pointer-events: none;
   height: auto;
   max-width: 2vmin;
-  padding: 8px;
+  padding: 5px;
+  padding-inline: 8px;
   justify-content: center;
-  filter: grayscale(1);
 }
 
 #socials-container {
@@ -41,16 +40,14 @@
 
 #name-title {
   color: black;
-  font-size: calc(15px + 3vmin);
+  font-size: calc(10px + 2vmin);
   position: relative;
-  top: 3vmin;
+  top: 4vmin;
 }
 
 #about-text {
-  color: #494949;
-  font-weight: lighter;
-  font-style: oblique;
+  color: #303030;
+  font-weight: 100;
   font-size: calc(5px + 1vmin);
   position: absolute;
-  left: 0.5vmin;
 }
