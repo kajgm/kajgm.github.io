@@ -15,8 +15,8 @@
 .socials-logos {
   height: auto;
   max-width: 2vmin;
-  padding: 5px;
-  padding-inline: 8px;
+  padding-top: 10px;
+  padding-inline: 10px;
   justify-content: center;
 }
 
