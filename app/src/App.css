@@ -5,18 +5,29 @@
 
 .intro-text {
   margin: 0;
+  color: #000000;
+  text-decoration: none;
 }
 
 .main-content {
-  left: 20vmin;
+  left: 5vmin;
   position: absolute;
 }
 
+.side-bar {
+  position: relative;
+  top: 20vmin;
+}
+
+.side-headers {
+  font-size: calc(10px + 2vmin);
+}
+
 .socials-logos {
-  height: auto;
+  height: 2vmin;
   max-width: 2vmin;
-  padding-top: 10px;
-  padding-inline: 10px;
+  padding-top: 0.1vmin;
+  padding-inline: 0.5vmin;
   justify-content: center;
 }
 
@@ -43,11 +54,20 @@
   font-size: calc(10px + 2vmin);
   position: relative;
   top: 4vmin;
+  left: 20vmin;
 }
 
-#about-text {
+#subheader-text {
   color: #303030;
   font-weight: 100;
   font-size: calc(5px + 1vmin);
   position: absolute;
+}
+
+#about {
+  padding-bottom: 20vmin;
+}
+
+#projects {
+  padding-bottom: 20vmin;
 }
