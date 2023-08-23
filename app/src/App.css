@@ -19,7 +19,6 @@
 
 .main-page {
   left: 50px;
-  top: 150px;
 }
 
 .side-bar {
@@ -46,13 +45,17 @@
 }
 
 #top-container {
-  display: inline-flex;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 50px;
 }
 
 #logos-container {
   left: 50px;
   top: 50px;
   max-width: 100px;
+  padding-right: 80px;
+  padding-bottom: 50px;
 }
 
 #personal-logo {
@@ -69,8 +72,8 @@
 #name-title {
   color: black;
   font-size: 30px;
-  top: 36px;
-  left: 150px;
+  padding-top: 35px;
+  left: 50px;
 }
 
 #subheader-text {
