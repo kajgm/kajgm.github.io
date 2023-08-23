@@ -7,8 +7,8 @@ import './App.css';
 function App() {
     return (
         <div className="App">
-            <div id="top-header">
-                <div id="logos-container">
+            <div id="top-container" className="w-full">
+                <div id="logos-container" className="relative">
                     <img src={personalLogo} id="personal-logo" alt="KGM" />
                     <div id="socials-container">
                         <a href="mailto:kajgrant@gmail.com">
@@ -23,7 +23,7 @@ function App() {
                     </div>
                 </div>
 
-                <div id="name-title">
+                <div id="name-title" className="relative">
                     <a className="intro-text" href="https://kajgrant.github.io/">
                         <h1 className="intro-text">Kaj Grant-Mathiasen</h1>
                     </a>
@@ -33,19 +33,30 @@ function App() {
                 </div>
             </div>
 
-            <div className="main-content">
-                <div className="side-bar">
-                    <h1 className="side-headers" id="about">
+            <span className="main-page relative">
+                <div id="about-container">
+                    <h1 className="side-bar relative" id="about">
                         About
                     </h1>
-                    <h1 className="side-headers" id="projects">
-                        Projects
-                    </h1>
-                    <h1 className="side-headers" id="media">
-                        Media
-                    </h1>
+                    <div className="content relative">
+                        <p>
+                            Hi, I'm Kaj.<br></br>
+                            <br></br>I'm a 5th year student currently in my last term of my Computer Engineering Degree.{' '}
+                            <br></br>I am passionate about the <strong>entire</strong> stack... from computer hardware,
+                            to reliable back-end infrastructure, and all the way up to brilliant user design. Currently,
+                            I'm looking for a full time position in a Software Engineering field. I have experience
+                            working with large-scale media pipelines, building scalable systems, and maintaining core
+                            infrastructure.
+                        </p>
+                    </div>
                 </div>
-            </div>
+                <h1 className="side-bar" id="projects">
+                    Projects
+                </h1>
+                <h1 className="side-bar" id="media">
+                    Media
+                </h1>
+            </span>
         </div>
     );
 }
