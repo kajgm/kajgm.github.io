@@ -10,24 +10,25 @@
 }
 
 .main-content {
-  left: 5vmin;
-  position: absolute;
+  left: 50px;
+  position: relative;
+  top: 100px;
 }
 
 .side-bar {
   position: relative;
-  top: 20vmin;
+  top: 100px;
 }
 
 .side-headers {
-  font-size: calc(10px + 2vmin);
+  font-size: 30px
 }
 
 .socials-logos {
-  height: 2vmin;
-  max-width: 2vmin;
-  padding-top: 0.1vmin;
-  padding-inline: 0.5vmin;
+  height: 20px;
+  max-width: 20px;
+  padding-top: 5px;
+  padding-inline: 5px;
   justify-content: center;
 }
 
@@ -38,36 +39,36 @@
 
 #logos-container {
   position: absolute;
-  left: 5vmin;
-  top: 5vmin;
-  max-width: 10vmin;
+  left: 50px;
+  top: 50px;
+  max-width: 100px;
 }
 
 #personal-logo {
   pointer-events: none;
   height: auto;
-  max-width: 10vmin;
+  max-width: 100px;
 }
 
 #name-title {
   color: black;
-  font-size: calc(10px + 2vmin);
+  font-size: 30px;
   position: relative;
-  top: 4vmin;
-  left: 20vmin;
+  top: 36px;
+  left: 200px;
 }
 
 #subheader-text {
   color: #303030;
   font-weight: 100;
-  font-size: calc(5px + 1vmin);
+  font-size: 15px;
   position: absolute;
 }
 
 #about {
-  padding-bottom: 20vmin;
+  padding-bottom: 200px;
 }
 
 #projects {
-  padding-bottom: 20vmin;
+  padding-bottom: 200px;
 }

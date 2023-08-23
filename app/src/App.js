@@ -32,6 +32,7 @@ function App() {
                     </p>
                 </div>
             </div>
+
             <div className="main-content">
                 <div className="side-bar">
                     <h1 className="side-headers" id="about">
