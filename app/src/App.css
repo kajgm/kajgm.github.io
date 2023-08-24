@@ -58,12 +58,12 @@
 }
 
 #personal-logo-bg {
-  background:linear-gradient(-45deg, #bb0900, #850600, #520500, #850600, #bb0900);
+  background: linear-gradient(-45deg, #bb0900, #850600, #520500, #850600, #bb0900);
   border-radius: 5px;
   background-size: 500% 500%;
   width: 100px;
   height: 50px;
-  animation: gradient 10s ease infinite;
+  animation: gradient 5s ease infinite;
 }
 
 @keyframes gradient {
@@ -138,6 +138,13 @@
   margin: 0px;
 }
 
+#chairable-logo {
+  display: inline;
+  background: linear-gradient(0deg, #130b60, #208309);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 #media-content {
   display: block;
 }
@@ -163,6 +170,26 @@ p.fade-text {
   }
 }
 
+u.black-underline {
+  color: inherit;
+  text-decoration: none;
+}
+
+u.black-underline {
+  background:     
+    linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255)),
+    linear-gradient(to right, rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0));
+  background-size: 100% 0.1em, 0 0.1em;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+}
+
+u.black-underline:hover,
+u.black-underline:focus {
+  background-size: 0 0.1em, 100% 0.1em;
+}
+
 u.color-underline {
   color: inherit;
   text-decoration: none;
@@ -171,7 +198,7 @@ u.color-underline {
 u.color-underline {
   background: 
     linear-gradient(to right, rgb(0, 0, 0), rgb(0, 0, 0)),
-    linear-gradient(to right, rgba(255, 0, 0, 1), rgba(255, 0, 180, 1), rgba(0, 100, 200, 1));
+    linear-gradient(to right, rgb(220, 0, 0), rgb(225, 0, 255), rgb(0, 53, 200));
   background-size: 100% 0.1em, 0 0.1em;
   background-position: 100% 100%, 0 100%;
   background-repeat: no-repeat;
@@ -183,8 +210,6 @@ u.color-underline:focus {
   background-size: 0 0.1em, 100% 0.1em;
 }
 
-
-/* Underline styles */
 a.color-link {
   position: relative;
   padding: 0.1em 0;

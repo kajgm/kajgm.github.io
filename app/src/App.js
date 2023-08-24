@@ -1,4 +1,3 @@
-import personalLogo from './img/logos/logo.png';
 import emailLogo from './img/logos/emaillogo.png';
 import linkedinLogo from './img/logos/linkedinlogo.png';
 import githubLogo from './img/logos/githublogo.png';
@@ -43,14 +42,14 @@ function App() {
                 <span className="main-page relative">
                     <div id="about-container" className="content-container">
                         <h1 className="side-bar" id="about">
-                            About
+                            <u className="black-underline">About</u>
                         </h1>
                         <div className="sub-content">
                             <p id="about-text" className="fade-text">
                                 Hi, I'm Kaj.<br></br>
                                 <br></br>I'm a 5th year student currently in my last term of my Computer Engineering
-                                Degree. <br></br>I am passionate about the <strong>entire</strong> stack... from
-                                computer hardware, to reliable back-end infrastructure, and all the way up to{' '}
+                                Degree. <br></br>I'm passionate about the <strong>entire</strong> stack... from computer
+                                hardware, to reliable back-end infrastructure, and all the way up to{' '}
                                 <u className="color-underline">brilliant</u> user design. Currently, I'm looking for a
                                 full-time position in a Software Engineering field. I have experience working with
                                 large-scale media pipelines, building scalable systems and maintaining core
@@ -60,7 +59,7 @@ function App() {
                     </div>
                     <div id="projects-container" className="content-container">
                         <h1 className="side-bar" id="projects">
-                            Projects
+                            <u className="black-underline">Projects</u>
                         </h1>
                         <div className="projects sub-content">
                             <h2 className="project-headers">
@@ -75,7 +74,7 @@ function App() {
                             </p>
                             <h2 className="project-headers">
                                 <a href="https://github.com/kajgrant/rolltech" className="color-link">
-                                    Chairable, by Roll Technology
+                                    <p id="chairable-logo">Chairable</p>, by Roll Technology
                                 </a>
                             </h2>
                             <p className="fade-text">
@@ -98,7 +97,7 @@ function App() {
                     </div>
                     <div id="media-container" className="content-container">
                         <h1 className="side-bar" id="media">
-                            Media
+                            <u className="black-underline">Media</u>
                         </h1>
                         <div id="media-content">
                             <p className="coming-soon">Coming soon...</p>
