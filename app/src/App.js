@@ -1,7 +1,7 @@
-import personalLogo from './logo.png';
-import emailLogo from './emaillogo.png';
-import linkedinLogo from './linkedinlogo.png';
-import githubLogo from './githublogo.png';
+import personalLogo from './img/logos/logo.png';
+import emailLogo from './img/logos/emaillogo.png';
+import linkedinLogo from './img/logos/linkedinlogo.png';
+import githubLogo from './img/logos/githublogo.png';
 import './App.css';
 
 function App() {
@@ -35,57 +35,112 @@ function App() {
                 </div>
 
                 <span className="main-page relative">
-                    <div id="about-container">
-                        <h1 className="side-bar relative" id="about">
+                    <div id="about-container" className="content-container">
+                        <h1 className="side-bar" id="about">
                             About
                         </h1>
-                        <div id="about-text" className="text-content relative">
-                            <p>
+                        <div className="sub-content">
+                            <p id="about-text">
                                 Hi, I'm Kaj.<br></br>
                                 <br></br>I'm a 5th year student currently in my last term of my Computer Engineering
                                 Degree. <br></br>I am passionate about the <strong>entire</strong> stack... from
                                 computer hardware, to reliable back-end infrastructure, and all the way up to{' '}
-                                <u>brilliant</u> user design. Currently, I'm looking for a full-time position in a
-                                Software Engineering field. I have experience working with large-scale media pipelines,
-                                building scalable systems and maintaining core infrastructure.
+                                <u className="color-underline">brilliant</u> user design. Currently, I'm looking for a
+                                full-time position in a Software Engineering field. I have experience working with
+                                large-scale media pipelines, building scalable systems and maintaining core
+                                infrastructure.
                             </p>
                         </div>
                     </div>
-                    <div id="projects-container">
-                        <h1 className="side-bar relative" id="projects">
+                    <div id="projects-container" className="content-container">
+                        <h1 className="side-bar" id="projects">
                             Projects
                         </h1>
-                        <div className="projects text-content relative">
-                            <h2>
-                                <a href="https://github.com/kajgrant/guitar-tuner">Hardware Accelerated Guitar Tuner</a>
+                        <div className="projects sub-content">
+                            <h2 className="project-headers">
+                                <a href="https://github.com/kajgrant/guitar-tuner" className="color-link">
+                                    Hardware Accelerated Guitar Tuner
+                                </a>
                             </h2>
                             <p>
                                 A Zedboard FPGA based guitar tuner that uses a Fast Fourier Transform core and a custom
                                 Harmonic Product Spectrum core. Involves multithreaded operation to detect note
                                 frequency and output feedback to a VGA based ui.
                             </p>
-                            <h2>
-                                <a href="https://github.com/kajgrant/rolltech">Chairable, by Roll Technology</a>
+                            <h2 className="project-headers">
+                                <a href="https://github.com/kajgrant/rolltech" className="color-link">
+                                    Chairable, by Roll Technology
+                                </a>
                             </h2>
                             <p>
                                 An SFU Engineering Capstone project that utilizes spherical wheel technology to move the
                                 standard office chair.
                             </p>
-                            <h2>
-                                <a href="https://github.com/kajgrant/redditsalestracker">RedditSalesTracker</a> &{' '}
-                                <a href="https://github.com/kajgrant/transittracker">TransitTracker</a>
+                            <h2 className="project-headers">
+                                <a href="https://github.com/kajgrant/redditsalestracker" className="color-link">
+                                    RedditSalesTracker
+                                </a>{' '}
+                                &{' '}
+                                <a href="https://github.com/kajgrant/transittracker" className="color-link">
+                                    TransitTracker
+                                </a>
                             </h2>
                             <p>
                                 Personal interest projects to interact with the Reddit api and Translink api platforms.
                             </p>
                         </div>
                     </div>
-                    <h1 className="side-bar" id="media">
-                        Media
-                    </h1>
+                    <div id="media-container" className="content-container">
+                        <h1 className="side-bar" id="media">
+                            Media
+                        </h1>
+                        <div class="grid">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
                 </span>
             </div>
-            <div id="side-gradient" className="relative"></div>
         </div>
     );
 }
