@@ -10,7 +10,13 @@ function App() {
             <div id="content">
                 <div id="top-container">
                     <div id="logos-container" className="relative">
-                        <img src={personalLogo} id="personal-logo" alt="KGM" />
+                        <div id="personal-logo">
+                            <div id="personal-logo-bg" className="relative">
+                                <p id="personal-logo-text" className="absolute">
+                                    KGM
+                                </p>
+                            </div>
+                        </div>
                         <div id="socials-container">
                             <a href="mailto:kajgrant@gmail.com">
                                 <img src={emailLogo} id="email-logo" className="socials-logos" alt="Email" />
@@ -40,7 +46,7 @@ function App() {
                             About
                         </h1>
                         <div className="sub-content">
-                            <p id="about-text">
+                            <p id="about-text" className="fade-text">
                                 Hi, I'm Kaj.<br></br>
                                 <br></br>I'm a 5th year student currently in my last term of my Computer Engineering
                                 Degree. <br></br>I am passionate about the <strong>entire</strong> stack... from
@@ -62,7 +68,7 @@ function App() {
                                     Hardware Accelerated Guitar Tuner
                                 </a>
                             </h2>
-                            <p>
+                            <p className="fade-text">
                                 A Zedboard FPGA based guitar tuner that uses a Fast Fourier Transform core and a custom
                                 Harmonic Product Spectrum core. Involves multithreaded operation to detect note
                                 frequency and output feedback to a VGA based ui.
@@ -72,7 +78,7 @@ function App() {
                                     Chairable, by Roll Technology
                                 </a>
                             </h2>
-                            <p>
+                            <p className="fade-text">
                                 An SFU Engineering Capstone project that utilizes spherical wheel technology to move the
                                 standard office chair.
                             </p>
@@ -85,7 +91,7 @@ function App() {
                                     TransitTracker
                                 </a>
                             </h2>
-                            <p>
+                            <p className="fade-text">
                                 Personal interest projects to interact with the Reddit api and Translink api platforms.
                             </p>
                         </div>
@@ -94,49 +100,8 @@ function App() {
                         <h1 className="side-bar" id="media">
                             Media
                         </h1>
-                        <div class="grid">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
+                        <div id="media-content">
+                            <p className="coming-soon">Coming soon...</p>
                         </div>
                     </div>
                 </span>
