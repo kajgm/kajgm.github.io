@@ -37,6 +37,8 @@
 
 .project-headers {
   margin-top: 50px;
+  margin-bottom: 15px;
+  line-height: 1.5;
 }
 
 .sub-content {
@@ -150,6 +152,7 @@ p.fade-text {
 }
 
 .coming-soon {
+  margin-top: 12px;
   clip-path: inset(0 12px 0 0);
   animation: loading 3s steps(6) infinite, fadein 2s;
 }
