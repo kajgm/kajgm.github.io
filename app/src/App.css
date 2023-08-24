@@ -1,6 +1,7 @@
 
 .App {
-  background-color: #ffffff;
+  width: 100%;
+  overflow: hidden;
 }
 
 .socials-logos {
@@ -24,11 +25,10 @@
 .side-bar {
   font-size: 30px;
   padding-right: 100px;
+  max-width: 80px;
 }
 
-.content {
-  color:#303030;
-  font-size: 20px;
+.text-content {
   max-width: 900px;
 }
 
@@ -42,6 +42,12 @@
 
 .w-full {
   width: 100%;
+}
+
+#content {
+  width: 80%;
+  float: left;
+  z-index: 10;
 }
 
 #top-container {
@@ -85,4 +91,73 @@
 #about-container {
   display: flex;
   flex-wrap: wrap;
+}
+
+#about-text {
+  color:#303030;
+  font-size: 20px;
+}
+
+#projects-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+p {
+  animation: fadein 2s;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+u {
+  color: inherit;
+  text-decoration: none;
+}
+
+u {
+  background: 
+    linear-gradient(to right, rgb(0, 0, 0), rgb(0, 0, 0)),
+    linear-gradient(to right, rgba(255, 0, 0, 1), rgba(255, 0, 180, 1), rgba(0, 100, 200, 1));
+  background-size: 100% 0.1em, 0 0.1em;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+}
+
+u:hover,
+u:focus {
+  background-size: 0 0.1em, 100% 0.1em;
+}
+
+
+/* Underline styles */
+a {
+  position: relative;
+  padding: 0.2em 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.1em;
+  background-color: rgb(128, 0, 0);
+  opacity: 0;
+  transition: opacity 300ms, transform 300ms;
+}
+
+a:hover::after,
+a:focus::after {
+  opacity: 1;
+  transform: translate3d(0, 0.2em, 0);
 }
