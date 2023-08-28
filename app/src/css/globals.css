@@ -1,0 +1,23 @@
+.no-decoration {
+    text-decoration: none;
+}
+
+.no-margin {
+    margin: 0px;
+}
+  
+.absolute {
+    position: absolute;
+}
+  
+.relative {
+    position: relative;
+}
+  
+.w-full {
+    width: 100%;
+}
+
+.two-fade-in {
+    animation: fadein 2s;
+}
