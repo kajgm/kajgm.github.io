@@ -1,6 +1,8 @@
 import spotfiyLogo from './img/logos/spotify.svg';
 import linkedinLogo from './img/logos/linkedin.svg';
 import githubLogo from './img/logos/github.svg';
+import sapLogo from './img/logos/sap.svg';
+import sonyLogo from './img/logos/sony.svg';
 import './css/main.css';
 import './css/personal-logo.css';
 import './css/animations.css';
@@ -57,7 +59,7 @@ function Main() {
                     <div className="sub-content">
                         <p id="about-text" className="two-fade-in no-margin">
                             Hi, I'm <strong id="kaj-text">Kaj</strong>.{' '}
-                            <i id="hidden-kaj"> - pronounced like Kai and rhymes with 🥧</i>
+                            <i id="hidden-kaj"> - pronounced like Kai and rhymes with 🥧 (pie!) </i>
                             <br></br>
                             <br></br>I'm a 5th year student currently in my last term of my Computer Engineering Degree.{' '}
                             <br></br>I'm passionate about the <strong>entire</strong> stack... from computer hardware,
@@ -68,6 +70,7 @@ function Main() {
                         </p>
                     </div>
                 </div>
+
                 <div id="projects-container" className="content">
                     <h1 className="content-headers side-bar no-margin">
                         <u className="black-underline">Projects</u>
@@ -78,20 +81,43 @@ function Main() {
                                 Hardware Accelerated Guitar Tuner
                             </a>
                         </h2>
-                        <p className="two-fade-in project-text">
-                            A Zedboard FPGA based guitar tuner that uses a Fast Fourier Transform core and a custom-made
-                            Harmonic Product Spectrum core. Involves multithreaded operation to detect note frequency
-                            and output feedback to a VGA based ui.
-                        </p>
+                        <ul>
+                            <p className="two-fade-in project-text">
+                                <li>
+                                    Involves multithreaded operation to detect note frequency and output feedback to a
+                                    VGA based ui.
+                                </li>
+                                <li>
+                                    Designed a custom hardware architecture using the Xilinx Zedboard FPGA for a guitar
+                                    tuner program
+                                </li>
+                                <li>
+                                    Interfaced Audio Codecs, FFT blocks, GPIO blocks, and VGA controller with software
+                                </li>
+                                <li>
+                                    Created a custom hardware block in VHDL to perform Harmonic Product Spectrum
+                                    calculation
+                                </li>
+                            </p>
+                        </ul>
                         <h2 className="project-headers">
                             <a href="https://github.com/kajgrant/rolltech" className="color-link">
                                 <p id="chairable-logo">Chairable</p>, by Roll Technology
                             </a>
                         </h2>
-                        <p className="two-fade-in project-text">
-                            A Simon Fraser University Engineering Capstone project that utilizes spherical wheel
-                            technology to move the standard office chair.
-                        </p>
+                        <ul>
+                            <p className="two-fade-in project-text">
+                                <li>An 8-month Simon Fraser University Engineering Capstone project</li>
+                                <li>
+                                    Utilizes a spherical wheel design for tight maneuvering and a space-efficient
+                                    footprint
+                                </li>
+                                <li>Modular design intended for attachment to a variety of office chair models</li>
+                                <li>
+                                    Boasts a full day battery life and the ability to move a 125kg load at a 2.5m/s pace
+                                </li>
+                            </p>
+                        </ul>
                         <h2 className="project-headers">
                             <a href="https://github.com/kajgrant/redditsalestracker" className="color-link">
                                 RedditSalesTracker
@@ -101,11 +127,86 @@ function Main() {
                                 TransitTracker
                             </a>
                         </h2>
-                        <p className="two-fade-in project-text">
-                            Personal interest projects to interact with the Reddit api and Translink api platforms.
-                        </p>
+                        <ul>
+                            <p className="two-fade-in project-text">
+                                <li>
+                                    Personal interest projects to interact with the Reddit api and Translink api
+                                    platforms
+                                </li>
+                                <li>
+                                    Uses either a command line interface or graphical interface intended for a small
+                                    raspberry pi screen
+                                </li>
+                            </p>
+                        </ul>
                     </div>
                 </div>
+
+                <div id="experience-container" className="content">
+                    <h1 className="content-headers side-bar no-margin">
+                        <u className="black-underline">Experience</u>
+                    </h1>
+                    <div className="projects sub-content">
+                        <h2 className="project-headers">
+                            <a href="https://www.sap.com/canada/index.html">
+                                <img src={sapLogo} id="SAP-logo" className="company-logos relative" alt="SAP" />
+                            </a>
+                            <a href="https://www.sap.com/canada/index.html" className="color-link">
+                                SAP Canada Inc.
+                            </a>
+                        </h2>
+                        <ul>
+                            <p className="two-fade-in project-text">
+                                <li>
+                                    Assigned to the core infrastructure team involved with development, maintenance, and
+                                    on-call support
+                                </li>
+                                <li>
+                                    Participated in daily stand-ups and scrum meetings to continuously improve
+                                    development process
+                                </li>
+                                <li>
+                                    Responded to concurrent <strong>Jira</strong> tickets involving new features or
+                                    fixes to existing systems
+                                </li>
+                                <li>
+                                    Tested proposed changes in <strong>Jenkins</strong> voter system, local{' '}
+                                    <strong>Docker</strong> and <strong>Kubernetes</strong> cloud environments
+                                </li>
+                            </p>
+                        </ul>
+                        <h2 className="project-headers">
+                            <a href="https://www.imageworks.com/">
+                                <img
+                                    src={sonyLogo}
+                                    id="Sony-logo"
+                                    className="company-logos relative"
+                                    alt="Sony Pictures Imageworks"
+                                />
+                            </a>
+                            <a href="https://www.imageworks.com/" className="color-link">
+                                Sony Pictures Imageworks
+                            </a>
+                        </h2>
+                        <ul>
+                            <p className="two-fade-in project-text">
+                                <li>
+                                    Created several apps in <strong>Python</strong> and <strong>JavaScript</strong> to
+                                    assist with production and senior engineer workflows
+                                </li>
+                                <li>
+                                    Given administrative level access to troubleshoot a variety of issues on production
+                                    level <strong>Linux</strong> machines
+                                </li>
+                                <li>
+                                    Deployed several projects to assist with the transition of 800+ employees to a
+                                    work-from-home workflow
+                                </li>
+                            </p>
+                        </ul>
+                    </div>
+                </div>
+
                 <div id="media-container" className="content">
                     <h1 className="content-headers side-bar no-margin">
                         <u className="black-underline">Media</u>

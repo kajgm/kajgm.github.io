@@ -21,3 +21,7 @@
 .two-fade-in {
     animation: fadein 2s;
 }
+
+li{
+    margin: 10px 0;
+  }

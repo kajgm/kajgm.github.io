@@ -7,7 +7,7 @@
 
 .socials-logos {
   height: 20px;
-  width: auto;
+  width: 20px;
   padding-top: 5px;
   padding-inline: 5px;
   justify-content: center;
@@ -15,8 +15,17 @@
 
 .socials-logos:hover {
   filter: invert(20%) sepia(32%) saturate(4473%) hue-rotate(345deg) brightness(78%) contrast(125%);
-  top: -1px;
+  top: -2px;
   transition: all 0.2s ease;
+}
+
+.company-logos {
+  height: 30px;
+  width: auto;
+  display: inline;
+  padding-right: 20px;
+  top: 6px;
+  pointer-events: all;
 }
 
 .content-headers {
@@ -32,7 +41,7 @@
 
 .side-bar {
   font-size: 2em;
-  padding-right: 100px;
+  padding-right: 140px;
   max-width: 80px;
 }
 
@@ -69,7 +78,7 @@
 #logos-container {
   left: 50px;
   top: 50px;
-  padding-right: 80px;
+  padding-right: 120px;
   padding-bottom: 50px;
 }
 
