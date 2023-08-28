@@ -1,6 +1,6 @@
-import emailLogo from './img/logos/emaillogo.png';
-import linkedinLogo from './img/logos/linkedinlogo.png';
-import githubLogo from './img/logos/githublogo.png';
+import spotfiyLogo from './img/logos/spotify.svg';
+import linkedinLogo from './img/logos/linkedin.svg';
+import githubLogo from './img/logos/github.svg';
 import './css/main.css';
 import './css/personal-logo.css';
 import './css/animations.css';
@@ -20,14 +20,19 @@ function Main() {
                         </div>
                     </div>
                     <div id="socials-container">
-                        <a href="mailto:kajgrant@gmail.com">
-                            <img src={emailLogo} id="email-logo" className="socials-logos" alt="Email" />
+                        <a href="https://open.spotify.com/user/btwz8uoci9s53csetc7jkjezk?si=2978b1c5e8f64d22">
+                            <img src={spotfiyLogo} id="spotify-logo" className="socials-logos relative" alt="Spotify" />
                         </a>
                         <a href="https://www.linkedin.com/in/kaj-grant-mathiasen/">
-                            <img src={linkedinLogo} id="linkedIn-logo" className="socials-logos" alt="LinkedIn" />
+                            <img
+                                src={linkedinLogo}
+                                id="linkedIn-logo"
+                                className="socials-logos relative"
+                                alt="LinkedIn"
+                            />
                         </a>
                         <a href="https://github.com/kajgrant">
-                            <img src={githubLogo} id="github-logo" className="socials-logos" alt="Github" />
+                            <img src={githubLogo} id="github-logo" className="socials-logos relative" alt="Github" />
                         </a>
                     </div>
                 </div>
@@ -51,7 +56,9 @@ function Main() {
                     </h1>
                     <div className="sub-content">
                         <p id="about-text" className="two-fade-in no-margin">
-                            Hi, I'm Kaj.<br></br>
+                            Hi, I'm <strong id="kaj-text">Kaj</strong>.{' '}
+                            <i id="hidden-kaj"> - pronounced like Kai and rhymes with 🥧</i>
+                            <br></br>
                             <br></br>I'm a 5th year student currently in my last term of my Computer Engineering Degree.{' '}
                             <br></br>I'm passionate about the <strong>entire</strong> stack... from computer hardware,
                             to reliable back-end infrastructure, and all the way up to{' '}
@@ -82,8 +89,8 @@ function Main() {
                             </a>
                         </h2>
                         <p className="two-fade-in project-text">
-                            An SFU Engineering Capstone project that utilizes spherical wheel technology to move the
-                            standard office chair.
+                            A Simon Fraser University Engineering Capstone project that utilizes spherical wheel
+                            technology to move the standard office chair.
                         </p>
                         <h2 className="project-headers">
                             <a href="https://github.com/kajgrant/redditsalestracker" className="color-link">

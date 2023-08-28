@@ -7,10 +7,16 @@
 
 .socials-logos {
   height: 20px;
-  max-width: 20px;
+  width: auto;
   padding-top: 5px;
   padding-inline: 5px;
   justify-content: center;
+}
+
+.socials-logos:hover {
+  filter: invert(20%) sepia(32%) saturate(4473%) hue-rotate(345deg) brightness(78%) contrast(125%);
+  top: -1px;
+  transition: all 0.2s ease;
 }
 
 .content-headers {
@@ -92,6 +98,17 @@
   color:#303030;
   font-size: 1.2em;
   font-weight: 400;
+}
+
+#hidden-kaj {
+  opacity: 0;
+  transition: 1s;
+  pointer-events: none;
+}
+
+#kaj-text:hover + #hidden-kaj {
+  display: inline;
+  opacity: 1;
 }
 
 #chairable-logo {
