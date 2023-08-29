@@ -18,13 +18,15 @@ function Main() {
         <div className="Main">
             <div id="top-container">
                 <div id="logos-container" className="relative">
-                    <div id="personal-logo">
-                        <div id="personal-logo-bg" className="relative">
-                            <p id="personal-logo-text" className="absolute">
-                                KGM
-                            </p>
+                    <a href="https://kajgrant.github.io/">
+                        <div id="personal-logo">
+                            <div id="personal-logo-bg" className="relative">
+                                <p id="personal-logo-text" className="absolute">
+                                    KGM
+                                </p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                     <div id="socials-container">
                         <a href="https://open.spotify.com/user/btwz8uoci9s53csetc7jkjezk?si=2978b1c5e8f64d22">
                             <img src={spotfiyLogo} id="spotify-logo" className="socials-logos relative" alt="Spotify" />
@@ -93,7 +95,7 @@ function Main() {
                             </a>
                         </h2>
                         <ul>
-                            <p className="two-fade-in project-text">
+                            <p className="two-fade-in bullet-text">
                                 <li>
                                     Involves multithreaded operation to detect note frequency and output feedback to a
                                     VGA based ui.
@@ -117,7 +119,7 @@ function Main() {
                             </a>
                         </h2>
                         <ul>
-                            <p className="two-fade-in project-text">
+                            <p className="two-fade-in bullet-text">
                                 <li>An 8-month Simon Fraser University Engineering Capstone project</li>
                                 <li>
                                     Utilizes a spherical wheel design for tight maneuvering and a space-efficient
@@ -139,7 +141,7 @@ function Main() {
                             </a>
                         </h2>
                         <ul>
-                            <p className="two-fade-in project-text">
+                            <p className="two-fade-in bullet-text">
                                 <li>
                                     Personal interest projects to interact with the Reddit api and Translink api
                                     platforms
@@ -157,17 +159,22 @@ function Main() {
                     <h1 className="content-headers side-bar no-margin">
                         <u className="black-underline">Experience</u>
                     </h1>
-                    <div className="projects sub-content">
-                        <h2 className="project-headers">
+                    <div className="experience sub-content">
+                        <div className="exp-headers-container">
                             <a href="https://www.sap.com/canada/index.html">
                                 <img src={sapLogo} id="SAP-logo" className="company-logos relative" alt="SAP" />
                             </a>
-                            <a href="https://www.sap.com/canada/index.html" className="color-link">
-                                SAP Canada Inc.
-                            </a>
-                        </h2>
+                            <div className="exp-headers-text">
+                                <h2 className="experience-headers">
+                                    <a href="https://www.sap.com/canada/index.html" className="color-link">
+                                        SAP Canada Inc.
+                                    </a>
+                                </h2>
+                                <p className="work-duration-text no-margin relative">8-Month Internship</p>
+                            </div>
+                        </div>
                         <ul>
-                            <p className="two-fade-in project-text">
+                            <p className="two-fade-in bullet-text">
                                 <li>
                                     Assigned to the core infrastructure team involved with development, maintenance, and
                                     on-call support
@@ -186,7 +193,7 @@ function Main() {
                                 </li>
                             </p>
                         </ul>
-                        <h2 className="project-headers">
+                        <div className="exp-headers-container">
                             <a href="https://www.imageworks.com/">
                                 <img
                                     src={sonyLogo}
@@ -195,12 +202,17 @@ function Main() {
                                     alt="Sony Pictures Imageworks"
                                 />
                             </a>
-                            <a href="https://www.imageworks.com/" className="color-link">
-                                Sony Pictures Imageworks
-                            </a>
-                        </h2>
+                            <div className="exp-headers-text">
+                                <h2 className="experience-headers">
+                                    <a href="https://www.imageworks.com/" className="color-link">
+                                        Sony Pictures Imageworks
+                                    </a>
+                                </h2>
+                                <p className="work-duration-text no-margin relative">8-Month Internship</p>
+                            </div>
+                        </div>
                         <ul>
-                            <p className="two-fade-in project-text">
+                            <p className="two-fade-in bullet-text">
                                 <li>
                                     Created several apps in <strong>Python</strong> and <strong>JavaScript</strong> to
                                     assist with production and senior engineer workflows
