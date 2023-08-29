@@ -3,11 +3,15 @@ import linkedinLogo from './img/logos/linkedin.svg';
 import githubLogo from './img/logos/github.svg';
 import sapLogo from './img/logos/sap.svg';
 import sonyLogo from './img/logos/sony.svg';
+import location from './img/location.svg';
+
 import './css/main.css';
 import './css/personal-logo.css';
 import './css/animations.css';
 import './css/underlines.css';
 import './css/globals.css';
+
+import DateTime from './dateTime';
 
 function Main() {
     return (
@@ -48,6 +52,13 @@ function Main() {
                     <p id="subheader-text" className="no-margin">
                         Student - Computer Engineer - Software Engineer - Videographer - Photographer
                     </p>
+                    <div id="location-time-container" className="relative">
+                        <img src={location} id="location" className="relative" alt="Location" />
+                        <p id="location-text" className="no-margin">
+                            Vancouver, BC. Canada -{' '}
+                        </p>
+                        <DateTime></DateTime>
+                    </div>
                 </div>
             </div>
 

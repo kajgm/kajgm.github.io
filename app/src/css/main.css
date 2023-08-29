@@ -97,10 +97,29 @@
   padding-top: 35px;
 }
 
+#location-time-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#location-text {
+  font-size: 0.8em;
+  font-weight: 500;
+  color: #6b6b6b;
+  padding-right: 5px
+}
+
+#location {
+  width: 15px;
+  height: auto;
+  padding-right: 5px;
+}
+
 #subheader-text {
   color: #303030;
   font-weight: 500;
   font-size: 1em;
+  padding-bottom: 10px;
 }
 
 #about-text {
@@ -111,6 +130,7 @@
 
 #hidden-kaj {
   opacity: 0;
+  font-size: 0.8em;
   transition: 1s;
   pointer-events: none;
 }
