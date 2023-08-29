@@ -1,3 +1,3 @@
 # kajgrant.github.io
 
-hi
+A simple website made with React
