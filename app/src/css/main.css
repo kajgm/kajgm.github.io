@@ -115,6 +115,11 @@
   padding-right: 5px;
 }
 
+#location:hover {
+  filter: invert(20%) sepia(32%) saturate(4473%) hue-rotate(345deg) brightness(78%) contrast(125%);
+  transition: all 0.2s ease;
+}
+
 #subheader-text {
   color: #303030;
   font-weight: 500;
