@@ -239,6 +239,15 @@ function Main() {
                                         Deployed several projects to assist with the transition of 800+ employees to a
                                         work-from-home workflow
                                     </li>
+                                    <li>
+                                        Received a film credit for the Animated Film:{' '}
+                                        <a
+                                            className="no-decoration gray black-underline"
+                                            href="https://jhmovie.fandom.com/wiki/The_Sea_Beast_(2022_film)/Credits"
+                                        >
+                                            The Sea Beast
+                                        </a>
+                                    </li>
                                 </p>
                             </ul>
                         </div>

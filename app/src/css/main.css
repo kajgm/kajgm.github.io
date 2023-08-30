@@ -40,7 +40,7 @@
 }
 
 .content-container:hover {
-  background-color: #eeeeee;
+  background-color: #efefef;
   border-radius: 5px;
   transition-duration: 0.5s;
 }

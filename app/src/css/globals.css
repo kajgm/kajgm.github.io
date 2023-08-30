@@ -22,6 +22,14 @@
     animation: fadein 2s;
 }
 
+.black {
+    color: black;
+}
+
+.gray {
+    color: #303030;
+}
+
 .twty-margin-bottom {
     margin-bottom: 20px;
 }
