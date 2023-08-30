@@ -178,7 +178,9 @@ function Main() {
                                             SAP Canada Inc.
                                         </a>
                                     </h2>
-                                    <p className="work-duration-text no-margin relative">8-Month Internship</p>
+                                    <p className="work-duration-text no-margin relative">
+                                        8-Month Internship - Agile Developer
+                                    </p>
                                 </div>
                             </div>
                             <ul>
@@ -218,7 +220,9 @@ function Main() {
                                             Sony Pictures Imageworks
                                         </a>
                                     </h2>
-                                    <p className="work-duration-text no-margin relative">8-Month Internship</p>
+                                    <p className="work-duration-text no-margin relative">
+                                        8-Month Internship - Systems Engineer
+                                    </p>
                                 </div>
                             </div>
                             <ul>
