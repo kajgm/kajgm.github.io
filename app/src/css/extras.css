@@ -1,0 +1,50 @@
+/* Color reveal for entire keyword */
+.color-reveal {
+    text-decoration: none;
+}
+  
+.color-reveal {
+    background: 
+      linear-gradient(to right, rgb(0, 0, 0), rgb(0, 0, 0)),
+      linear-gradient(to right, rgb(220, 0, 0), rgb(225, 0, 255), rgb(0, 53, 200));
+    background-size: 100% 1em, 0 1em;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+  
+.color-reveal:hover,
+.color-reveal:focus {
+    background-size: 0 1em, 100% 1em;
+}
+  
+
+/* Red colored project links */
+.black-underline {
+    position: relative;
+    padding: 0em 0;
+    color: inherit;
+    text-decoration: none;
+}
+  
+.black-underline::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.1em;
+    background-color: black;
+    opacity: 0;
+    transition: opacity 300ms, transform 300ms;
+}
+  
+.black-underline:hover::after,
+.black-underline:focus::after {
+    opacity: 1;
+    transform: translate3d(0, 0.1em, 0);
+}
+  

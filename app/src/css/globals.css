@@ -22,6 +22,14 @@
     animation: fadein 2s;
 }
 
-li{
-    margin: 10px 0;
-  }
+.twty-margin-bottom {
+    margin-bottom: 20px;
+}
+
+li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+ul {
+    margin-bottom: 0px;
+}
