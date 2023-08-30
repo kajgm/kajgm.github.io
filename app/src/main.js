@@ -68,9 +68,7 @@ function Main() {
 
             <div className="relative">
                 <div id="about-container" className="content">
-                    <h1 className="content-headers side-bar no-margin">
-                        <u className="black-underline">About</u>
-                    </h1>
+                    <h1 className="content-headers side-bar no-margin">About</h1>
                     <div className="sub-content">
                         <p id="about-text" className="two-fade-in no-margin">
                             Hi, I'm{' '}
@@ -90,9 +88,7 @@ function Main() {
                 </div>
 
                 <div id="projects-container" className="content">
-                    <h1 className="content-headers side-bar no-margin">
-                        <u className="black-underline">Projects</u>
-                    </h1>
+                    <h1 className="content-headers side-bar no-margin">Projects</h1>
                     <div className="projects sub-content">
                         <div className="content-container twty-margin-bottom">
                             <h2 className="project-headers no-margin">
@@ -103,20 +99,20 @@ function Main() {
                             <ul>
                                 <p className="two-fade-in bullet-text">
                                     <li>
-                                        Involves multithreaded operation to detect note frequency and output feedback to
-                                        a VGA based ui.
+                                        Involves multithreaded operation to detect note frequency and output live
+                                        feedback to a VGA based ui.
                                     </li>
                                     <li>
-                                        Designed a custom hardware architecture using the Xilinx Zedboard FPGA for a
-                                        guitar tuner program
+                                        Designed a custom hardware architecture using the <b>Xilinx Zedboard FPGA</b>{' '}
+                                        for a guitar tuner program
                                     </li>
                                     <li>
                                         Interfaced Audio Codecs, FFT blocks, GPIO blocks, and VGA controller with
                                         software
                                     </li>
                                     <li>
-                                        Created a custom hardware block in VHDL to perform Harmonic Product Spectrum
-                                        calculation
+                                        Created a custom hardware block in <b>VHDL</b> to perform Harmonic Product
+                                        Spectrum calculation
                                     </li>
                                 </p>
                             </ul>
@@ -136,8 +132,8 @@ function Main() {
                                     </li>
                                     <li>Modular design intended for attachment to a variety of office chair models</li>
                                     <li>
-                                        Boasts a full day battery life and the ability to move a 125kg load at a 2.5m/s
-                                        pace
+                                        Boasts a full day battery life and the ability to move a <b>125kg</b> load at a{' '}
+                                        <b>2.5m/s</b> pace
                                     </li>
                                 </p>
                             </ul>
@@ -145,11 +141,11 @@ function Main() {
                         <div className="content-container">
                             <h2 className="project-headers">
                                 <a href="https://github.com/kajgrant/redditsalestracker" className="black-underline">
-                                    RedditSalesTracker
+                                    <b id="reddit-color">Reddit</b>SalesTracker
                                 </a>{' '}
                                 &{' '}
                                 <a href="https://github.com/kajgrant/transittracker" className="black-underline">
-                                    TransitTracker
+                                    <b id="translink-color">Transit</b>Tracker
                                 </a>
                             </h2>
                             <ul>
@@ -169,9 +165,7 @@ function Main() {
                 </div>
 
                 <div id="experience-container" className="content">
-                    <h1 className="content-headers side-bar no-margin">
-                        <u className="black-underline">Experience</u>
-                    </h1>
+                    <h1 className="content-headers side-bar no-margin">Experience</h1>
                     <div className="experience sub-content">
                         <div className="content-container twty-margin-bottom">
                             <div className="exp-headers-container">

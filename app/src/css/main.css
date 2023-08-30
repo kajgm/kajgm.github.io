@@ -195,6 +195,14 @@
   -webkit-text-fill-color: transparent;
 }
 
+#reddit-color {
+  color: #FF4500;
+}
+
+#translink-color {
+  color: #00355F;
+}
+
 #coming-soon {
   margin-top: 12px;
   clip-path: inset(0 12px 0 0);
