@@ -5,7 +5,7 @@
   
 .color-reveal {
     background: 
-      linear-gradient(to right, rgb(0, 0, 0), rgb(0, 0, 0)),
+      linear-gradient(to right, var(--body_color), var(--body_color)),
       linear-gradient(to right, rgb(220, 0, 0), rgb(225, 0, 255), rgb(0, 53, 200));
     background-size: 100% 1em, 0 1em;
     background-position: 100% 100%, 0 100%;
@@ -26,7 +26,7 @@
 .black-underline {
     position: relative;
     padding: 0em 0;
-    color: inherit;
+    color: var(--body_color);
     text-decoration: none;
 }
   
@@ -37,7 +37,7 @@
     left: 0;
     width: 100%;
     height: 0.1em;
-    background-color: black;
+    background-color: var(--body_color);
     opacity: 0;
     transition: opacity 300ms, transform 300ms;
 }

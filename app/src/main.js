@@ -1,3 +1,7 @@
+import * as React from 'react';
+import * as ReactDOM from 'react-dom';
+import { DarkModeSwitch } from 'react-toggle-dark-mode';
+
 import spotfiyLogo from './img/logos/spotify.svg';
 import linkedinLogo from './img/logos/linkedin.svg';
 import githubLogo from './img/logos/github.svg';
@@ -14,6 +18,20 @@ import './css/globals.css';
 import DateTime from './dateTime';
 
 function Main() {
+    const [isDarkMode, setDarkMode] = React.useState(false);
+
+    const toggleDarkMode = (checked) => {
+        setDarkMode(checked);
+    };
+
+    if (isDarkMode) {
+        document.querySelector('body').setAttribute('data-theme', 'dark');
+        localStorage.setItem('selectedTheme', 'dark');
+    } else {
+        document.querySelector('body').setAttribute('data-theme', 'light');
+        localStorage.setItem('selectedTheme', 'light');
+    }
+
     return (
         <div className="Main">
             <div id="top-container">
@@ -45,6 +63,10 @@ function Main() {
                     </div>
                 </div>
 
+                <div id="toggle-container" className="relative">
+                    <DarkModeSwitch checked={isDarkMode} onChange={toggleDarkMode} size={40} />
+                </div>
+
                 <div id="main-header" className="relative">
                     <a className="no-decoration" href="https://kajgrant.github.io/">
                         <h1 id="name-title" className="no-margin">
@@ -55,7 +77,7 @@ function Main() {
                         Student - Computer Engineer - Software Engineer - Videographer - Photographer
                     </p>
                     <a className="no-decoration" href="https://en.wikipedia.org/wiki/Vancouver">
-                        <div id="location-time-container" className="relative">
+                        <div id="location-time-container" className="no-margin">
                             <img src={location} id="location" className="relative" alt="Location" />
                             <p id="location-text" className="no-margin">
                                 Vancouver, BC. Canada -{' '}
@@ -243,7 +265,7 @@ function Main() {
                                     <li>
                                         Received a film credit for the Animated Film:{' '}
                                         <a
-                                            className="no-decoration gray black-underline"
+                                            className="no-decoration black-underline"
                                             href="https://jhmovie.fandom.com/wiki/The_Sea_Beast_(2022_film)/Credits"
                                         >
                                             The Sea Beast
