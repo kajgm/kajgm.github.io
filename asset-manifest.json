@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.6c14f499.css",
-    "main.js": "/static/js/main.3d3e8623.js",
+    "main.css": "/static/css/main.d017bceb.css",
+    "main.js": "/static/js/main.a3e9c826.js",
     "static/js/787.c1112931.chunk.js": "/static/js/787.c1112931.chunk.js",
     "static/media/sony.svg": "/static/media/sony.19af8fab07fe8712b5659a27f80e8c7b.svg",
     "static/media/sap.svg": "/static/media/sap.be15b58a6324b1de90bb21df437bddd1.svg",
@@ -10,12 +10,12 @@
     "static/media/spotify.svg": "/static/media/spotify.478307c630043214d8e7dd1a480a02f0.svg",
     "static/media/location.svg": "/static/media/location.351870b901810823cc7db9f86f4e54f8.svg",
     "index.html": "/index.html",
-    "main.6c14f499.css.map": "/static/css/main.6c14f499.css.map",
-    "main.3d3e8623.js.map": "/static/js/main.3d3e8623.js.map",
+    "main.d017bceb.css.map": "/static/css/main.d017bceb.css.map",
+    "main.a3e9c826.js.map": "/static/js/main.a3e9c826.js.map",
     "787.c1112931.chunk.js.map": "/static/js/787.c1112931.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6c14f499.css",
-    "static/js/main.3d3e8623.js"
+    "static/css/main.d017bceb.css",
+    "static/js/main.a3e9c826.js"
   ]
 }
