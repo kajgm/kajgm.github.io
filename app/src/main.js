@@ -17,7 +17,15 @@ import './css/globals.css';
 import DateTime from './dateTime';
 
 function Main() {
-    const [isDarkMode, setDarkMode] = React.useState(false);
+    const selectedTheme = localStorage.getItem('selectedTheme');
+
+    let themeBool = false;
+
+    if (selectedTheme === 'dark') {
+        themeBool = true;
+    }
+
+    const [isDarkMode, setDarkMode] = React.useState(themeBool);
 
     const toggleDarkMode = (checked) => {
         setDarkMode(checked);
