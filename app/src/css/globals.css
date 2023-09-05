@@ -34,6 +34,10 @@
     margin-bottom: 20px;
 }
 
+.dark-invert {
+    filter: var(--invert-filter);
+}
+
 li:not(:last-child) {
     margin-bottom: 10px;
 }

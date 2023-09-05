@@ -232,7 +232,7 @@ function Main() {
                                     <img
                                         src={sonyLogo}
                                         id="Sony-logo"
-                                        className="company-logos relative"
+                                        className="company-logos relative dark-invert"
                                         alt="Sony Pictures Imageworks"
                                     />
                                 </a>

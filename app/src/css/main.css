@@ -1,6 +1,7 @@
 :root {
   --body_background: white;
   --body_color: black;
+  --content_background: #eeeeee;
   --content-text-color: #303030;
   --sub-text-color: #4b4b4b;
   --invert-filter: invert(0%);
