@@ -162,8 +162,8 @@ function Main() {
                                     </li>
                                     <li>Modular design intended for attachment to a variety of office chair models</li>
                                     <li>
-                                        Boasts a full day battery life and the ability to move a <b>125kg</b> load at a{' '}
-                                        <b>2.5m/s</b> pace
+                                        Large <b>6200mAh</b> capacity battery and the ability to move a <b>125kg</b>{' '}
+                                        load at a <b>2.5m/s</b> pace
                                     </li>
                                 </p>
                             </ul>
