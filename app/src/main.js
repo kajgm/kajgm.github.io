@@ -80,9 +80,10 @@ function Main() {
                             <br></br>I'm a 5th year student currently in my last term of my Computer Engineering Degree.{' '}
                             <br></br>I'm passionate about the <strong className="color-reveal">entire</strong> stack...
                             from computer architecture, to reliable back-end infrastructure, and all the way up to{' '}
-                            brilliant user design. Currently, I'm looking for a full-time position in a Software
-                            Engineering field. I have experience working with large-scale media pipelines, building
-                            scalable systems and maintaining core infrastructure.
+                            brilliant user design. <br></br>
+                            <br></br>Currently, I'm looking for a full-time position in a Software Engineering field. I
+                            have experience working with large-scale media pipelines, building scalable systems and
+                            maintaining core infrastructure.
                         </p>
                     </div>
                 </div>
