@@ -1,5 +1,4 @@
 import * as React from 'react';
-import * as ReactDOM from 'react-dom';
 import { DarkModeSwitch } from 'react-toggle-dark-mode';
 
 import spotfiyLogo from './img/logos/spotify.svg';
@@ -34,6 +33,10 @@ function Main() {
 
     return (
         <div className="Main">
+            <div id="toggle-container">
+                <DarkModeSwitch checked={isDarkMode} style={{ margin: '0px' }} onChange={toggleDarkMode} size={40} />
+            </div>
+
             <div id="top-container">
                 <div id="logos-container" className="relative">
                     <a href="https://kajgrant.github.io/">
@@ -61,10 +64,6 @@ function Main() {
                             <img src={githubLogo} id="github-logo" className="socials-logos relative" alt="Github" />
                         </a>
                     </div>
-                </div>
-
-                <div id="toggle-container" className="relative">
-                    <DarkModeSwitch checked={isDarkMode} onChange={toggleDarkMode} size={40} />
                 </div>
 
                 <div id="main-header" className="relative">
@@ -278,9 +277,7 @@ function Main() {
                 </div>
 
                 <div id="media-container" className="content">
-                    <h1 className="content-headers side-bar no-margin">
-                        <u className="black-underline">Media</u>
-                    </h1>
+                    <h1 className="content-headers side-bar no-margin">Media</h1>
                     <div id="media-content">
                         <p id="coming-soon">Coming soon...</p>
                     </div>

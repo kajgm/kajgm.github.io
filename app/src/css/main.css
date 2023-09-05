@@ -10,9 +10,9 @@
   --body_background: #1b1b1b;
   --body_color: white;
   --content_background: #131313;
-  --content-text-color: white;
-  --sub-text-color: white;
-  --invert-filter: invert(100%);
+  --content-text-color: #d6d6d6;
+  --sub-text-color: #c5c5c5;
+  --invert-filter: invert(90%);
 }
 
 
@@ -155,7 +155,7 @@
 }
 
 #toggle-container {
-  position: fixed;
+  position: absolute;
   right: 50px;
   top: 50px;
   z-index: 10;
@@ -196,7 +196,7 @@
 #location-text {
   font-size: 0.9em;
   font-weight: 500;
-  color: var(--content-text-color);
+  color: var(--sub-text-color);
   padding-right: 5px
 }
 
@@ -232,7 +232,7 @@
 
 #chairable-logo {
   display: inline;
-  background: linear-gradient(0deg, #130b60, #208309);
+  background: linear-gradient(0deg, #1b07ce, #28be06);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
