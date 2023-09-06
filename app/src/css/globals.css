@@ -13,21 +13,9 @@
 .relative {
     position: relative;
 }
-  
-.w-full {
-    width: 100%;
-}
 
 .two-fade-in {
     animation: fadein 2s;
-}
-
-.black {
-    color: black;
-}
-
-.gray {
-    color: #303030;
 }
 
 .twty-margin-bottom {
