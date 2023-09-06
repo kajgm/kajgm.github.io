@@ -58,13 +58,13 @@ function Main() {
                     </a>
                     <div id="socials-container">
                         <a href="https://open.spotify.com/user/btwz8uoci9s53csetc7jkjezk?si=2978b1c5e8f64d22">
-                            <img src={spotfiyLogo} className="socials-logos" alt="Spotify" />
+                            <img src={spotfiyLogo} className="socials-logos relative" alt="Spotify" />
                         </a>
                         <a href="https://www.linkedin.com/in/kaj-grant-mathiasen/">
-                            <img src={linkedinLogo} className="socials-logos" alt="LinkedIn" />
+                            <img src={linkedinLogo} className="socials-logos relative" alt="LinkedIn" />
                         </a>
                         <a href="https://github.com/kajgrant">
-                            <img src={githubLogo} className="socials-logos" alt="Github" />
+                            <img src={githubLogo} className="socials-logos relative" alt="Github" />
                         </a>
                     </div>
                 </div>
