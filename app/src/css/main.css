@@ -255,6 +255,7 @@
 #coming-soon {
   color: var(--body_color);
   margin-top: 12px;
+  padding-left: 50px;
   clip-path: inset(0 12px 0 0);
   animation: loading 3s steps(6) infinite, fadein 2s;
 }
