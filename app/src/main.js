@@ -117,7 +117,7 @@ function Main() {
                     <div className="content-container twty-margin-bottom">
                         <h2 className="project-headers no-margin">
                             <a href="https://github.com/kajgrant/guitar-tuner" className="black-underline">
-                                Hardware Accelerated Guitar Tuner
+                                Hardware Accelerated <b id="guitar-color">Guitar</b> Tuner
                             </a>
                         </h2>
                         <ul>
@@ -161,7 +161,7 @@ function Main() {
                             </p>
                         </ul>
                     </div>
-                    <div className="content-container">
+                    <div className="content-container twty-margin-bottom">
                         <h2 className="project-headers">
                             <a href="https://github.com/kajgrant/redditsalestracker" className="black-underline">
                                 <b id="reddit-color">Reddit</b>SalesTracker
@@ -180,6 +180,29 @@ function Main() {
                                 <li>
                                     Uses either a command line interface or graphical interface intended for a small
                                     raspberry pi screen
+                                </li>
+                            </p>
+                        </ul>
+                    </div>
+                    <div className="content-container">
+                        <h2 className="project-headers">
+                            <a href="https://github.com/kajgrant/ExU" className="black-underline">
+                                <b id="risc-color">RISC</b>-<b id="v-color">V</b> Execution Unit
+                            </a>
+                        </h2>
+                        <ul>
+                            <p className="bullet-text two-fade-in no-margin">
+                                <li>
+                                    Designed a <b>VHDL</b> based execution unit that could execute the <b>RISC-V</b>{' '}
+                                    instruction set
+                                </li>
+                                <li>
+                                    Implemented barrel shifters, 64-bit adder, and logic unit to correctly respond to
+                                    input signals
+                                </li>
+                                <li>
+                                    Synthesized on the <b>Cyclone IV FPGA</b> and performed timing analysis using{' '}
+                                    <b>ModelSim</b> waveforms
                                 </li>
                             </p>
                         </ul>

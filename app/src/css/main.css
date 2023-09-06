@@ -232,12 +232,24 @@
   -webkit-text-fill-color: transparent;
 }
 
+#guitar-color {
+  color: #d5750f;
+}
+
 #reddit-color {
   color: #d63900;
 }
 
 #translink-color {
-  color: #0070ac;
+  color: #036dc4;
+}
+
+#risc-color {
+  color: #263cce;
+}
+
+#v-color {
+  color: #f5b21b;
 }
 
 #coming-soon {
