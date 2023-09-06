@@ -13,6 +13,7 @@ import './css/personal-logo.css';
 import './css/animations.css';
 import './css/extras.css';
 import './css/globals.css';
+import './css/colors.css';
 
 import DateTime from './dateTime';
 
@@ -117,7 +118,7 @@ function Main() {
                     <div className="content-container twty-margin-bottom">
                         <h2 className="project-headers no-margin">
                             <a href="https://github.com/kajgrant/guitar-tuner" className="black-underline">
-                                Hardware Accelerated <b id="guitar-color">Guitar</b> Tuner
+                                Hardware Accelerated <b id="guitar-color">Guitar</b> <b id="tuner-color">Tuner</b>
                             </a>
                         </h2>
                         <ul>
@@ -143,7 +144,8 @@ function Main() {
                     <div className="content-container twty-margin-bottom">
                         <h2 className="project-headers">
                             <a href="https://github.com/kajgrant/rolltech" className="black-underline">
-                                <p id="chairable-logo">Chairable</p>, by Roll Technology
+                                <b id="chair-color">Chair</b>
+                                <b id="able-color">able</b>, by Roll Technology
                             </a>
                         </h2>
                         <ul>

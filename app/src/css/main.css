@@ -162,13 +162,25 @@
 
 #main-header {
   left: 50px;
+  max-width: 80%;
   padding-right: 250px;
 }
 
 #name-title {
   color: var(--body_color);
-  font-size: 5em;
+  font-size: 4em;
   padding-top: 30px;
+}
+
+@media screen and (max-width: 1050px) {
+  #name-title {
+     font-size: 4em;
+  }
+}
+@media screen and (min-width: 1050px) {
+  #name-title {
+     font-size: 5em;
+  }
 }
 
 #subheader-text {
@@ -222,34 +234,6 @@
 #kaj-text:hover + #hidden-kaj {
   display: inline;
   opacity: 1;
-}
-
-#chairable-logo {
-  display: inline;
-  background: linear-gradient(0deg, #1b07ce, #28be06);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-#guitar-color {
-  color: #d5750f;
-}
-
-#reddit-color {
-  color: #d63900;
-}
-
-#translink-color {
-  color: #036dc4;
-}
-
-#risc-color {
-  color: #263cce;
-}
-
-#v-color {
-  color: #f5b21b;
 }
 
 #coming-soon {
