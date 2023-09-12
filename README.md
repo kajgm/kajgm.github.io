@@ -2,4 +2,4 @@
 
 A simple website made with React
 
-kajgrant.github.io
+[kajgrant.github.io](https://kajgrant.github.io/)
