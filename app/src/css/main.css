@@ -18,14 +18,16 @@
   --invert-filter: invert(90%);
 }
 
-* {
+Main > *:not(#toggle-container) {
   transition: background-color 0.3s ease-in-out;
 }
 
 /* Classes */
-.Main > * {
+.Main {
+  width: calc(50% + 300px);
+  margin: auto;
   background-color: var(--body_background);
-  overflow: hidden;
+  max-width: 95vw;
 }
 
 .socials-logos {
@@ -75,7 +77,7 @@
 }
 
 .bounce-text {
-  animation: bounce 3s ease infinite;
+  animation: bounce-text 3s ease infinite;
   display: inline-flex;
 }
 
@@ -144,6 +146,8 @@
   display: flex;
   flex-wrap: wrap;
   padding-bottom: 50px;
+  overflow-x: hidden;
+  padding-top: 50px;
 }
 
 #logos-container {
@@ -157,7 +161,7 @@
   position: absolute;
   background-color: inherit;
   right: 50px;
-  top: 50px;
+  top: 100px;
   z-index: 10;
 }
 
@@ -176,17 +180,6 @@
   color: var(--body_color);
   font-size: 4em;
   padding-top: 30px;
-}
-
-@media screen and (max-width: 1050px) {
-  #name-title {
-     font-size: 4em;
-  }
-}
-@media screen and (min-width: 1050px) {
-  #name-title {
-     font-size: 5em;
-  }
 }
 
 #subheader-text {
@@ -250,15 +243,17 @@
   animation: loading 3s steps(6) infinite, fadein 2s;
 }
 
-#footer {
-  width: 100%;
-  height: 80px;
-  background-color: var(--footer-background);
-  text-align: center;
+/* Screen size conditional*/
+@media screen and (max-width: 1459px) {
+  #name-title {
+     font-size: 4em;
+  }
+  .sub-content {
+    max-width: 90vw;
+  }
 }
-
-#mwlb {
-  color: var(--body_color);
-  font-size: 1em;
-  display: inline-block;
+@media screen and (min-width: 1460px) {
+  #name-title {
+     font-size: 5em;
+  }
 }

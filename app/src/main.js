@@ -14,6 +14,7 @@ import './css/animations.css';
 import './css/extras.css';
 import './css/globals.css';
 import './css/colors.css';
+import './css/scrollbar.css';
 
 import DateTime from './dateTime';
 
@@ -41,7 +42,7 @@ function Main() {
     }
 
     return (
-        <div className="Main">
+        <div className="Main relative">
             <div id="toggle-container">
                 <DarkModeSwitch checked={isDarkMode} style={{ margin: '0px' }} onChange={toggleDarkMode} size={40} />
             </div>

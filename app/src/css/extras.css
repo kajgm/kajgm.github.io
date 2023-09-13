@@ -1,9 +1,6 @@
 /* Color reveal for entire keyword */
 .color-reveal {
     text-decoration: none;
-}
-  
-.color-reveal {
     background: 
       linear-gradient(to right, var(--body_color), var(--body_color)),
       linear-gradient(to right, rgb(220, 0, 0), rgb(225, 0, 255), rgb(0, 53, 200));
@@ -33,9 +30,10 @@
 .black-underline::after {
     content: '';
     position: absolute;
+    border-radius: 10px;
     bottom: 0;
-    left: 0;
-    width: 100%;
+    left: -1%;
+    width: 102%;
     height: 0.1em;
     background-color: var(--body_color);
     opacity: 0;
