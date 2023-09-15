@@ -47,7 +47,7 @@ function Main() {
                 <DarkModeSwitch checked={isDarkMode} style={{ margin: '0px' }} onChange={toggleDarkMode} size={40} />
             </div>
 
-            <div className="homepage">
+            <div className="homepage relative">
                 <div id="top-container">
                     <div id="logos-container" className="relative">
                         <a href="https://kajgrant.github.io/">

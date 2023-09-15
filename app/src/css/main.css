@@ -28,7 +28,7 @@
 }
 
 .homepage {
-  width: max(50%, 500px);
+  width: 1200px;
   margin: auto;
   background-color: var(--body_background);
   max-width: 95vw;
@@ -97,7 +97,7 @@
 }
 
 .sub-content {
-  max-width: 800px;
+  max-width: min(800px, 95%);
 }
 
 .projects {
@@ -150,8 +150,8 @@
   display: flex;
   flex-wrap: wrap;
   padding-bottom: 50px;
-  overflow-x: hidden;
   padding-top: 50px;
+  max-width: 80vw;
 }
 
 #logos-container {
@@ -176,8 +176,6 @@
 
 #main-header {
   left: 50px;
-  max-width: 80%;
-  padding-right: 250px;
 }
 
 #name-title {
@@ -248,12 +246,12 @@
 }
 
 /* Screen size conditional*/
-@media screen and (max-width: 1459px) {
+@media screen and (max-width: 500px) {
   #name-title {
      font-size: 4em;
   }
 }
-@media screen and (min-width: 1460px) {
+@media screen and (min-width: 600px) {
   #name-title {
      font-size: 5em;
   }
