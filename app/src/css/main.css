@@ -20,7 +20,7 @@
 
 /* Classes */
 .homepage {
-  width: 50%;
+  width: max(50%, 500px);
   margin: auto;
   background-color: var(--body_background);
   transition: background-color 0.3s ease-in-out;
@@ -244,9 +244,6 @@
 @media screen and (max-width: 1459px) {
   #name-title {
      font-size: 4em;
-  }
-  .sub-content {
-    max-width: 90vw;
   }
 }
 @media screen and (min-width: 1460px) {
