@@ -19,11 +19,18 @@
 }
 
 /* Classes */
+*:not(#toggle-container) {
+  transition: background-color 0.3s ease-in-out;
+}
+
+.Main {
+  background-color: var(--body_background);
+}
+
 .homepage {
   width: max(50%, 500px);
   margin: auto;
   background-color: var(--body_background);
-  transition: background-color 0.3s ease-in-out;
   max-width: 95vw;
 }
 
