@@ -57,9 +57,11 @@
 }
 
 .content {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   padding-block: 50px;
+  left: -50px;
 }
 
 .content-headers {
@@ -91,9 +93,9 @@
 
 .side-bar {
   font-size: 2em;
-  padding-left: 50px;
-  padding-right: 90px;
-  width: 80px;
+  padding-right: 70px;
+  width: 200px;
+  text-align: right;
 }
 
 .sub-content {
