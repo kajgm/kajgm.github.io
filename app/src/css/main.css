@@ -19,12 +19,9 @@
 }
 
 /* Classes */
-*:not(#toggle-container) {
-  transition: background-color 0.3s ease-in-out;
-}
-
 .Main {
   background-color: var(--body_background);
+  transition: background-color 0.3s ease-in-out;
 }
 
 .homepage {
@@ -32,6 +29,7 @@
   margin: auto;
   background-color: var(--body_background);
   max-width: 95vw;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .socials-logos {
