@@ -29,7 +29,7 @@
   width: 1200px;
   margin: auto;
   background-color: var(--body_background);
-  max-width: 105vw;
+  max-width: 95vw;
   transition: background-color 0.3s ease-in-out;
 }
 
@@ -250,6 +250,9 @@
 @media screen and (max-width: 500px) {
   #name-title {
      font-size: 4em;
+  }
+  .homepage {
+    max-width: 105vw;
   }
 }
 
