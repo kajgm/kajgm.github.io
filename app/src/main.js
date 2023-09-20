@@ -304,7 +304,9 @@ function Main() {
                 </div>
 
                 <div id="media-container" className="content">
-                    <h1 className="content-headers side-bar no-margin">Media</h1>
+                    <h1 id="media-title" className="content-headers side-bar no-margin">
+                        Media
+                    </h1>
                     <div id="media-content">
                         <p id="coming-soon">Coming soon...</p>
                     </div>

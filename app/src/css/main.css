@@ -22,13 +22,14 @@
 .Main {
   background-color: var(--body_background);
   transition: background-color 0.3s ease-in-out;
+  overflow-x: hidden;
 }
 
 .homepage {
   width: 1200px;
   margin: auto;
   background-color: var(--body_background);
-  max-width: 95vw;
+  max-width: 105vw;
   transition: background-color 0.3s ease-in-out;
 }
 
@@ -97,7 +98,7 @@
 }
 
 .sub-content {
-  max-width: min(800px, 95%);
+  max-width: min(800px, 100%);
 }
 
 .projects {
@@ -180,7 +181,7 @@
 
 #name-title {
   color: var(--body_color);
-  font-size: 4em;
+  font-size: 5em;
   padding-top: 30px;
 }
 
@@ -251,18 +252,24 @@
      font-size: 4em;
   }
 }
-@media screen and (min-width: 600px) {
-  #name-title {
-     font-size: 5em;
-  }
-}
 
 @media screen and (max-width: 1180px){
   .side-bar {
     text-align: left;
     padding-left: 90px;
+    padding-left: 70px;
   }
   .sub-content {
-    padding-left: 50px;
+    padding-left: 30px;
+  }
+  #media-title {
+    padding-right: 0px;
+    width: 100px;
+  }
+  #main-header {
+    left: 20px;
+  }
+  #logos-container {
+    left: 20px;
   }
 }
