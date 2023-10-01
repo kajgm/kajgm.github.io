@@ -17,6 +17,7 @@ import './css/colors.css';
 import './css/scrollbar.css';
 
 import DateTime from './dateTime';
+import Media from './media';
 
 function Main() {
     const selectedTheme = localStorage.getItem('selectedTheme');
@@ -233,7 +234,7 @@ function Main() {
                                 </div>
                             </div>
                             <ul>
-                                <p className="two-fade-in bullet-text">
+                                <p className="bullet-text two-fade-in no-margin">
                                     <li>
                                         Assigned to the core infrastructure team involved with development, maintenance,
                                         and on-call support
@@ -275,7 +276,7 @@ function Main() {
                                 </div>
                             </div>
                             <ul>
-                                <p className="two-fade-in bullet-text">
+                                <p className="bullet-text two-fade-in no-margin">
                                     <li>
                                         Created several apps in <strong>Python</strong> and <strong>JavaScript</strong>{' '}
                                         to assist with production and senior engineer workflows
@@ -304,11 +305,10 @@ function Main() {
                 </div>
 
                 <div id="media-container" className="content">
-                    <h1 id="media-title" className="content-headers side-bar no-margin">
-                        Media
-                    </h1>
-                    <div id="media-content">
-                        <p id="coming-soon">Coming soon...</p>
+                    <h1 className="content-headers side-bar no-margin">Media</h1>
+                    <div id="media" className="sub-content">
+                        {/* <p id="coming-soon">Coming soon...</p> -*/}
+                        <Media></Media>
                     </div>
                 </div>
             </div>
