@@ -1,34 +1,46 @@
-import './css/media.css';
+import React, { useState } from 'react';
 
-//Fisher-Yates shuffle
-function shuffle(array) {
-    let i = array.length,
-        j;
+function importAll(r) {
+    let images = [];
+    r.keys().map((item, index) => {
+        images.push(<img src={r(item)} className="images" key={item.replace('./', '')} alt={item.replace('./', '')} />);
+        return images;
+    });
 
-    while (i > 0) {
-        j = Math.floor(Math.random() * i);
-        i--;
-        [array[i], array[j]] = [array[j], array[i]];
-    }
-
-    return array;
+    return images;
 }
 
+const defaultImages = importAll(require.context('./img/media/', false, /\.JPG$/));
+
 export const Media = () => {
-    function importAll(r) {
-        let images = [];
-        r.keys().map((item, index) => {
-            images.push(
-                <img src={r(item)} className="images" key={item.replace('./', '')} alt={item.replace('./', '')} />
-            );
-        });
+    const [images, setImages] = useState(defaultImages);
 
-        return shuffle(images);
-    }
+    //Fisher-Yates shuffle
+    const shuffle = () => {
+        let i = images.length,
+            j;
 
-    let images = importAll(require.context('./img/media/', false, /\.JPG$/));
+        while (i > 0) {
+            j = Math.floor(Math.random() * i);
+            i--;
+            [images[i], images[j]] = [images[j], images[i]];
+        }
+        setImages([...images]);
+    };
 
-    return <div>{images}</div>;
+    return (
+        <div id="media" className="sub-content">
+            {' '}
+            A completely{' '}
+            <button onClick={shuffle} id="random-text">
+                <strong>random</strong>
+            </button>{' '}
+            collection
+            <div id="media-content" className="sub-content">
+                {images}
+            </div>
+        </div>
+    );
 };
 
 export default Media;

@@ -15,6 +15,7 @@ import './css/extras.css';
 import './css/globals.css';
 import './css/colors.css';
 import './css/scrollbar.css';
+import './css/media.css';
 
 import DateTime from './dateTime';
 import Media from './media';
@@ -230,7 +231,7 @@ function Main() {
                                             SAP Canada Inc.
                                         </a>
                                     </h2>
-                                    <p className="work-duration-text no-margin">8-Month Internship - Agile Developer</p>
+                                    <p className="work-duration-text no-margin">8-Month Co-Op - Agile Developer</p>
                                 </div>
                             </div>
                             <ul>
@@ -270,16 +271,15 @@ function Main() {
                                             Sony Pictures Imageworks
                                         </a>
                                     </h2>
-                                    <p className="work-duration-text no-margin">
-                                        8-Month Internship - Systems Engineer
-                                    </p>
+                                    <p className="work-duration-text no-margin">8-Month Co-Op - Systems Engineer</p>
                                 </div>
                             </div>
                             <ul>
                                 <p className="bullet-text two-fade-in no-margin">
                                     <li>
-                                        Created several apps in <strong>Python</strong> and <strong>JavaScript</strong>{' '}
-                                        to assist with production and senior engineer workflows
+                                        Created several apps in <strong>C</strong>, <strong>Python</strong>, and{' '}
+                                        <strong>JavaScript</strong> to assist with production and senior engineer
+                                        workflows
                                     </li>
                                     <li>
                                         Given administrative level access to troubleshoot a variety of issues on
@@ -306,10 +306,8 @@ function Main() {
 
                 <div id="media-container" className="content">
                     <h1 className="content-headers side-bar no-margin">Media</h1>
-                    <div id="media" className="sub-content">
-                        {/* <p id="coming-soon">Coming soon...</p> -*/}
-                        <Media></Media>
-                    </div>
+                    {/* <p id="coming-soon">Coming soon...</p> -*/}
+                    <Media></Media>
                 </div>
             </div>
         </div>
