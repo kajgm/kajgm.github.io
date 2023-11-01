@@ -52,15 +52,16 @@ function Main() {
             <div className="homepage relative">
                 <div id="top-container">
                     <div id="logos-container" className="relative">
-                        <a href="https://kajgrant.github.io/">
-                            <div id="personal-logo">
+                        <div id="personal-logo">
+                            <a href="https://kajgrant.github.io/">
                                 <div id="personal-logo-bg" className="relative">
                                     <p id="personal-logo-text" className="absolute">
                                         KGM
                                     </p>
                                 </div>
-                            </div>
-                        </a>
+                            </a>
+                        </div>
+
                         <div id="socials-container">
                             <a href="https://open.spotify.com/user/btwz8uoci9s53csetc7jkjezk?si=2978b1c5e8f64d22">
                                 <img src={spotfiyLogo} className="socials-logos relative" alt="Spotify" />
@@ -83,15 +84,20 @@ function Main() {
                         <p id="subheader-text" className="no-margin">
                             Student - Computer Engineer - Software Engineer - Videographer - Photographer
                         </p>
-                        <a className="no-decoration" href="https://en.wikipedia.org/wiki/Vancouver">
-                            <div id="location-time-container" className="no-margin">
+
+                        <div id="location-time-container" className="no-margin">
+                            <a
+                                className="no-decoration"
+                                id="location-time-container"
+                                href="https://en.wikipedia.org/wiki/Vancouver"
+                            >
                                 <img src={location} id="location" className="relative" alt="Location" />
                                 <p id="location-text" className="no-margin">
                                     Vancouver, BC. Canada -{' '}
                                 </p>
                                 <DateTime></DateTime>
-                            </div>
-                        </a>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
