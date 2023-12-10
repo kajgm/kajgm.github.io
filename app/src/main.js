@@ -82,7 +82,7 @@ function Main() {
                             </h1>
                         </a>
                         <p id="subheader-text" className="no-margin">
-                            Student - Computer Engineer - Software Engineer - Videographer - Photographer
+                            Computer Engineer - Software Engineer - Videographer - Photographer
                         </p>
 
                         <div id="location-time-container" className="no-margin">
@@ -111,10 +111,10 @@ function Main() {
                             </strong>
                             . <i id="hidden-kaj"> - pronounced like Kai (and rhymes with pie 🥧) </i>
                             <br></br>
-                            <br></br>I'm a 5th year student currently in my last term of my Computer Engineering Degree.{' '}
-                            <br></br>I'm passionate about the <strong className="color-reveal">entire</strong> stack...
-                            from computer architecture, to reliable back-end infrastructure, and all the way up to
-                            brilliant user design. <br></br>
+                            <br></br>I'm a recent Computer Engineering undergraduate student based in Vancouver, BC and
+                            Toronto, ON. <br></br>I'm passionate about the{' '}
+                            <strong className="color-reveal">entire</strong> stack... from computer architecture, to
+                            reliable back-end infrastructure, and all the way up to brilliant user design. <br></br>
                             <br></br>Currently, I'm looking for a full-time position in a Software Engineering field. I
                             have experience working with large-scale media pipelines, building scalable systems and
                             maintaining core infrastructure.
@@ -168,7 +168,7 @@ function Main() {
                                     </li>
                                     <li>Modular design intended for attachment to a variety of office chair models</li>
                                     <li>
-                                        Large <b>6200mAh</b> capacity battery and the ability to move a <b>125kg</b>{' '}
+                                        Large <b>7000mAh</b> capacity battery and the ability to move a <b>125kg</b>{' '}
                                         load at a <b>2.5m/s</b> pace
                                     </li>
                                 </p>
@@ -237,7 +237,9 @@ function Main() {
                                             SAP Canada Inc.
                                         </a>
                                     </h2>
-                                    <p className="work-duration-text no-margin">8-Month Co-Op - Agile Developer</p>
+                                    <p className="work-duration-text no-margin">
+                                        8-Month Co-Op - Agile Developer || 2022
+                                    </p>
                                 </div>
                             </div>
                             <ul>
@@ -277,7 +279,9 @@ function Main() {
                                             Sony Pictures Imageworks
                                         </a>
                                     </h2>
-                                    <p className="work-duration-text no-margin">8-Month Co-Op - Systems Engineer</p>
+                                    <p className="work-duration-text no-margin">
+                                        8-Month Co-Op - Systems Engineer || 2020
+                                    </p>
                                 </div>
                             </div>
                             <ul>
