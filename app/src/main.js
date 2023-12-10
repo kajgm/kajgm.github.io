@@ -15,10 +15,8 @@ import './css/extras.css';
 import './css/globals.css';
 import './css/colors.css';
 import './css/scrollbar.css';
-import './css/media.css';
 
 import DateTime from './dateTime';
-import Media from './media';
 
 function Main() {
     const selectedTheme = localStorage.getItem('selectedTheme');
@@ -111,10 +109,10 @@ function Main() {
                             </strong>
                             . <i id="hidden-kaj"> - pronounced like Kai (and rhymes with pie 🥧) </i>
                             <br></br>
-                            <br></br>I'm a recent Computer Engineering undergraduate student based in Vancouver, BC and
-                            Toronto, ON. <br></br>I'm passionate about the{' '}
-                            <strong className="color-reveal">entire</strong> stack... from computer architecture, to
-                            reliable back-end infrastructure, and all the way up to brilliant user design. <br></br>
+                            <br></br>I'm a recent Computer Engineering graduate based in Vancouver, BC and Toronto, ON.{' '}
+                            <br></br>I'm passionate about the <strong className="color-reveal">entire</strong> stack...
+                            from computer architecture, to reliable back-end infrastructure, and all the way up to
+                            brilliant user design. <br></br>
                             <br></br>Currently, I'm looking for a full-time position in a Software Engineering field. I
                             have experience working with large-scale media pipelines, building scalable systems and
                             maintaining core infrastructure.
@@ -316,8 +314,7 @@ function Main() {
 
                 <div id="media-container" className="content">
                     <h1 className="content-headers side-bar no-margin">Media</h1>
-                    {/* <p id="coming-soon">Coming soon...</p> -*/}
-                    <Media></Media>
+                    <p id="coming-soon">Coming soon...</p>
                 </div>
             </div>
         </div>
