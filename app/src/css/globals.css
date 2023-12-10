@@ -22,8 +22,12 @@
     margin-bottom: 20px;
 }
 
-.dark-invert {
+.dark-invert-filter {
     filter: var(--invert-filter);
+}
+
+.dark-invert-color {
+    color: var(--content-text-color);
 }
 
 li:not(:last-child) {

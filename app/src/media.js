@@ -30,12 +30,14 @@ export const Media = () => {
 
     return (
         <div id="media" className="sub-content">
-            {' '}
-            A completely{' '}
-            <button onClick={shuffle} id="random-text">
-                <strong>random</strong>
-            </button>{' '}
-            collection
+            <p className="no-margin dark-invert-color">
+                {' '}
+                A completely{' '}
+                <button onClick={shuffle} id="random-text">
+                    <strong>random</strong>
+                </button>{' '}
+                collection
+            </p>
             <div id="media-content" className="sub-content">
                 {images}
             </div>
