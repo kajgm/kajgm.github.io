@@ -8,13 +8,13 @@ import sapLogo from './img/logos/sap.svg';
 import sonyLogo from './img/logos/sony.svg';
 import location from './img/location.svg';
 
-import './css/main.css';
-import './css/personal-logo.css';
-import './css/animations.css';
-import './css/extras.css';
-import './css/globals.css';
-import './css/colors.css';
-import './css/scrollbar.css';
+import './styles/main.css';
+import './styles/personal-logo.css';
+import './styles/animations.css';
+import './styles/extras.css';
+import './styles/globals.css';
+import './styles/colors.css';
+import './styles/scrollbar.css';
 
 import DateTime from './dateTime';
 
