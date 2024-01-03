@@ -20,15 +20,9 @@ import Experience from './experience';
 
 function Main() {
     const selectedTheme = localStorage.getItem('selectedTheme');
-
-    let themeBool = false;
-
-    if (selectedTheme === 'dark') {
-        themeBool = true;
-    }
+    const themeBool = selectedTheme === 'dark' ? true : false;
 
     const [isDarkMode, setDarkMode] = React.useState(themeBool);
-
     const toggleDarkMode = (checked) => {
         setDarkMode(checked);
     };
@@ -94,7 +88,7 @@ function Main() {
                                     Vancouver, BC. Canada -{' '}
                                 </p>
                             </a>
-                            <DateTime></DateTime>
+                            <DateTime />
                         </div>
                     </div>
                 </div>
@@ -120,13 +114,8 @@ function Main() {
                     </div>
                 </div>
 
-                <div id="projects-container" className="content">
-                    <Projects></Projects>
-                </div>
-
-                <div id="experience-container" className="content">
-                    <Experience></Experience>
-                </div>
+                <Projects />
+                <Experience />
             </div>
         </div>
     );

@@ -1,11 +1,10 @@
 import './styles/main.css';
 import './styles/globals.css';
-import './styles/animations.css';
 import './styles/extras.css';
 
 const Projects = () => {
     return (
-        <div>
+        <div id="projects-container" className="content">
             <h1 className="content-headers side-bar no-margin">Projects</h1>
             <div className="projects sub-content">
                 <div className="content-container twty-margin-bottom">

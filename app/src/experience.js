@@ -3,12 +3,11 @@ import sonyLogo from './img/logos/sony.svg';
 
 import './styles/main.css';
 import './styles/globals.css';
-import './styles/animations.css';
 import './styles/extras.css';
 
 const Experience = () => {
     return (
-        <div>
+        <div id="experience-container" className="content">
             <h1 className="content-headers side-bar no-margin">Experience</h1>
             <div className="experience sub-content">
                 <div className="content-container twty-margin-bottom">
