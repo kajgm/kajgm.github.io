@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './styles/globals.css';
 import './styles/dateTime.css';
 
-export const DateTime = () => {
+const DateTime = () => {
     var [date, setDate] = useState(new Date());
 
     useEffect(() => {
