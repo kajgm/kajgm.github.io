@@ -6,7 +6,7 @@ import linkedinLogo from './img/logos/linkedin.svg';
 import githubLogo from './img/logos/github.svg';
 import location from './img/location.svg';
 
-import resume from './res/Kaj.Grant-Mathiasen.Resume.SW.2024.pdf';
+import resume from './res/resume.pdf';
 
 import './styles/main.css';
 import './styles/globals.css';
