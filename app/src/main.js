@@ -60,7 +60,7 @@ function Main() {
                             <a href="https://www.linkedin.com/in/kaj-grant-mathiasen/">
                                 <img src={linkedinLogo} className="socials-logos relative" alt="LinkedIn" />
                             </a>
-                            <a href={resume} target="_blank">
+                            <a href={resume} target="_blank" rel="noreferrer">
                                 <img src={resumeLogo} className="socials-logos relative" alt="Spotify" />
                             </a>
                             <a href="https://github.com/kajgrant">
