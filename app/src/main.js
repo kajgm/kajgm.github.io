@@ -1,10 +1,12 @@
 import * as React from 'react';
 import { DarkModeSwitch } from 'react-toggle-dark-mode';
 
-import spotfiyLogo from './img/logos/spotify.svg';
+import resumeLogo from './img/logos/resume.svg';
 import linkedinLogo from './img/logos/linkedin.svg';
 import githubLogo from './img/logos/github.svg';
 import location from './img/location.svg';
+
+import resume from './res/Kaj.Grant-Mathiasen.Resume.SW.2024.pdf';
 
 import './styles/main.css';
 import './styles/globals.css';
@@ -55,11 +57,11 @@ function Main() {
                         </div>
 
                         <div id="socials-container">
-                            <a href="https://open.spotify.com/user/btwz8uoci9s53csetc7jkjezk?si=2978b1c5e8f64d22">
-                                <img src={spotfiyLogo} className="socials-logos relative" alt="Spotify" />
-                            </a>
                             <a href="https://www.linkedin.com/in/kaj-grant-mathiasen/">
                                 <img src={linkedinLogo} className="socials-logos relative" alt="LinkedIn" />
+                            </a>
+                            <a href={resume} target="_blank">
+                                <img src={resumeLogo} className="socials-logos relative" alt="Spotify" />
                             </a>
                             <a href="https://github.com/kajgrant">
                                 <img src={githubLogo} className="socials-logos relative" alt="Github" />
