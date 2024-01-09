@@ -1,9 +1,9 @@
 #chair-color {
-    color: #2617ad;
+  color: #263cce;
 }
 
 #able-color {
-    color: #1a6e08;
+  color: #1a6e08;
 }
 
 #guitar-color {
@@ -11,7 +11,15 @@
 }
 
 #tuner-color {
-    color: #743d02;
+  color: #743d02;
+}
+
+#gauss-color {
+  color: #0068B5;
+}
+
+#elim-color {
+  color: #ca0505;
 }
 
 #reddit-color {

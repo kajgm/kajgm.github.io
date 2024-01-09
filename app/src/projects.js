@@ -54,6 +54,25 @@ const Projects = () => {
                 </div>
                 <div className="content-container twty-margin-bottom">
                     <h2 className="project-headers">
+                        <a href="https://github.com/kajgrant/gaussian-acceleration" className="black-underline">
+                            FPGA Accelerated <b id="gauss-color">Gaussian</b> <b id="elim-color">Elimination</b> Algorithm
+                        </a>
+                    </h2>
+                    <ul>
+                        <p className="bullet-text two-fade-in no-margin">
+                            <li> Optimized the common Gaussian Elimination Algorithm using buffering, tiling, memory, compute, and ping-pong data transfer enhancements
+                            </li>
+                            <li> Incorporated <b>Intel Intrinsics</b> and <b>OpenMP</b> CPU optimizations to achieve a speedup factor {'>'} 8.4
+                            </li> 
+                            <li> Streamlined exisiting <b>CUDA</b>-based algorithm based on underlying GPU architecture to gain a speedup factor {'>'} 2
+                            </li>
+                            <li> Performed comparison and analysis of naive, CPU (Intel i9-10900X), FPGA (AMD Alevo U50), and GPU (Nvidia A4000) implementations
+                            </li>
+                        </p>
+                    </ul>
+                </div>
+                <div className="content-container twty-margin-bottom">
+                    <h2 className="project-headers">
                         <a href="https://github.com/kajgrant/redditsalestracker" className="black-underline">
                             <b id="reddit-color">Reddit</b>SalesTracker
                         </a>{' '}
@@ -83,11 +102,11 @@ const Projects = () => {
                     <ul>
                         <p className="bullet-text two-fade-in no-margin">
                             <li>
-                                Designed a <b>VHDL</b> based execution unit that could execute the <b>RISC-V</b>{' '}
+                                Designed a <b>VHDL</b> based execution unit capable of executing the full <b>RISC-V</b>{' '}
                                 instruction set
                             </li>
                             <li>
-                                Implemented barrel shifters, 64-bit adder, and logic unit to correctly respond to input
+                                Implemented barrel shifters, a 64-bit adder, and a logic unit to correctly respond to input
                                 signals
                             </li>
                             <li>
