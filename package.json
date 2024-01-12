@@ -1,38 +1,55 @@
 {
   "name": "kajgrant.github.io",
-  "version": "1.0.0",
-  "description": "website",
-  "main": "index.js",
-  "proxy": "http://localhost:3001",
-  "homepage": "https://kajgrant.github.io/",
-  "files": [
-    "index.js",
-    "package.json"
-  ],
+  "version": "2.0.0",
+  "author": "Kaj Grant-Mathiasen",
+  "homepage": "https://kajgrant.github.io",
+  "license": "ISC",
+  "description": "Personal portfolio website",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kajgrant/kajgrant.github.io.git"
-  },
-  "keywords": ["Kaj Grant"],
-  "author": "Kaj Grant",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/kajgrant/kajgrant.github.io/issues"
+    "url": "https://github.com/kajgrant/kajgrant.github.io.git"
   },
   "engines": {
-    "node": ">=14.20.0"
+    "node": ">=16.x"
   },
+  "keywords": [
+    "Kaj Grant-Mathiasen",
+    "website"
+  ],
   "scripts": {
-    "start": "node server/index.js",
-    "build": "cd app && npm install && npm run build",
-    "deploy:app": "cd app && npm run deploy"
+    "predeploy": "npm run build",
+    "start": "react-scripts start",
+    "lint": "eslint \"**/*.js\"",
+    "build": "react-scripts build"
   },
   "dependencies": {
-    "express": "^4.18.2"
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.21.1",
+    "react-scripts": "^5.0.1",
+    "react-toggle-dark-mode": "^1.1.1",
+    "sass": "^1.66.1",
+    "web-vitals": "^2.1.4",
+    "webpack": "^5.88.2"
   },
   "devDependencies": {
-    "eslint": "8.30.0",
+    "eslint": "^8.56.0",
     "eslint-config-prettier": "^8.5.0",
     "prettier": "2.8.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
