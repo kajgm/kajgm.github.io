@@ -16,9 +16,9 @@ import './styles/colors.css';
 import './styles/personal-logo.css';
 import './styles/scrollbar.css';
 
-import DateTime from './dateTime';
-import Projects from './projects';
-import Experience from './experience';
+import DateTime from '../components/dateTime';
+import Projects from '../components/projects';
+import Experience from '../components/experience';
 
 function Main() {
     const selectedTheme = localStorage.getItem('selectedTheme');
