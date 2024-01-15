@@ -1,6 +1,9 @@
 const data = [
   {
-    title: 'Engineering Capstone Project: Chairable',
+    title: 'Chairable, by Roll Technology',
+    image: '/img/rolltech.svg',
+    role: 'SFU Engineering Capstone',
+    duration: 'May 2023 - Dec 2023',
     link: 'https://github.com/kajgrant/rolltech',
     description: [
       'Designed a modular attachment for office chairs using a spherical wheel for enhanced powered movement',
@@ -12,6 +15,9 @@ const data = [
   },
   {
     title: 'FPGA Accelerated Gaussian Elimination Algorithm',
+    image: '/img/xilinx.svg',
+    role: 'ENSC 453/894 Final Project',
+    duration: 'Sept 2023 - Dec 2023',
     link: 'https://github.com/kajgrant/gaussian-acceleration',
     description: [
       'Minimized execution time via buffering, tiling, memory, compute, and ping-pong data transfer enhancements',
@@ -23,6 +29,9 @@ const data = [
   },
   {
     title: 'Hardware Accelerated Guitar Tuner',
+    image: '/img/frequency.svg',
+    role: 'ENSC 452/894 Final Project',
+    duration: 'Jan 2023 - May 2023',
     link: 'https://github.com/kajgrant/guitar-tuner',
     description: [
       'Designed a custom ARM based architecture using the Xilinx Zedboard FPGA for a guitar tuner program',
@@ -34,6 +43,9 @@ const data = [
   },
   {
     title: 'RISC-V Execution Unit',
+    image: '/img/riscv.svg',
+    role: 'ENSC 350 Final Project',
+    duration: 'Jan 2022 - May 2022',
     link: 'https://github.com/kajgrant/ExU',
     description: [
       'Designed a VHDL based execution unit capable of executing the full RISC-V instruction set',
@@ -44,6 +56,9 @@ const data = [
   },
   {
     title: 'RedditSalesTracker',
+    image: '/img/reddit.svg',
+    role: 'Personal interest project',
+    duration: 'Jan 2023 - Present',
     link: 'https://github.com/kajgrant/transittracker',
     description: [
       'Personal interest projects to interact with the Reddit API and Translink API platforms',
@@ -53,6 +68,9 @@ const data = [
   },
   {
     title: 'TransitTracker',
+    image: '/img/translinkbuses.svg',
+    role: 'Personal interest project',
+    duration: 'Feb 2023 - Present',
     link: 'https://github.com/kajgrant/transittracker',
     description: [
       'Personal interest projects to interact with the Reddit API and Translink API platforms',
