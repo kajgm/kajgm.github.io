@@ -1,8 +1,6 @@
 import * as React from 'react';
 import { DarkModeSwitch } from 'react-toggle-dark-mode';
 
-//import resume from '../../public/assets/publicResume.pdf';
-
 import data from '../data/socials';
 
 import '../static/css/main.css';
@@ -13,7 +11,8 @@ import '../static/css/colors.css';
 import '../static/css/personal-logo.css';
 import '../static/css/scrollbar.css';
 
-import DateTime from '../components/dateTime';
+import DateTime from '../components/Template/DateTime';
+import Logo from '../components/Template/Logo';
 
 const Main = (props) => {
   const selectedTheme = localStorage.getItem('selectedTheme');
@@ -41,16 +40,7 @@ const Main = (props) => {
       <div className="homepage relative">
         <div id="top-container">
           <div id="logos-container" className="relative">
-            <div id="personal-logo">
-              <a href="https://kajgrant.github.io/">
-                <div id="personal-logo-bg" className="relative">
-                  <p id="personal-logo-text" className="absolute">
-                    KGM
-                  </p>
-                </div>
-              </a>
-            </div>
-
+            <Logo text="KGM"></Logo>
             <div id="socials-container">
               <a href="https://www.linkedin.com/in/kaj-grant-mathiasen/">
                 <img src={data[1].image} className="socials-logos relative" alt="LinkedIn" />
@@ -85,6 +75,8 @@ const Main = (props) => {
             </div>
           </div>
         </div>
+
+        <div id="main">{props.children}</div>
       </div>
     </div>
   );

@@ -16,6 +16,4 @@ const PageNotFound = () => (
   </HelmetProvider>
 );
 
-export function Element() {
-  return PageNotFound;
-}
+export default PageNotFound;
