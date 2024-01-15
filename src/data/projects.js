@@ -43,8 +43,17 @@ const data = [
     skills: ['RISC-V', 'VHDL', 'Quartus', 'Modelsim'],
   },
   {
-    title: 'RedditSalesTracker & TransitTracker',
-    link: 'https://github.com/kajgrant/transittracker', //TODO: add second reddittracker link + functionality
+    title: 'RedditSalesTracker',
+    link: 'https://github.com/kajgrant/transittracker',
+    description: [
+      'Personal interest projects to interact with the Reddit API and Translink API platforms',
+      'Uses either a command line interface or graphical interface intended for a small raspberry pi screen',
+    ],
+    skills: ['Python', 'APIs'],
+  },
+  {
+    title: 'TransitTracker',
+    link: 'https://github.com/kajgrant/transittracker',
     description: [
       'Personal interest projects to interact with the Reddit API and Translink API platforms',
       'Uses either a command line interface or graphical interface intended for a small raspberry pi screen',
