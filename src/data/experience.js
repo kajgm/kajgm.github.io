@@ -4,7 +4,7 @@ const data = [
     role: 'Agile Developer Co-Op',
     duration: 'May 2022 - Dec 2022',
     image: '/img/logos/sap.svg',
-    website: 'https://www.sap.com/canada/index.html',
+    link: 'https://www.sap.com/canada/index.html',
     description: [
       'Responded to 80+ concurrent Jira tickets involving new features or fixes to existing systems',
       'Created and maintained several automated Jest and Jasmine testing suites to achieve 98%+ code coverage',
@@ -37,7 +37,7 @@ const data = [
     role: 'Systems Engineer Co-Op',
     duration: 'Jan 2020 - Sept 2020',
     image: '/img/logos/sony.svg',
-    website: 'https://www.imageworks.com/',
+    link: 'https://www.imageworks.com/',
     description: [
       'Resolved 200+ tickets relating to performance or configuration issues on production level Linux machines',
       'Architected a project management system involving an SQL database, user-based permission sharing, cached' +

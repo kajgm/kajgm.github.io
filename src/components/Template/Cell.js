@@ -1,20 +1,24 @@
 import React from 'react';
 
-const ExperienceCard = ({ data: { title, role, duration, image, website, description } }) => (
+const Cell = ({ data: { title, role, duration, image, link, description } }) => (
   <div className="content-container">
     <div className="exp-headers-container">
-      <a href={website}>
-        <img src={image} className="company-logos relative" alt="SAP" />
-      </a>
+      {image ? (
+        <a href={link}>
+          <img src={image} className="company-logos relative" alt={title} />
+        </a>
+      ) : null}
       <div className="exp-headers-text">
         <h2 className="experience-headers">
-          <a href={website} className="black-underline">
+          <a href={link} className="black-underline">
             {title}
           </a>
         </h2>
-        <p className="work-duration-text no-margin">
-          {role}, {duration}
-        </p>
+        {role && duration ? (
+          <p className="work-duration-text no-margin">
+            {role}, {duration}
+          </p>
+        ) : null}
       </div>
     </div>
     {description ? (
@@ -29,4 +33,4 @@ const ExperienceCard = ({ data: { title, role, duration, image, website, descrip
   </div>
 );
 
-export default ExperienceCard;
+export default Cell;
