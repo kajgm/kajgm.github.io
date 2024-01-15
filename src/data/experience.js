@@ -1,11 +1,11 @@
 const data = [
   {
     title: 'SAP Canada Inc.',
-    role: 'Agile Developer',
-    duration: '8-Months',
-    date: '2022',
+    role: 'Agile Developer Co-Op',
+    duration: 'May 2022 - Dec 2022',
     image: '/img/logos/sap.svg',
-    desc: [
+    website: 'https://www.sap.com/canada/index.html',
+    description: [
       'Responded to 80+ concurrent Jira tickets involving new features or fixes to existing systems',
       'Created and maintained several automated Jest and Jasmine testing suites to achieve 98%+ code coverage',
       'Implemented a layered cache resiliency system involving several microservices to ensure 99%+ uptime',
@@ -31,18 +31,17 @@ const data = [
       'Git',
       'Gerrit',
     ],
-    links: [],
   },
   {
     title: 'Sony Pictures Imageworks',
-    role: 'Systems Engineer',
-    duration: '8-Months',
-    date: '2020',
+    role: 'Systems Engineer Co-Op',
+    duration: 'Jan 2020 - Sept 2020',
     image: '/img/logos/sony.svg',
-    desc: [
+    website: 'https://www.imageworks.com/',
+    description: [
       'Resolved 200+ tickets relating to performance or configuration issues on production level Linux machines',
-      'Architected a project management system involving an SQL database, user-based permission sharing, cached \
-       data retrieval, and integration with the google app suite to improve overall team productivity',
+      'Architected a project management system involving an SQL database, user-based permission sharing, cached' +
+        'data retrieval, and integration with the google app suite to improve overall team productivity',
       'Reduced Dialogflow chatbot prompt failures by 87% and implemented an automated analytics dashboard',
       'Created an application using less than 1% of system resources to safely reboot machines with large uptimes',
       'Optimized the management of MacBook software using the JAMF API and a custom Django-based interface',
@@ -62,7 +61,6 @@ const data = [
       'Dialogflow',
       'Linux',
     ],
-    links: [{ 'The Sea Beast': 'https://jhmovie.fandom.com/wiki/The_Sea_Beast_(2022_film)/Credits' }],
   },
 ];
 

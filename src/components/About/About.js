@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Section from './Template/Section';
+import Section from '../Template/Section';
 
 const About = () => (
   <Section sectionType="about-container" title="About">
