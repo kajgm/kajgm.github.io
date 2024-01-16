@@ -17,10 +17,10 @@
     "website"
   ],
   "scripts": {
-    "predeploy": "npm run build",
+    "predeploy": "npm run build && react-snap",
     "start": "react-scripts start",
     "lint": "eslint \"**/*.js\"",
-    "build": "react-scripts build"
+    "build": "rimraf ./build && react-scripts build"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -43,6 +43,8 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-react": "^7.33.2",
     "prettier": "2.8.1",
+    "react-snap": "^1.23.0",
+    "rimraf": "^5.0.5",
     "sass": "^1.69.7",
     "sass-loader": "^14.0.0",
     "webpack": "^5.89.0"
