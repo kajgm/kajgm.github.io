@@ -1,0 +1,32 @@
+$body_background: 'body_background';
+$body_color: 'body_color';
+$content-background: 'content-background';
+$content-text-color: 'content-text-color';
+$sub-text-color: 'sub-text-color';
+$footer-background: 'footer-background';
+$invert-filter: 'invert-filter';
+
+
+$themes: (
+    default: (
+        body_background: white,
+        body_color: black,
+        content-background: #eeeeee,
+        content-text-color: #303030,
+        sub-text-color: #4b4b4b,
+        footer-background: #eeeeee,
+        invert-filter: invert(0%),
+    ),
+    dark: (
+        body_background: #1b1b1b,
+        body_color: white,
+        content-background: #131313,
+        content-text-color: #d6d6d6,
+        sub-text-color: #c5c5c5,
+        footer-background: #131313,
+        invert-filter: invert(90%),
+    ),
+);
+
+// Font
+$font: (family: ('Roboto', sans-serif));

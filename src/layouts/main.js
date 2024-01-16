@@ -4,13 +4,6 @@ import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { DarkModeSwitch } from 'react-toggle-dark-mode';
 import createPersistedState from 'use-persisted-state';
 
-import '../static/css/main.css';
-import '../static/css/globals.css';
-import '../static/css/extras.css';
-import '../static/css/animations.css';
-import '../static/css/colors.css';
-import '../static/css/scrollbar.css';
-
 import Logo from '../components/Header/Logo';
 import Header from '../components/Header/Header';
 import Socials from '../components/Header/Socials';

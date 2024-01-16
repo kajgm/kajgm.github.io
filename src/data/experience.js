@@ -37,6 +37,7 @@ const data = [
     role: 'Systems Engineer Co-Op',
     duration: 'Jan 2020 - Sept 2020',
     image: '/img/sony.svg',
+    invert: true,
     link: 'https://www.imageworks.com/',
     description: [
       'Resolved 200+ tickets relating to performance or configuration issues on production level Linux machines',

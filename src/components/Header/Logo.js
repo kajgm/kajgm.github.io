@@ -1,8 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import '../../static/css/personal-logo.css';
-
 const Logo = (props) => (
   <div id="personal-logo">
     <Link to="/">

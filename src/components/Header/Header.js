@@ -21,9 +21,9 @@ const Header = (props) => {
 
       <div id="location-time-container" className="no-margin">
         {data.locations.map((value) => (
-          <a className="no-decoration" id="location-time-container" href={value.link}>
-            <img src={value.image} id="location" className="relative" alt={value.name} />
-            <p id="location-text" className="no-margin">
+          <a key={value.link} className="no-decoration" id="location-time-container" href={value.link}>
+            <img key={value.name} src={value.image} id="location" className="relative" alt={value.name} />
+            <p key={value.locaion} id="location-text" className="no-margin">
               {value.name} -{' '}
             </p>
           </a>

@@ -30,9 +30,7 @@
     "react-router-dom": "^6.21.1",
     "react-scripts": "^5.0.1",
     "react-toggle-dark-mode": "^1.1.1",
-    "sass": "^1.66.1",
-    "use-persisted-state": "^0.3.3",
-    "webpack": "^5.88.2"
+    "use-persisted-state": "^0.3.3"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.23.3",
@@ -45,7 +43,10 @@
     "eslint": "^8.56.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-react": "^7.33.2",
-    "prettier": "2.8.1"
+    "prettier": "2.8.1",
+    "sass": "^1.69.7",
+    "sass-loader": "^14.0.0",
+    "webpack": "^5.89.0"
   },
   "browserslist": {
     "production": [
