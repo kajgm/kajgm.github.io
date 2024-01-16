@@ -183,7 +183,7 @@
     font-style: italic;
     font-size: 0.9em;
     font-weight: 500;
-    padding-top: 2px;
+    padding-top: 4px;
     color: var(--sub-text-color);
   }
   
@@ -364,6 +364,7 @@ li:not(:last-child) {
 
 ul {
     margin-bottom: 0px;
+    margin-top: 10px;
 }
 
 /* Color reveal for entire keyword */

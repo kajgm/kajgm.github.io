@@ -1,33 +1,28 @@
-import { useEffect, useMemo } from 'react';
-import { useMediaQuery } from 'react-responsive';
+import React from 'react';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { DarkModeSwitch } from 'react-toggle-dark-mode';
-import createPersistedState from 'use-persisted-state';
 
 import Logo from '../components/Header/Logo';
 import Header from '../components/Header/Header';
 import Socials from '../components/Header/Socials';
 
-const useColorSchemeState = createPersistedState('colorScheme');
-
 const Main = (props) => {
-  const systemPrefersDark = useMediaQuery({
-    query: '(prefers-color-scheme: dark)',
-  });
+  const selectedTheme = localStorage.getItem('selectedTheme');
+  const themeBool = selectedTheme === 'dark' ? true : false;
 
-  const [isDarkMode, setDarkMode] = useColorSchemeState();
-  const isChecked = useMemo(
-    () => (isDarkMode === undefined ? !!systemPrefersDark : isDarkMode),
-    [isDarkMode, systemPrefersDark]
-  );
+  const [isDarkMode, setDarkMode] = React.useState(themeBool);
 
-  useEffect(() => {
-    if (isChecked) {
-      document.querySelector('body').setAttribute('data-theme', 'dark');
-    } else {
-      document.querySelector('body').setAttribute('data-theme', 'light');
-    }
-  }, [isChecked]);
+  const toggleDarkMode = (checked) => {
+    setDarkMode(checked);
+  };
+
+  if (isDarkMode) {
+    document.querySelector('body').setAttribute('data-theme', 'dark');
+    localStorage.setItem('selectedTheme', 'dark');
+  } else {
+    document.querySelector('body').setAttribute('data-theme', 'light');
+    localStorage.setItem('selectedTheme', 'light');
+  }
 
   return (
     <HelmetProvider>
@@ -37,7 +32,7 @@ const Main = (props) => {
       </Helmet>
       <div className="Main relative">
         <div id="toggle-container">
-          <DarkModeSwitch checked={isChecked} style={{ margin: '0px' }} onChange={setDarkMode} size={40} />
+          <DarkModeSwitch checked={isDarkMode} style={{ margin: '0px' }} onChange={toggleDarkMode} size={40} />
         </div>
 
         <div className="homepage relative">
