@@ -3,7 +3,7 @@
   "version": "2.0.0",
   "author": "Kaj Grant-Mathiasen",
   "homepage": "https://kajgrant.github.io",
-  "license": "ISC",
+  "license": "MIT",
   "description": "Personal portfolio website",
   "repository": {
     "type": "git",

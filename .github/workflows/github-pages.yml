@@ -3,7 +3,7 @@ name: Deploy to Github Pages
 on:
   # Runs automatically on main branch push
   push:
-    branches: [ "main" ]
+    branches: ['main']
 
   # Enable Manual deployments
   # https://docs.github.com/en/actions/using-workflows/manually-running-a-workflow
@@ -13,13 +13,13 @@ on:
 # https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#permissions
 permissions:
   id-token: write # This is required for requesting the JWT
-  contents: read  # This is required for actions/checkout
+  contents: read # This is required for actions/checkout
   pages: write # Required for deployment
 
 # Disable pages deployment concurrency
 # https://docs.github.com/en/actions/using-jobs/using-concurrency
 concurrency:
-  group: "pages"
+  group: 'pages'
   cancel-in-progress: false
 
 jobs:
@@ -27,7 +27,7 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     timeout-minutes: 10
     steps:
       - name: Checkout
