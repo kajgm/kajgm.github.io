@@ -1,10 +1,6 @@
 name: Deploy to Github Pages
 
 on:
-  # Runs automatically on main branch push
-  push:
-    branches: ['main']
-
   # Enable Manual deployments
   # https://docs.github.com/en/actions/using-workflows/manually-running-a-workflow
   workflow_dispatch:
