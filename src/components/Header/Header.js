@@ -6,7 +6,7 @@ import DateTime from './DateTime';
 import data from '../../data/header';
 
 const Header = (props) => {
-  const subtitle = data.roles.toString().replaceAll(',', ' - ');
+  const subtitle = data.roles.join(' - ');
 
   return (
     <div id="main-header" className="relative">
