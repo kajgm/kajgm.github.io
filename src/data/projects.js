@@ -21,8 +21,8 @@ const data = [
     link: 'https://github.com/kajgrant/gaussian-acceleration',
     description: [
       'Minimized execution time via buffering, tiling, memory, compute, and ping-pong data transfer enhancements',
-      'Incorporated Intel Intrinsics and OpenMP CPU optimizations to achieve a speedup factor greater than 8.4',
-      'Streamlined CUDA-based algorithm based on underlying GPU architecture to gain a speedup factor of 2.1',
+      'Achieved an 8.4 speedup factor using Intel Intrinsics and OpenMP optimizations on the CPU-based platform',
+      'Doubled performance of CUDA algorithm based on analysis of underlying GPU architecture and cache layout',
       'Performed comparison and analysis of naive, CPU (Intel i9-10900X), FPGA (AMD Alevo U50), and GPU (Nvidia A4000) implementations',
     ],
     skills: ['C', 'Cuda', 'Intel Intrinsics', 'OpenMp', 'Xilinx Vitis'],
