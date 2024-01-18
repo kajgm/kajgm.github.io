@@ -1,8 +1,9 @@
 @import-normalize;
 
-
 @import 'libs/vars';
+@import 'libs/functions';
 @import 'libs/mixins';
+@import 'libs/skel';
 
 // Base
 @import 'base/page';
@@ -11,14 +12,17 @@
 // Components
 @import 'components/about';
 @import 'components/cell';
-@import 'components/darkModeToggle';
+@import 'components/icons';
 @import 'components/logo';
 @import 'components/section';
 
 // Layout
 @import 'layout/main';
-@import 'layout/subtitle';
-@import 'layout/title';
+@import 'layout/navcell';
+@import 'layout/header';
+@import 'layout/subheader';
+@import 'layout/topbar';
+@import 'layout/wrapper';
 
 // Pages
 @import 'pages/notFound';
@@ -27,13 +31,12 @@
 //This is a massive file and needs to be moved to individual components
 //THIS IS JUST A PLACEHOLDER AND NEEDS TO BE FIXED ASAP
 
-:root {
+[data-theme="light"] {
     --body_background: white;
     --body_color: black;
     --content-background: #eeeeee;
     --content-text-color: #303030;
     --sub-text-color: #4b4b4b;
-    --footer-background: #eeeeee;
     --invert-filter: invert(0%);
   }
   
@@ -43,59 +46,12 @@
     --content-background: #131313;
     --content-text-color: #d6d6d6;
     --sub-text-color: #c5c5c5;
-    --footer-background: #131313;
     --invert-filter: invert(90%);
   }
 
-  body {
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    background-color: var(--body_background);
-    transition: background-color 0.3s ease-in-out;
-  }
-  
-  code {
-    font-family: 'Roboto', sans-serif;
-  }
-  
+
   
   /* Classes */
-  .Main {
-    background-color: var(--body_background);
-    transition: background-color 0.3s ease-in-out;
-    overflow-x: hidden;
-  }
-  
-  .homepage {
-    width: 1200px;
-    margin: auto;
-    background-color: var(--body_background);
-    max-width: 95vw;
-    transition: background-color 0.3s ease-in-out;
-  }
-  
-  .socials-logos {
-    height: 20px;
-    width: 20px;
-    padding-top: 5px;
-    padding-inline: 8px;
-    filter: var(--invert-filter);
-  }
-  
-  .socials-logos:hover {
-    filter: invert(20%) sepia(32%) saturate(4473%) hue-rotate(345deg) brightness(78%) contrast(125%);
-    top: -2px;
-  }
-  
-  .company-logos {
-    height: 30px;
-    width: auto;
-    display: inline;
-    padding-right: 20px;
-    top: 5px;
-  }
   
   .content {
     position: relative;
@@ -189,44 +145,11 @@
   
   
   /* ids */
-  #top-container {
-    display: flex;
-    flex-wrap: wrap;
-    padding-bottom: 50px;
-    padding-top: 50px;
-    max-width: 80vw;
-  }
+
   
-  #logos-container {
-    left: 50px;
-    top: 50px;
-    padding-right: 100px;
-    padding-bottom: 50px;
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    width: 120px;
-    height: 100px;
-  }
+
   
-  #toggle-container {
-    position: absolute;
-    background-color: inherit;
-    right: 50px;
-    top: 100px;
-    z-index: 10;
-  }
-  
-  #socials-container {
-    justify-content: center;
-    display: inline-block;
-    width: 140px;
-  }
-  
-  #main-header {
-    left: 50px;
-  }
+
   
   #name-title {
     color: var(--body_color);
@@ -268,39 +191,14 @@
     filter: invert(20%) sepia(32%) saturate(4473%) hue-rotate(345deg) brightness(78%) contrast(125%);
   }
   
-  #about-text {
-    color: var(--body_color);
-    font-size: 1.15em;
-    font-weight: 00;
-    margin-left: 50px;
-  }
-  
-  #hidden-kaj {
-    opacity: 0;
-    font-size: 0.8em;
-    transition: 1s;
-    pointer-events: none;
-  }
-  
-  #kaj-text:hover + #hidden-kaj {
-    display: inline;
-    opacity: 1;
-  }
-  
-  #coming-soon {
-    color: var(--body_color);
-    margin-top: 12px;
-    padding-left: 50px;
-    clip-path: inset(0 12px 0 0);
-    animation: loading 3s steps(6) infinite, fadein 2s;
-  }
+
   
   /* Screen size conditional*/
   @media screen and (max-width: 500px) {
     #name-title {
        font-size: 4em;
     }
-    .homepage {
+    #main {
       max-width: 105vw;
     }
   }
@@ -318,10 +216,10 @@
       padding-right: 0px;
       width: 100px;
     }
-    #main-header {
+    #header {
       left: 20px;
     }
-    #logos-container {
+    #navcell {
       left: 20px;
     }
   }
@@ -365,26 +263,6 @@ li:not(:last-child) {
 ul {
     margin-bottom: 0px;
     margin-top: 10px;
-}
-
-/* Color reveal for entire keyword */
-.color-reveal {
-    text-decoration: none;
-    background: 
-      linear-gradient(to right, var(--body_color), var(--body_color)),
-      linear-gradient(to right, rgb(220, 0, 0), rgb(225, 0, 255), rgb(0, 53, 200));
-    background-size: 100% 1em, 0 1em;
-    background-position: 100% 100%, 0 100%;
-    background-repeat: no-repeat;
-    transition: background-size 400ms;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-  
-.color-reveal:hover,
-.color-reveal:focus {
-    background-size: 0 1em, 100% 1em;
 }
   
 

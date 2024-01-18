@@ -2,9 +2,8 @@ import React from 'react';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { DarkModeSwitch } from 'react-toggle-dark-mode';
 
-import Logo from '../components/Header/Logo';
 import Header from '../components/Header/Header';
-import Socials from '../components/Header/Socials';
+import NavCell from '../components/Header/NavCell';
 
 const Main = (props) => {
   const selectedTheme = localStorage.getItem('selectedTheme');
@@ -30,21 +29,19 @@ const Main = (props) => {
         {props.title && <title>{props.title}</title>}
         <meta name="description" content={props.description} />
       </Helmet>
-      <div className="Main relative">
-        <div id="toggle-container">
-          <DarkModeSwitch checked={isDarkMode} style={{ margin: '0px' }} onChange={toggleDarkMode} size={40} />
+      <DarkModeSwitch
+        checked={isDarkMode}
+        style={{ margin: '0px', position: 'absolute', right: '50px', top: '110px' }}
+        onChange={toggleDarkMode}
+        size={40}
+      />
+      {/*Future entry point of Navigation*/}
+      <div id="wrapper">
+        <div id="topbar">
+          <NavCell />
+          <Header text={props.header} subtext={props.subheader} location={props.location}></Header>
         </div>
-
-        <div className="homepage relative">
-          <div id="top-container">
-            <div id="logos-container" className="relative">
-              <Logo>KGM</Logo>
-              <Socials />
-            </div>
-            <Header>Kaj Grant-Mathiasen</Header>
-          </div>
-          {props.children}
-        </div>
+        <div id="main">{props.children}</div>
       </div>
     </HelmetProvider>
   );

@@ -6,7 +6,7 @@ const data = [
     image: '/img/sap.svg',
     link: 'https://www.sap.com/canada/index.html',
     description: [
-      'Coordinated with senior engineers to implement a layered cache resiliency system involving several core' +
+      'Coordinated with senior engineers to implement a layered cache resiliency system involving several core ' +
         'microservices to ensure 99%+ uptime, developed accompanying documentation and testing strategies',
       'Analyzed artifact build pipeline to expose regression-related variations between local and cloud deployments',
       'Prioritized and managed 80+ concurrent Jira tickets involving new features or fixes to existing systems',
@@ -43,7 +43,7 @@ const data = [
     description: [
       'Resolved 200+ tickets relating to performance or configuration issues on production level Linux machines',
       'Designed a project management system involving an SQL database, user-based permission sharing, cached' +
-        'data retrieval, and integration with the google app suite to improve department productivity and efficiency',
+        ' data retrieval, and integration with the google app suite to improve department productivity and efficiency',
       'Reduced Dialogflow chatbot prompt failures by 87% and implemented an automated analytics dashboard',
       'Created an application using less than 1% of system resources to safely reboot machines with large uptimes',
       'Developed a Django app using the Jamf API to efficiently manage Apple devices and display usage statistics',

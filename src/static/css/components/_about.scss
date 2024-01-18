@@ -1,0 +1,18 @@
+#about-text {
+    color: var(--body_color);
+    font-size: 1.15em;
+    font-weight: 00;
+    margin-left: 50px;
+  }
+  
+  #hidden-kaj {
+    opacity: 0;
+    font-size: 0.8em;
+    transition: 1s;
+    pointer-events: none;
+  }
+  
+  #kaj-text:hover + #hidden-kaj {
+    display: inline;
+    opacity: 1;
+  }

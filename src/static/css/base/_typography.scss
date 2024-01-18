@@ -1,3 +1,18 @@
 
+body {
+    margin: 0;
+    font-family: _font(family);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: var(--body_background);
+    transition: background-color 0.3s ease-in-out;
+}
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
 
+strong, b {
+  font-weight: _font(weight-bold)
+}

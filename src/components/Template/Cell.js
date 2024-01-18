@@ -6,7 +6,7 @@ const Cell = ({ data: { title, role, duration, image, invert, link, description 
       <div className="exp-headers-container">
         {image ? (
           <a href={link}>
-            <img src={image} className={'company-logos relative' + (invert ? ' dark-invert' : '')} alt={title} />
+            <img src={image} className={'cell-icon relative' + (invert ? ' dark-invert' : '')} alt={title} />
           </a>
         ) : null}
         <div className="exp-headers-text">

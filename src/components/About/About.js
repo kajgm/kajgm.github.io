@@ -12,10 +12,16 @@ const About = () => (
       . <i id="hidden-kaj"> - pronounced like Kai (and rhymes with pie 🥧) </i>
       <br></br>
       <br></br>I'm a recent Computer Engineering graduate based in Vancouver, BC and Toronto, ON. <br></br>I'm
-      passionate about the <strong className="color-reveal">entire</strong> stack... from computer architecture, to
-      reliable back-end infrastructure, and all the way up to brilliant user design. <br></br>
+      passionate about the <strong>entire</strong> stack... from computer architecture, to reliable back-end
+      infrastructure, and all the way up to brilliant user design. <br></br>
       <br></br>Currently, I'm looking for a full-time position in a Software Engineering field. I have experience
       working with large-scale media pipelines, building scalable systems and maintaining core infrastructure.
+      <br></br>
+      <br></br>Send me an{' '}
+      <strong>
+        <a href="mailto:kajgrant@gmail.com">Email</a>
+      </strong>{' '}
+      or take a look below at some of the things I've done.
     </p>
   </Section>
 );

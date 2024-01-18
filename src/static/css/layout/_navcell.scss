@@ -1,0 +1,18 @@
+#navcell {
+    left: 50px;
+    top: 50px;
+    padding-right: 100px;
+    padding-bottom: 50px;
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 120px;
+    height: 100px;
+  }
+  
+  #socials {
+    justify-content: center;
+    width: 140px;
+  }

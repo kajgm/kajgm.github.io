@@ -1,0 +1,20 @@
+.social-icon {
+    height: 20px;
+    width: 20px;
+    padding-top: 5px;
+    padding-inline: 8px;
+    filter: var(--invert-filter);
+  }
+  
+.social-icon:hover {
+    filter: invert(20%) sepia(32%) saturate(4473%) hue-rotate(345deg) brightness(78%) contrast(125%);
+    top: -2px;
+  }
+
+.cell-icon {
+    height: 30px;
+    width: auto;
+    display: inline;
+    padding-right: 20px;
+    top: 5px;
+  }
