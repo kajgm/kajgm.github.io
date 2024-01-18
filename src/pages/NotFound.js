@@ -10,7 +10,11 @@ const PageNotFound = () => (
       </Helmet>
       <h1>Page Not Found</h1>
       <p>
-        How about we go <Link to="/">home</Link>?
+        How about we go{' '}
+        <strong>
+          <Link to="/">home</Link>
+        </strong>
+        ?
       </p>
     </div>
   </HelmetProvider>
