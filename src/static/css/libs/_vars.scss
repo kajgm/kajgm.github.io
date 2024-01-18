@@ -47,6 +47,25 @@ $themes: (
   --invert-filter: invert(90%);
 }
 
+$duration: (
+  transition: 0.3s,
+  text: 0.5s,
+  bullet: 2s,
+  bounce: 3s,
+  logos: 5s,
+);
+
+$size: (
+  hidden-kaj: 0.8em,
+  subtitle: 0.9em,
+  description: 1em,
+  about: 1.15em,
+  content-header: 2em,
+  logo: 2.2em,
+  main-header-small: 4em,
+  main-header: 5em,
+);
+
 // Font
 $font: (
   family: (
@@ -57,6 +76,7 @@ $font: (
   weight-bold: 700,
   weight-heading: 400,
   weight-heading-bold: 800,
+  kerning-heading: 0.01em,
 );
 
 @keyframes fadein {

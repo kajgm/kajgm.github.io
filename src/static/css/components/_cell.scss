@@ -1,21 +1,29 @@
 .cell {
   padding-inline: 10px;
-  padding-bottom: 30px;
-  margin-left: 40px;
-  transition-duration: 0.5s;
+  padding-bottom: 10px;
+  margin: 0 0 20px 40px;
 
   h2 {
-    color: var(--body_color);
     display: inline;
     vertical-align: middle;
+    color: var(--body_color);
+  }
+
+  h3 {
+    margin: 0px;
+    font-weight: 500;
+    padding-top: 5px;
+    font-style: italic;
+    font-size: _size(subtitle);
+    color: var(--sub-text-color);
   }
 
   li {
-    color: var(--content-text-color);
-    font-weight: 500;
-    font-size: 1em;
     margin: 0px;
-    animation: fadein 2s;
+    font-weight: 500;
+    font-size: _size(description);
+    color: var(--content-text-color);
+    animation: fadein _duration(bullet);
   }
 
   li:not(:last-child) {
@@ -23,33 +31,25 @@
   }
 
   ul {
-    margin-bottom: 0px;
     margin-top: 10px;
+    margin-bottom: 0px;
+    padding-left: 25px;
+  }
+
+  &:hover {
+    border-radius: 5px;
+    transition-duration: _duration(text);
+    background-color: var(--content-background);
   }
 }
 
-.cell:hover {
-  background-color: var(--content-background);
-  border-radius: 5px;
-  transition-duration: 0.5s;
-}
-
 .cell-title {
-  padding-top: 5px;
   display: flex;
+  padding-top: 5px;
 }
 
 .cell-header {
   display: inline;
   flex-direction: column;
   justify-content: center;
-}
-
-.cell-subtitle {
-  font-style: italic;
-  font-size: 0.9em;
-  font-weight: 500;
-  padding-top: 4px;
-  margin: 0px;
-  color: var(--sub-text-color);
 }

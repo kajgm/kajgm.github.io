@@ -1,17 +1,18 @@
 #header {
-  position: relative;
   left: 20px;
+  position: relative;
 
   h1 {
-    color: var(--body_color);
+    margin: 0px;
     font-size: 5em;
     padding-top: 30px;
-    margin: 0px;
+    color: var(--body_color);
+    letter-spacing: _font(kerning-heading);
   }
 
   a {
-    display: inline-flex;
     flex-wrap: wrap;
+    display: inline-flex;
   }
 
   a:hover #location-icon {
@@ -23,39 +24,12 @@
       font-size: 4em;
     }
   }
-}
 
-#subheader {
-  color: var(--content-text-color);
-  font-weight: 500;
-  font-size: 1em;
-  padding-bottom: 5px;
-  margin: 0px;
-}
-
-#location-time {
-  display: inline-flex;
-  flex-wrap: wrap;
-}
-
-#location-icon {
-  width: 15px;
-  height: auto;
-  padding-right: 5px;
-  filter: var(--invert-filter);
-}
-
-#location-text {
-  font-size: 0.9em;
-  font-weight: 500;
-  color: var(--sub-text-color);
-  padding-right: 5px;
-  margin: 0px;
-}
-
-#time-text {
-  font-size: 0.9em;
-  font-weight: 500;
-  color: var(--sub-text-color);
-  margin: 0px;
+  > p {
+    margin: 0px;
+    font-size: 1em;
+    font-weight: 500;
+    padding-bottom: 5px;
+    color: var(--content-text-color);
+  }
 }

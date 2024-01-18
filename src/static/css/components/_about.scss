@@ -1,52 +1,48 @@
 #about {
-  color: var(--body_color);
-  font-size: 1.15em;
-  font-weight: 00;
   margin: 0 0 0 50px;
+  font-size: _size(about);
+  color: var(--body_color);
 }
 
 #kaj-text {
-  animation: bounce-text 3s ease infinite;
-  display: inline-flex;
   margin: 0px;
-}
-
-#kaj-text:hover {
-  animation: none;
-}
-
-#kaj-text:hover + #hidden-kaj {
-  display: inline;
-  opacity: 1;
+  display: inline-flex;
+  animation: bounce-text _duration(bounce) ease infinite;
 }
 
 #hidden-kaj {
   opacity: 0;
-  font-size: 0.8em;
   transition: 1s;
   pointer-events: none;
+  font-size: _size(hidden-kaj);
+}
+
+#kaj-text:hover + #hidden-kaj {
+  opacity: 1;
+  animation: none;
+  display: inline;
 }
 
 @keyframes bounce-text {
   0% {
-    transform: translateY(0);
+    transform: translateY(-1px);
   }
   46% {
-    transform: translateY(0);
+    transform: translateY(-1px);
   }
   50% {
-    transform: translateY(-4px);
+    transform: translateY(-6px);
   }
   56% {
-    transform: translateY(0);
+    transform: translateY(-1px);
   }
   58% {
-    transform: translateY(-2px);
+    transform: translateY(-3px);
   }
   65% {
-    transform: translateY(0);
+    transform: translateY(-1px);
   }
   100% {
-    transform: translateY(0);
+    transform: translateY(-1px);
   }
 }

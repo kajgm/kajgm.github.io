@@ -12,7 +12,7 @@ const DateTime = () => {
 
   return (
     <div>
-      <p id="time-text">{date.toLocaleTimeString('en-US', { timeZone: 'America/Vancouver' })}</p>
+      <p>{date.toLocaleTimeString('en-US', { timeZone: 'America/Vancouver' })}</p>
     </div>
   );
 };

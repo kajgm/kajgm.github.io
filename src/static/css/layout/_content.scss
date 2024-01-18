@@ -1,19 +1,19 @@
 .content {
-  position: relative;
   display: flex;
   flex-wrap: wrap;
-  padding-block: 50px;
+  position: relative;
   left: -50px;
-}
+  padding-block: 50px;
 
-.content-header {
-  color: var(--body_color);
-  padding-bottom: 20px;
-  margin: 0;
-  font-size: 2em;
-  padding-right: 70px;
-  width: 200px;
-  text-align: right;
+  h1 {
+    margin: 0;
+    width: 200px;
+    text-align: right;
+    padding-right: 70px;
+    padding-bottom: 20px;
+    color: var(--body_color);
+    font-size: _size(content-header);
+  }
 }
 
 .sub-content {
