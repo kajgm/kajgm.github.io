@@ -6,7 +6,7 @@ import Cell from '../Template/Cell';
 import data from '../../data/projects';
 
 const Projects = () => (
-  <Section sectionType="projects-container" title="Projects">
+  <Section title="Projects">
     {data.map((project) => (
       <Cell data={project} key={project.title} />
     ))}

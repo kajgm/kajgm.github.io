@@ -8,33 +8,24 @@ import data from '../../data/header';
 const Header = (props) => {
   const text = props.text ? props.text : 'Kaj Grant-Mathiasen';
   const subtext = props.subtext ? props.subtext : data.roles.join(' - ');
+  const location = data.location;
 
   return (
-    <div id="header">
-      <Link to="/" className="no-decoration">
-        <h1 id="name-title" className="no-margin">
-          {text}
-        </h1>
+    <header id="header">
+      <Link to="/">
+        <h1 id="name-title">{text}</h1>
       </Link>
-      <p id="subheader-text" className="no-margin">
-        {subtext}
-      </p>
+      <p id="subheader">{subtext}</p>
 
-      <div id="location-time-container" className="no-margin">
-        {!props.location
-          ? data.locations.map((value) => (
-              <a key={value.link} className="no-decoration" id="location-time-container" href={value.link}>
-                <img key={value.name} src={value.image} id="location" className="relative" alt={value.name} />
-                <p key={value.locaion} id="location-text" className="no-margin">
-                  {value.name} -{' '}
-                </p>
-              </a>
-            ))
-          : null}
+      <div id="location-time">
+        <a href={location.link} id="location-link">
+          <img src={location.image} id="location-icon" alt={location.name} />
+          <p id="location-text">{location.name} - </p>
+        </a>
 
         <DateTime />
       </div>
-    </div>
+    </header>
   );
 };
 

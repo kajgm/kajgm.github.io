@@ -41,7 +41,7 @@ const Main = (props) => {
           <NavCell />
           <Header text={props.header} subtext={props.subheader} location={props.location}></Header>
         </div>
-        <div id="main">{props.children}</div>
+        {props.children}
       </div>
     </HelmetProvider>
   );

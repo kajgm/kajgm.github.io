@@ -1,3 +1,5 @@
+//TODO: Implement skill indicators (maybe on hover?)
+
 const data = [
   {
     title: 'Chairable, by Roll Technology',

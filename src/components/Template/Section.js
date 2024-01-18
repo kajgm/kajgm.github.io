@@ -2,10 +2,10 @@ import React from 'react';
 
 //TODO: Implement collapsable tabs
 const Section = (props) => (
-  <div id={props.sectionType} className="content">
-    <h1 className="content-headers side-bar no-margin">{props.title}</h1>
-    <div className="sub-content">{props.children}</div>
-  </div>
+  <section className="content">
+    <h1 className="content-header">{props.title}</h1>
+    <section className="sub-content">{props.children}</section>
+  </section>
 );
 
 export default Section;

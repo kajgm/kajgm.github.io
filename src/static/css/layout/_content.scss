@@ -1,0 +1,31 @@
+.content {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  padding-block: 50px;
+  left: -50px;
+}
+
+.content-header {
+  color: var(--body_color);
+  padding-bottom: 20px;
+  margin: 0;
+  font-size: 2em;
+  padding-right: 70px;
+  width: 200px;
+  text-align: right;
+}
+
+.sub-content {
+  max-width: min(900px, 100%);
+}
+
+@media screen and (max-width: $swidth) {
+  .content-header {
+    text-align: left;
+    padding-left: 70px;
+  }
+  .sub-content {
+    padding-left: 30px;
+  }
+}

@@ -1,3 +1,5 @@
+//TODO: Implement more variables
+
 $body_background: 'body_background';
 $body_color: 'body_color';
 $content-background: 'content-background';
@@ -5,29 +7,66 @@ $content-text-color: 'content-text-color';
 $sub-text-color: 'sub-text-color';
 $invert-filter: 'invert-filter';
 
-
+//Themes
 $themes: (
-    default: (
-        body_background: white,
-        body_color: black,
-        content-background: #eeeeee,
-        content-text-color: #303030,
-        sub-text-color: #4b4b4b,
-        invert-filter: invert(0%),
-    ),
-    dark: (
-        body_background: #1b1b1b,
-        body_color: white,
-        content-background: #131313,
-        content-text-color: #d6d6d6,
-        sub-text-color: #c5c5c5,
-        invert-filter: invert(90%),
-    ),
+  default: (
+    body_background: white,
+    body_color: black,
+    content-background: #eeeeee,
+    content-text-color: #303030,
+    sub-text-color: #4b4b4b,
+    invert-filter: invert(0%),
+  ),
+  dark: (
+    body_background: #1b1b1b,
+    body_color: white,
+    content-background: #131313,
+    content-text-color: #d6d6d6,
+    sub-text-color: #c5c5c5,
+    invert-filter: invert(90%),
+  ),
 );
 
+//Old theme structure, currently in use
+//TODO: migrate to new structure above
+[data-theme='light'] {
+  --body_background: white;
+  --body_color: black;
+  --content-background: #eeeeee;
+  --content-text-color: #303030;
+  --sub-text-color: #4b4b4b;
+  --invert-filter: invert(0%);
+}
+
+[data-theme='dark'] {
+  --body_background: #1b1b1b;
+  --body_color: white;
+  --content-background: #131313;
+  --content-text-color: #d6d6d6;
+  --sub-text-color: #c5c5c5;
+  --invert-filter: invert(90%);
+}
+
 // Font
-$font: (family: ('Roboto', sans-serif),
-weight:						400,
-weight-bold:				700,
-weight-heading:				400,
-weight-heading-bold:		800);
+$font: (
+  family: (
+    'Roboto',
+    sans-serif,
+  ),
+  weight: 400,
+  weight-bold: 700,
+  weight-heading: 400,
+  weight-heading-bold: 800,
+);
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+$swidth: 1250px;
+$xswidth: 500px;

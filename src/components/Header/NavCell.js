@@ -4,6 +4,7 @@ import Logo from './Logo';
 
 import data from '../../data/links';
 
+//TODO: Improve the icon animations
 const NavCell = () => (
   <div id="navcell">
     <Logo>KGM</Logo>

@@ -1,0 +1,55 @@
+.cell {
+  padding-inline: 10px;
+  padding-bottom: 30px;
+  margin-left: 40px;
+  transition-duration: 0.5s;
+
+  h2 {
+    color: var(--body_color);
+    display: inline;
+    vertical-align: middle;
+  }
+
+  li {
+    color: var(--content-text-color);
+    font-weight: 500;
+    font-size: 1em;
+    margin: 0px;
+    animation: fadein 2s;
+  }
+
+  li:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  ul {
+    margin-bottom: 0px;
+    margin-top: 10px;
+  }
+}
+
+.cell:hover {
+  background-color: var(--content-background);
+  border-radius: 5px;
+  transition-duration: 0.5s;
+}
+
+.cell-title {
+  padding-top: 5px;
+  display: flex;
+}
+
+.cell-header {
+  display: inline;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cell-subtitle {
+  font-style: italic;
+  font-size: 0.9em;
+  font-weight: 500;
+  padding-top: 4px;
+  margin: 0px;
+  color: var(--sub-text-color);
+}

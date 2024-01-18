@@ -1,37 +1,28 @@
 import React from 'react';
 
 const Cell = ({ data: { title, role, duration, image, invert, link, description } }) => (
-  <div style={{ paddingBottom: 20 + 'px' }}>
-    <div className="content-container">
-      <div className="exp-headers-container">
-        {image ? (
-          <a href={link}>
-            <img src={image} className={'cell-icon relative' + (invert ? ' dark-invert' : '')} alt={title} />
-          </a>
-        ) : null}
-        <div className="exp-headers-text">
-          <h2 className="experience-headers">
-            <a href={link} className="black-underline">
-              {title}
-            </a>
-          </h2>
+  <div className="cell">
+    <a href={link}>
+      <section className="cell-title">
+        {image ? <img src={image} className={'cell-icon' + (invert ? ' dark-invert' : '')} alt={title} /> : null}
+        <div className="cell-header">
+          <h2 className="underline">{title}</h2>
           {role && duration ? (
-            <p className="work-duration-text no-margin">
+            <p className="cell-subtitle">
               {role}, {duration}
             </p>
           ) : null}
         </div>
-      </div>
-      {description ? (
-        <ul>
-          <p className="bullet-text two-fade-in no-margin">
-            {description.map((description) => (
-              <li key={description}>{description}</li>
-            ))}
-          </p>
-        </ul>
-      ) : null}
-    </div>
+      </section>
+    </a>
+    {description ? (
+      <ul>
+        {description.map((description, index) => {
+          index++;
+          return <li key={index}>{description}</li>;
+        })}
+      </ul>
+    ) : null}
   </div>
 );
 

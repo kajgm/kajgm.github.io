@@ -1,11 +1,10 @@
 .not-found {
-    text-align: center;
-    margin: 5em;
-    background-color: var(--body_background);
-    
-    h1, p {
-      color: var(--body_color);
-    }
+  text-align: center;
+  margin: 5em;
+  background-color: var(--body_background);
 
+  h1,
+  p {
+    color: var(--body_color);
   }
-  
+}

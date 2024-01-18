@@ -33,6 +33,7 @@ const data = [
       'Gerrit',
     ],
   },
+  //TODO: Add the ability to link special (link to sea beast)
   {
     title: 'Sony Pictures Imageworks',
     role: 'Systems Engineer Co-Op',

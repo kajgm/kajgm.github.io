@@ -3,10 +3,10 @@ import React from 'react';
 import Section from '../Template/Section';
 
 const About = () => (
-  <Section sectionType="about-container" title="About">
-    <p id="about-text" className="two-fade-in no-margin">
+  <Section title="About">
+    <p id="about">
       Hi, I'm{' '}
-      <strong className="bounce-text no-margin" id="kaj-text">
+      <strong className="bounce-text" id="kaj-text">
         Kaj
       </strong>
       . <i id="hidden-kaj"> - pronounced like Kai (and rhymes with pie 🥧) </i>
@@ -18,10 +18,10 @@ const About = () => (
       working with large-scale media pipelines, building scalable systems and maintaining core infrastructure.
       <br></br>
       <br></br>Send me an{' '}
-      <strong>
+      <strong className="underline">
         <a href="mailto:kajgrant@gmail.com">Email</a>
       </strong>{' '}
-      or take a look below at some of the things I've done.
+      or explore some of the things I've done below...
     </p>
   </Section>
 );
