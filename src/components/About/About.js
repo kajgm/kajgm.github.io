@@ -19,7 +19,7 @@ const About = () => (
       <br></br>
       <br></br>Send me an{' '}
       <strong className="underline">
-        <a href="mailto:kajgrant@gmail.com">Email</a>
+        <a href="mailto:kajgrant@gmail.com">email</a>
       </strong>{' '}
       or explore some of the things I've done below...
     </p>

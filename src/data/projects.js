@@ -37,7 +37,7 @@ const data = [
     duration: 'Jan 2023 - May 2023',
     link: 'https://github.com/kajgrant/guitar-tuner',
     description: [
-      'Designed a custom ARM based architecture using the Xilinx Zedboard FPGA for a guitar tuner program',
+      'Engineered a custom ARM based architecture using the Xilinx Zedboard FPGA for a guitar tuner program',
       'Interfaced 9+ Audio Codecs, FFT blocks, GPIO blocks, and VGA controllers with C-based software',
       'Created an optimized hardware block in VHDL to perform the Harmonic Product Spectrum calculation',
       'Reduced latency to less than 1s between live auto stream input and corresponding VGA display output',
