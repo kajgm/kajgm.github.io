@@ -37,6 +37,8 @@ jobs:
         run: npm ci
       - name: Build and render
         run: npm run predeploy
+      - name: Deploy to gh-pages branch
+        run: npm deploy
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Upload artifact
