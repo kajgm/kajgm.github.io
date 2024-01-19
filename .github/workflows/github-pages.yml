@@ -39,10 +39,10 @@ jobs:
         run: npm run predeploy
       - name: Deploy to gh-pages branch
         run: |
-          git config --global user.name $user_name
-          git config --global user.email $user_email
-          git remote set-url origin https://${github_token}@github.com/${repository}
-          npm run deploy
+          git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+          npx gh-pages -d build -u "github-actions-bot <support+actions@github.com>"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         env:
           user_name: 'github-actions[bot]'
           user_email: 'github-actions[bot]@users.noreply.github.com'
