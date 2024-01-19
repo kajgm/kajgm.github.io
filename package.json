@@ -2,7 +2,7 @@
   "name": "kajgrant.github.io",
   "version": "2.0.0",
   "author": "Kaj Grant-Mathiasen",
-  "homepage": "https://kajgrant.github.io",
+  "homepage": "https://kajgm.com/",
   "license": "MIT",
   "description": "Personal portfolio website",
   "repository": {
@@ -18,7 +18,7 @@
   ],
   "scripts": {
     "predeploy": "npm run build && react-snap",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d build --cname kajgm.com",
     "start": "react-scripts start",
     "lint": "eslint \"**/*.js\"",
     "build": "rimraf ./build && react-scripts build",
