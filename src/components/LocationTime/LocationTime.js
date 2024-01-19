@@ -10,7 +10,7 @@ const LocationTime = () => (
       <img src={data.image} id="location-icon" alt={data.name} />
       <p id="location-text">{data.name} - </p>
     </a>
-    <DateTime />
+    <DateTime timeZone={data.timeZone} />
   </section>
 );
 

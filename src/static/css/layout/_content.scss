@@ -14,6 +14,12 @@
     color: var(--body_color);
     font-size: _size(content-header);
   }
+  @media screen and (max-width: $swidth) {
+    h1 {
+      text-align: left;
+      padding-left: 70px;
+    }
+  }
 }
 
 .sub-content {
@@ -21,10 +27,6 @@
 }
 
 @media screen and (max-width: $swidth) {
-  .content-header {
-    text-align: left;
-    padding-left: 70px;
-  }
   .sub-content {
     padding-left: 30px;
   }

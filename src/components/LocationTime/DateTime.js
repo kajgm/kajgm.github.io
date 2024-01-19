@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const DateTime = () => {
+const DateTime = (props) => {
   var [date, setDate] = useState(new Date());
 
   useEffect(() => {
@@ -12,7 +12,11 @@ const DateTime = () => {
 
   return (
     <div>
-      <p>{date.toLocaleTimeString('en-US', { timeZone: 'America/Vancouver' })}</p>
+      <p>
+        {date.toLocaleTimeString('en-US', {
+          timeZone: props.timeZone ? props.timeZone : Intl.DateTimeFormat().resolvedOptions().timeZone,
+        })}
+      </p>
     </div>
   );
 };
