@@ -8,6 +8,10 @@
   margin: 0px;
   display: inline-flex;
   animation: bounce-text _duration(bounce) ease infinite;
+
+  &:hover {
+    animation: none;
+  }
 }
 
 #hidden-kaj {
@@ -19,7 +23,6 @@
 
 #kaj-text:hover + #hidden-kaj {
   opacity: 1;
-  animation: none;
   display: inline;
 }
 
