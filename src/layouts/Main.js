@@ -16,10 +16,10 @@ const Main = (props) => {
   };
 
   if (isDarkMode) {
-    document.querySelector('body').setAttribute('data-theme', 'dark');
+    document.querySelector('body').setAttribute('theme', 'dark');
     localStorage.setItem('selectedTheme', 'dark');
   } else {
-    document.querySelector('body').setAttribute('data-theme', 'light');
+    document.querySelector('body').setAttribute('theme', 'light');
     localStorage.setItem('selectedTheme', 'light');
   }
 
@@ -34,6 +34,7 @@ const Main = (props) => {
         style={{ margin: '0px', position: 'absolute', right: '50px', top: '110px' }}
         onChange={toggleDarkMode}
         size={40}
+        id="theme-toggle"
       />
       {/*Future entry point of Navigation*/}
       <div id="wrapper">

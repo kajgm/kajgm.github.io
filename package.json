@@ -20,7 +20,8 @@
     "predeploy": "npm run build && react-snap",
     "start": "react-scripts start",
     "lint": "eslint \"**/*.js\"",
-    "build": "rimraf ./build && react-scripts build"
+    "build": "rimraf ./build && react-scripts build",
+    "test": "npx jest"
   },
   "dependencies": {
     "normalize.css": "^8.0.1",

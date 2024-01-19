@@ -29,7 +29,7 @@ $themes: (
 
 //Old theme structure, currently in use
 //TODO: migrate to new structure above
-[data-theme='light'] {
+[theme='light'] {
   --body_background: white;
   --body_color: black;
   --content-background: #eeeeee;
@@ -38,7 +38,7 @@ $themes: (
   --invert-filter: invert(0%);
 }
 
-[data-theme='dark'] {
+[theme='dark'] {
   --body_background: #1b1b1b;
   --body_color: white;
   --content-background: #131313;
