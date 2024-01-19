@@ -47,7 +47,7 @@
     "prettier": "2.8.1",
     "react-snap": "^0.2.0",
     "rimraf": "^5.0.5",
-    "sass": "^1.69.7",
+    "sass": "^1.70.0",
     "sass-loader": "^14.0.0",
     "webpack": "^5.89.0"
   },
