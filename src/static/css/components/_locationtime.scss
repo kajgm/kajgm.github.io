@@ -5,14 +5,13 @@
   img {
     width: 15px;
     height: auto;
-    padding-right: 5px;
     filter: var(--invert-filter);
   }
   p {
     font-size: 0.9em;
     font-weight: 500;
     color: var(--sub-text-color);
-    padding-right: 5px;
+    padding-left: 5px;
     margin: 0px;
   }
 }

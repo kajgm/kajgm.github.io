@@ -13,6 +13,7 @@ const DateTime = (props) => {
   return (
     <div>
       <p>
+        -{' '}
         {date.toLocaleTimeString('en-US', {
           timeZone: props.timeZone ? props.timeZone : Intl.DateTimeFormat().resolvedOptions().timeZone,
         })}

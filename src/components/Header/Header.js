@@ -7,7 +7,7 @@ import data from '../../data/header';
 
 const Header = (props) => {
   const text = props.text ? props.text : 'Kaj Grant-Mathiasen';
-  const subtext = props.subtext ? props.subtext : data.roles.join(' - ');
+  const subtext = props.subtext ? props.subtext : data.roles.join(' / ');
 
   return (
     <header id="header">

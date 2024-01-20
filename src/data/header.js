@@ -1,5 +1,5 @@
 const data = {
-  roles: ['Computer Engineer', 'Software Engineer', 'Videographer', 'Photographer'],
+  roles: ['Computer Engineer', 'Full-Stack Developer', 'Videographer', 'Photographer'],
 };
 
 export default data;
