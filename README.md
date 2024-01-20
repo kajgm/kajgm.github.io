@@ -1,4 +1,4 @@
-# kajgrant.github.io
+# kajgrant.github.io &middot; [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/ConorMurphy21/StrikeOrSike/blob/master/LICENSE) [![Node.js CI](https://github.com/kajgrant/kajgrant.github.io/actions/workflows/node.js.yml/badge.svg)](https://github.com/kajgrant/kajgrant.github.io/actions/workflows/node.js.yml) ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
 
 A simple personal portfolio website.
 [kajgm.com](https://kajgm.com/)
@@ -15,7 +15,7 @@ Please ensure the following software is installed on your system:
 
 - [Node 16.x](https://nodejs.org/en/download)
 
-## Install
+## Installation
 
 Follow these steps to install and run the development environment:
 
@@ -32,7 +32,7 @@ cd kajgrant.github.io/
 npm install
 ```
 
-## Run
+## Running development server
 
 To start the development server use the following command:
 
@@ -44,7 +44,7 @@ Your default browser will automatically open to the development server homepage.
 
 > The address should be [http://localhost:3000/](http://localhost:3000/)
 
-## Build
+## Building Static Resources
 
 To build the static resources for local or custom CDN deployment, run the following commands:
 
