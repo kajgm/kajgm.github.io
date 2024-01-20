@@ -3,7 +3,7 @@
 const data = [
   {
     title: 'Chairable, by Roll Technology',
-    image: '/img/rolltech.svg',
+    image: '/images/content/rolltech.svg',
     role: 'SFU Engineering Capstone',
     duration: 'May 2023 - Dec 2023',
     link: 'https://github.com/kajgrant/rolltech',
@@ -17,7 +17,7 @@ const data = [
   },
   {
     title: 'FPGA Accelerated Gaussian Elimination Algorithm',
-    image: '/img/xilinx.svg',
+    image: '/images/content/xilinx.svg',
     role: 'ENSC 453/894 Final Project',
     duration: 'Sept 2023 - Dec 2023',
     link: 'https://github.com/kajgrant/gaussian-acceleration',
@@ -31,7 +31,7 @@ const data = [
   },
   {
     title: 'Hardware Accelerated Guitar Tuner',
-    image: '/img/frequency.svg',
+    image: '/images/content/frequency.svg',
     invert: true,
     role: 'ENSC 452/894 Final Project',
     duration: 'Jan 2023 - May 2023',
@@ -46,7 +46,7 @@ const data = [
   },
   {
     title: 'RISC-V Execution Unit',
-    image: '/img/riscv.svg',
+    image: '/images/content/riscv.svg',
     role: 'ENSC 350 Final Project',
     duration: 'Jan 2022 - May 2022',
     link: 'https://github.com/kajgrant/ExU',
@@ -59,7 +59,7 @@ const data = [
   },
   {
     title: 'TransitTracker',
-    image: '/img/translinkbuses.svg',
+    image: '/images/content/translinkbuses.svg',
     role: 'Personal interest project',
     duration: 'Feb 2023 - Present',
     link: 'https://github.com/kajgrant/transittracker',
@@ -73,7 +73,7 @@ const data = [
   },
   {
     title: 'RedditSalesTracker',
-    image: '/img/reddit.svg',
+    image: '/images/content/reddit.svg',
     role: 'Personal interest project',
     duration: 'Jan 2023 - Present',
     link: 'https://github.com/kajgrant/transittracker',

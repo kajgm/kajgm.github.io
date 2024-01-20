@@ -7,9 +7,10 @@
   left: 50%;
   margin-top: 0;
   color: white;
-  font-weight: bold;
   position: absolute;
+  //font-weight: bold;
   font-size: _size(logo);
+  font-family: _font(logo);
   transform: translate(-50%, -50%);
 }
 

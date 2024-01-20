@@ -61,7 +61,7 @@ $size: (
   description: 1em,
   about: 1.15em,
   content-header: 2em,
-  logo: 2.2em,
+  logo: 2em,
   main-header-small: 4em,
   main-header: 5em,
 );
@@ -71,6 +71,9 @@ $font: (
   family: (
     'Roboto',
     sans-serif,
+  ),
+  logo: (
+    'Permanent Marker',
   ),
   weight: 400,
   weight-bold: 700,

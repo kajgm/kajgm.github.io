@@ -3,7 +3,7 @@ const data = [
     title: 'SAP Canada Inc.',
     role: 'Agile Developer Co-Op',
     duration: 'May 2022 - Dec 2022',
-    image: '/img/sap.svg',
+    image: '/images/content/sap.svg',
     link: 'https://www.sap.com/canada/index.html',
     description: [
       'Coordinated with senior engineers to implement a layered cache resiliency system involving several core ' +
@@ -38,7 +38,7 @@ const data = [
     title: 'Sony Pictures Imageworks',
     role: 'Systems Engineer Co-Op',
     duration: 'Jan 2020 - Sept 2020',
-    image: '/img/sony.svg',
+    image: '/images/content/sony.svg',
     invert: true,
     link: 'https://www.imageworks.com/',
     description: [
