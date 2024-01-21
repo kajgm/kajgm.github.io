@@ -25,7 +25,7 @@ const data = [
       'Minimized execution time via buffering, tiling, memory, compute, and ping-pong data transfer enhancements',
       'Achieved an 8.4 speedup factor using Intel Intrinsics and OpenMP optimizations on the CPU-based platform',
       'Doubled performance of CUDA algorithm based on analysis of underlying GPU architecture and cache layout',
-      'Performed comparison of CPU (Intel i9-10900X), FPGA (AMD Alevo U50), and GPU (Nvidia A4000) implementations',
+      'Compared CPU (Intel i9-10900X), FPGA (AMD Alevo U50), and GPU (Nvidia A4000) implementations',
     ],
     skills: ['C', 'Cuda', 'Intel Intrinsics', 'OpenMp', 'Xilinx Vitis'],
   },
