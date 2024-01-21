@@ -1,5 +1,5 @@
 #logo {
-  margin-bottom: 0px;
+  margin-bottom: 5px;
 }
 
 #logo-text {
@@ -8,7 +8,6 @@
   margin-top: 0;
   color: white;
   position: absolute;
-  //font-weight: bold;
   font-size: _size(logo);
   font-family: _font(logo);
   transform: translate(-50%, -50%);
@@ -22,16 +21,16 @@
   animation: personal-logo-gradient 5s ease infinite;
   background: linear-gradient(-45deg, #bb0900, #850600, #520500, #850600, #bb0900);
   background-size: 500% 500%;
-}
 
-@keyframes personal-logo-gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
+  @keyframes personal-logo-gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
   }
 }

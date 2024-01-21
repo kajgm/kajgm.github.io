@@ -1,6 +1,13 @@
 #topbar {
   display: flex;
   flex-wrap: wrap;
-  max-width: 80vw;
-  padding-bottom: 50px;
+  max-width: $maxtopwidth;
+  padding-left: 50px;
+  padding-bottom: 40px;
+
+  @media screen and (max-width: $swidth) {
+    & {
+      padding-left: 0px;
+    }
+  }
 }

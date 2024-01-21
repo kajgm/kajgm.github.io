@@ -1,7 +1,7 @@
 #wrapper {
   margin: auto;
-  width: 1200px;
-  max-width: 95vw;
+  width: $wrapperwidth;
+  max-width: $maxwrapperwidth;
   padding-top: 50px;
   padding-bottom: 50px;
 }

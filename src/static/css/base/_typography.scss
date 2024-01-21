@@ -1,10 +1,13 @@
+:root {
+  transition: background-color _duration(transition) ease-in-out;
+}
+
 body {
   margin: 0;
   font-family: _font(family);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--body_background);
-  transition: background-color 0.3s ease-in-out;
 }
 
 a {
@@ -31,14 +34,14 @@ b {
   bottom: 0;
   left: -1%;
   width: 102%;
-  height: 0.1em;
+  height: _size(underline);
   background-color: var(--body_color);
   opacity: 0;
-  transition: opacity 300ms, transform 300ms;
+  transition: opacity _duration(transition), transform _duration(transition);
 }
 
 .underline:hover::after,
 .underline:focus::after {
   opacity: 1;
-  transform: translate3d(0, 0.1em, 0);
+  transform: translate3d(0, _size(underline), 0);
 }

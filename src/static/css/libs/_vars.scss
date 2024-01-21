@@ -1,5 +1,11 @@
-//TODO: Implement more variables
+// scss shared variables
 
+$redfilter: invert(20%) sepia(32%) saturate(4473%) hue-rotate(345deg) brightness(78%) contrast(125%);
+$swidth: 1250px;
+$xswidth: 500px;
+$wrapperwidth: 1200px;
+$maxtopwidth: 80vw;
+$maxwrapperwidth: 90vw;
 $body_background: 'body_background';
 $body_color: 'body_color';
 $content-background: 'content-background';
@@ -50,12 +56,14 @@ $themes: (
 $duration: (
   transition: 0.3s,
   text: 0.5s,
+  reveal: 1s,
   bullet: 2s,
   bounce: 3s,
   logos: 5s,
 );
 
 $size: (
+  underline: 0.1em,
   hidden-kaj: 0.8em,
   subtitle: 0.9em,
   description: 1em,
@@ -77,7 +85,8 @@ $font: (
   ),
   weight: 400,
   weight-bold: 700,
-  weight-heading: 400,
+  weight-li: 500,
+  weight-heading: 500,
   weight-heading-bold: 800,
   kerning-heading: 0.01em,
 );
@@ -90,6 +99,3 @@ $font: (
     opacity: 1;
   }
 }
-
-$swidth: 1250px;
-$xswidth: 500px;

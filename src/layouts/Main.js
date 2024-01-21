@@ -3,7 +3,7 @@ import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { DarkModeSwitch } from 'react-toggle-dark-mode';
 
 import Header from '../components/Header/Header';
-import NavCell from '../components/Header/NavCell';
+import Links from '../components/Header/Links';
 
 const Main = (props) => {
   const selectedTheme = localStorage.getItem('selectedTheme');
@@ -31,7 +31,7 @@ const Main = (props) => {
       </Helmet>
       <DarkModeSwitch
         checked={isDarkMode}
-        style={{ margin: '0px', position: 'absolute', right: '50px', top: '110px' }}
+        style={{ margin: '0px', position: 'absolute', right: '50px', top: '75px' }}
         onChange={toggleDarkMode}
         size={40}
         id="theme-toggle"
@@ -39,7 +39,7 @@ const Main = (props) => {
       {/*Future entry point of Navigation*/}
       <div id="wrapper">
         <div id="topbar">
-          <NavCell />
+          <Links />
           <Header text={props.header} subtext={props.subheader} location={props.location}></Header>
         </div>
         {props.children}

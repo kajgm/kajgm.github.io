@@ -1,7 +1,7 @@
 .cell {
   padding-inline: 10px;
   padding-bottom: 10px;
-  margin: 0 0 20px 40px;
+  margin-bottom: 20px;
 
   h2 {
     display: inline;
@@ -11,7 +11,7 @@
 
   h3 {
     margin: 0px;
-    font-weight: 500;
+    font-weight: _font(weight-heading);
     padding-top: 5px;
     font-style: italic;
     font-size: _size(subtitle);
@@ -20,7 +20,7 @@
 
   li {
     margin: 0px;
-    font-weight: 500;
+    font-weight: _font(weight-li);
     font-size: _size(description);
     color: var(--content-text-color);
     animation: fadein _duration(bullet);

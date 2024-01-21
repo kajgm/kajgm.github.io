@@ -9,16 +9,15 @@
 @import 'base/typography';
 
 // Components
-@import 'components/about';
 @import 'components/cell';
 @import 'components/icons';
 @import 'components/locationtime';
 @import 'components/logo';
-@import 'components/section';
 
 // Layout
+@import 'layout/about';
 @import 'layout/content';
-@import 'layout/navcell';
+@import 'layout/links';
 @import 'layout/header';
 @import 'layout/topbar';
 @import 'layout/wrapper';

@@ -5,8 +5,8 @@ import Logo from './Logo';
 import data from '../../data/links';
 
 //TODO: Improve the icon animations
-const NavCell = () => (
-  <div id="navcell">
+const Links = () => (
+  <div id="links">
     <Logo>KGM</Logo>
     <section id="socials">
       {data.map((social) => (
@@ -18,4 +18,4 @@ const NavCell = () => (
   </div>
 );
 
-export default NavCell;
+export default Links;

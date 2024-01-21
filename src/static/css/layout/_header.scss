@@ -1,11 +1,7 @@
 #header {
-  left: 20px;
-  position: relative;
-
   h1 {
     margin: 0px;
-    font-size: 5em;
-    padding-top: 30px;
+    font-size: _size(main-header);
     color: var(--body_color);
     letter-spacing: _font(kerning-heading);
   }
@@ -16,18 +12,18 @@
   }
 
   a:hover #location-icon {
-    filter: invert(20%) sepia(32%) saturate(4473%) hue-rotate(345deg) brightness(78%) contrast(125%);
+    filter: $redfilter;
   }
 
   @media screen and (max-width: $xswidth) {
     h1 {
-      font-size: 4em;
+      font-size: _size(main-header-small);
     }
   }
 
   > p {
     margin: 0px;
-    font-size: 1em;
+    font-size: _size(description);
     font-weight: 500;
     padding-bottom: 5px;
     color: var(--content-text-color);
