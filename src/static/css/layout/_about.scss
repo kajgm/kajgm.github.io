@@ -39,7 +39,7 @@
 
 #hidden-kaj {
   opacity: 0;
-  transition: _duration(reveal);
   pointer-events: none;
   font-size: _size(hidden-kaj);
+  transition: _duration(reveal);
 }
