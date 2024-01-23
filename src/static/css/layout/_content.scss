@@ -1,19 +1,19 @@
 .content {
   display: flex;
   flex-wrap: wrap;
-  position: relative;
   padding-block: 50px;
+  max-width: $wrapperwidth;
 
   h1 {
     margin: 0;
     width: 150px;
     text-align: right;
-    padding-right: 130px;
+    padding-right: calc(150px - $leftPadding);
     padding-bottom: 20px;
     color: var(--body_color);
     font-size: _size(content-header);
   }
-  @media screen and (max-width: $swidth) {
+  @media screen and (max-width: calc($wrapperwidth + $offset)) {
     h1 {
       text-align: left;
     }
@@ -21,7 +21,7 @@
 }
 
 .sub-content {
-  max-width: min(850px, 100%);
+  width: $contentwidth;
   p {
     margin: 0;
     font-size: _size(about);

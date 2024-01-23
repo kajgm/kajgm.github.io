@@ -1,13 +1,10 @@
-:root {
-  transition: background-color _duration(transition) ease-in-out;
-}
-
 body {
   margin: 0;
   font-family: _font(family);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--body_background);
+  transition: background-color _duration(transition) ease-in-out;
 }
 
 a {

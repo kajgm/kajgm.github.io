@@ -2,6 +2,8 @@
   margin: auto;
   width: $wrapperwidth;
   max-width: $maxwrapperwidth;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: $topPadding;
+  padding-bottom: $bottomPadding;
+  padding-left: $leftPadding;
+  padding-right: $rightPadding;
 }

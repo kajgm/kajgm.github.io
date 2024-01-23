@@ -1,17 +1,27 @@
 // scss shared variables
 
+//Colors and filters
 $redfilter: invert(20%) sepia(32%) saturate(4473%) hue-rotate(345deg) brightness(78%) contrast(125%);
-$swidth: 1255px;
-$xswidth: 500px;
-$wrapperwidth: 1200px;
-$maxtopwidth: 78vw;
-$maxwrapperwidth: 90vw;
-$body_background: 'body_background';
-$body_color: 'body_color';
-$content-background: 'content-background';
-$content-text-color: 'content-text-color';
-$sub-text-color: 'sub-text-color';
 $invert-filter: 'invert-filter';
+
+$offset: 30px;
+
+//Wrapper
+$topPadding: 50px;
+$bottomPadding: 50px;
+$leftPadding: 20px;
+$rightPadding: 20px;
+$wrapperwidth: 1200px;
+$maxwrapperwidth: calc(95vw - $leftPadding - $rightPadding);
+
+//Content
+$xswidth: 500px;
+$contentheaderwidth: 150px;
+$contentwidth: 850px;
+$maxcontentwidth: min($wrapperwidth, $maxwrapperwidth);
+
+//Header
+$maxtopwidth: calc(100vw - 150px);
 
 //Themes
 $themes: (

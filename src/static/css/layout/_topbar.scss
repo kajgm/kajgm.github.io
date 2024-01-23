@@ -3,9 +3,9 @@
   flex-wrap: wrap;
   max-width: $maxtopwidth;
   padding-left: 50px;
-  padding-bottom: 40px;
+  padding-bottom: 50px;
 
-  @media screen and (max-width: $swidth) {
+  @media screen and (max-width: calc($wrapperwidth + $offset)) {
     & {
       padding-left: 0px;
     }
