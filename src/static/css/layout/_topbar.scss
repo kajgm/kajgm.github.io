@@ -1,9 +1,9 @@
 #topbar {
   display: flex;
   flex-wrap: wrap;
-  max-width: $maxtopwidth;
   padding-left: 50px;
   padding-bottom: 50px;
+  max-width: $maxtopwidth;
 
   @media screen and (max-width: calc($wrapperwidth + $offset)) {
     & {
