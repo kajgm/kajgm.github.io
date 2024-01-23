@@ -24,30 +24,9 @@ $xswidth: 500px;
 $maxtopwidth: calc($maxwrapperwidth - 140px);
 
 //Themes
-$themes: (
-  default: (
-    body_background: white,
-    body_color: black,
-    content-background: #eeeeee,
-    content-text-color: #303030,
-    sub-text-color: #4b4b4b,
-    invert-filter: invert(0%),
-  ),
-  dark: (
-    body_background: #1b1b1b,
-    body_color: white,
-    content-background: #131313,
-    content-text-color: #d6d6d6,
-    sub-text-color: #c5c5c5,
-    invert-filter: invert(90%),
-  ),
-);
-
-//Old theme structure, currently in use
-//TODO: migrate to new structure above
 [theme='light'] {
-  --body_background: white;
-  --body_color: black;
+  --body-background: white;
+  --body-color: black;
   --content-background: #eeeeee;
   --content-text-color: #303030;
   --sub-text-color: #4b4b4b;
@@ -55,8 +34,8 @@ $themes: (
 }
 
 [theme='dark'] {
-  --body_background: #1b1b1b;
-  --body_color: white;
+  --body-background: #1b1b1b;
+  --body-color: white;
   --content-background: #131313;
   --content-text-color: #d6d6d6;
   --sub-text-color: #c5c5c5;

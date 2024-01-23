@@ -3,7 +3,7 @@ body {
   font-family: _font(family);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--body_background);
+  background-color: var(--body-background);
   transition: background-color _duration(transition) ease-in-out;
 }
 

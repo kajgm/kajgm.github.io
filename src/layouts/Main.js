@@ -15,13 +15,9 @@ const Main = (props) => {
     setDarkMode(checked);
   };
 
-  if (isDarkMode) {
-    document.querySelector('body').setAttribute('theme', 'dark');
-    localStorage.setItem('selectedTheme', 'dark');
-  } else {
-    document.querySelector('body').setAttribute('theme', 'light');
-    localStorage.setItem('selectedTheme', 'light');
-  }
+  const themeStr = isDarkMode ? 'dark' : 'light';
+  document.querySelector('body').setAttribute('theme', themeStr);
+  localStorage.setItem('selectedTheme', themeStr);
 
   return (
     <HelmetProvider>
