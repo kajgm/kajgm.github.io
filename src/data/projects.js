@@ -71,20 +71,21 @@ const data = [
     ],
     skills: ['Python', 'APIs'],
   },
-  {
-    title: 'RedditSalesTracker',
-    image: '/images/content/reddit.svg',
-    role: 'Personal interest project',
-    duration: 'Jan 2023 - Present',
-    link: 'https://github.com/kajgrant/transittracker',
-    description: [
-      'Personal interest project to explore interactions with the Reddit API platform',
-      'Retrieves post statistics and data from over 1000 distinct sales-specific subreddits',
-      'Features optional arguments to control notification sounds, watch list, and frequency of query',
-      'Enhances the capacity to capitalize on time-sensitive sales opportunities with a real-time notification system',
-    ],
-    skills: ['Python', 'APIs'],
-  },
+  // },
+  // {
+  //   title: 'RedditSalesTracker',
+  //   image: '/images/content/reddit.svg',
+  //   role: 'Personal interest project',
+  //   duration: 'Jan 2023 - Present',
+  //   link: 'https://github.com/kajgrant/transittracker',
+  //   description: [
+  //     'Personal interest project to explore interactions with the Reddit API platform',
+  //     'Retrieves post statistics and data from over 1000 distinct sales-specific subreddits',
+  //     'Features optional arguments to control notification sounds, watch list, and frequency of query',
+  //     'Enhances the capacity to capitalize on time-sensitive sales opportunities with a real-time notification system',
+  //   ],
+  //   skills: ['Python', 'APIs'],
+  // },
 ];
 
 export default data;
