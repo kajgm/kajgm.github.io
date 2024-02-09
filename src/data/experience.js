@@ -6,14 +6,15 @@ const data = [
     image: '/images/content/sap.svg',
     link: 'https://www.sap.com/canada/index.html',
     description: [
-      'Coordinated with senior engineers to implement a layered cache resiliency system involving several core ' +
-        'microservices to ensure 99%+ uptime, developed accompanying documentation and testing strategies',
+      'Implemented a layered cache resiliency system involving several core microservices to ensure 99%+ uptime',
       'Analyzed artifact build pipeline to expose regression-related variations between local and cloud deployments',
-      'Prioritized and managed 80+ concurrent Jira tickets involving new features or fixes to existing systems',
+      'Resolved a crucial ERP connection error by identifying an overlooked edge case related to the transfer of SQL ' +
+        'data between microservices, ensuring the on-time deployment of several essential features',
       'Refactored core system dependencies and designed asynchronous logic to adhere to architectural standards',
-      'Created and maintained several automated Jest and Jasmine testing suites to achieve 98%+ code coverage',
+      'Converted core module to use asynchronous logic, resulting in a 2% reduction of system-wide loading times ',
+      'Created and maintained several automated Jest and Jasmine testing suites to achieve 99%+ code coverage',
+      'Led team-wide knowledge transfer sessions, reducing development time for several workflows by up to 95%',
       'Verified proposed changes with remote Jenkins, local Node.js, and cloud-based Kubernetes environments',
-      'Conducted code reviews and knowledge transfer sessions to improve existing practices and code quality',
     ],
     skills: [
       'JavaScript',
