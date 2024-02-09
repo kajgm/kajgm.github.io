@@ -7,12 +7,15 @@ const data = [
     role: 'SFU Engineering Capstone',
     duration: 'May 2023 - Dec 2023',
     link: 'https://github.com/kajgrant/rolltech',
-    description: [
-      'Designed a modular attachment for office chairs using a spherical wheel for enhanced powered movement',
-      'Led a team of 5 students to produce a minimum viable product and publicly demonstrate system capabilities',
-      'Built an enclosed electrical circuit with 14+ motor control, communication, logic, and safety elements',
-      'Devised a mechanical system with machined steel and 3D printed components to control a 2200W motor',
-    ],
+    description: {
+      type: 'list',
+      content: [
+        'Designed a modular attachment for office chairs using a spherical wheel for enhanced powered movement',
+        'Led a team of 5 students to produce a minimum viable product and publicly demonstrate system capabilities',
+        'Built an enclosed electrical circuit with 14+ motor control, communication, logic, and safety elements',
+        'Devised a mechanical system with machined steel and 3D printed components to control a 2200W motor',
+      ],
+    },
     skills: ['C++', 'SolidWorks', 'KiCad', 'Soldering', 'Electrical Design', 'Photoshop'],
   },
   {
@@ -21,12 +24,15 @@ const data = [
     role: 'ENSC 453/894 Final Project',
     duration: 'Sept 2023 - Dec 2023',
     link: 'https://github.com/kajgrant/gaussian-acceleration',
-    description: [
-      'Minimized execution time via buffering, tiling, memory, compute, and ping-pong data transfer enhancements',
-      'Achieved an 8.4 speedup factor using Intel Intrinsics and OpenMP optimizations on the CPU-based platform',
-      'Doubled performance of CUDA algorithm based on analysis of underlying GPU architecture and cache layout',
-      'Compared CPU (Intel i9-10900X), FPGA (AMD Alevo U50), and GPU (Nvidia A4000) implementations',
-    ],
+    description: {
+      type: 'list',
+      content: [
+        'Minimized execution time via buffering, tiling, memory, compute, and ping-pong data transfer enhancements',
+        'Achieved an 8.4 speedup factor using Intel Intrinsics and OpenMP optimizations on the CPU-based platform',
+        'Doubled performance of CUDA algorithm based on analysis of underlying GPU architecture and cache layout',
+        'Compared CPU (Intel i9-10900X), FPGA (AMD Alevo U50), and GPU (Nvidia A4000) implementations',
+      ],
+    },
     skills: ['C', 'Cuda', 'Intel Intrinsics', 'OpenMp', 'Xilinx Vitis'],
   },
   {
@@ -36,12 +42,15 @@ const data = [
     role: 'ENSC 452/894 Final Project',
     duration: 'Jan 2023 - May 2023',
     link: 'https://github.com/kajgrant/guitar-tuner',
-    description: [
-      'Designed a dual core ARM-based architecture using the Xilinx Zedboard FPGA for a custom guitar tuner',
-      'Streamlined data transfer logic to achieve 1Hz accuracy and an input to output latency of less than 1 second',
-      'Interfaced 9+ Audio Codecs, FFT blocks, GPIO blocks, and VGA controllers with C-based software',
-      'Created an optimized hardware block in VHDL to perform the Harmonic Product Spectrum calculation',
-    ],
+    description: {
+      type: 'list',
+      content: [
+        'Designed a dual core ARM-based architecture using the Xilinx Zedboard FPGA for a custom guitar tuner',
+        'Streamlined data transfer logic to achieve 1Hz accuracy and an input to output latency of less than 1 second',
+        'Interfaced 9+ Audio Codecs, FFT blocks, GPIO blocks, and VGA controllers with C-based software',
+        'Created an optimized hardware block in VHDL to perform the Harmonic Product Spectrum calculation',
+      ],
+    },
     skills: ['C', 'VHDL', 'Vivado', 'Xilinx Vitis', 'Frequency Theory'],
   },
   {
@@ -50,11 +59,14 @@ const data = [
     role: 'ENSC 350 Final Project',
     duration: 'Jan 2022 - May 2022',
     link: 'https://github.com/kajgrant/ExU',
-    description: [
-      'Designed a VHDL based execution unit capable of executing the full RISC-V instruction set',
-      'Implemented barrel shifters, a 64-bit adder, and a logic unit to correctly respond to input signals',
-      'Synthesized on the Cyclone IV FPGA and performed timing analysis using ModelSim waveforms',
-    ],
+    description: {
+      type: 'list',
+      content: [
+        'Designed a VHDL based execution unit capable of executing the full RISC-V instruction set',
+        'Implemented barrel shifters, a 64-bit adder, and a logic unit to correctly respond to input signals',
+        'Synthesized on the Cyclone IV FPGA and performed timing analysis using ModelSim waveforms',
+      ],
+    },
     skills: ['RISC-V', 'VHDL', 'Quartus', 'Modelsim'],
   },
   {
@@ -63,29 +75,17 @@ const data = [
     role: 'Personal interest project',
     duration: 'Feb 2023 - Present',
     link: 'https://github.com/kajgrant/transittracker',
-    description: [
-      'Personal interest project to explore interactions with the Translink API platform',
-      'Uses either a command line interface or graphical interface intended for a small raspberry pi screen',
-      'Continuously displays current bus schedules and the time remaining till arrival of chosen bus routes',
-      'Includes animated features, a user interface designed for quick comprehension, and robust error handling',
-    ],
+    description: {
+      type: 'list',
+      content: [
+        'Personal interest project to explore interactions with the Translink API platform',
+        'Uses either a command line interface or graphical interface intended for a small raspberry pi screen',
+        'Continuously displays current bus schedules and the time remaining till arrival of chosen bus routes',
+        'Includes animated features, a user interface designed for quick comprehension, and robust error handling',
+      ],
+    },
     skills: ['Python', 'APIs'],
   },
-  // },
-  // {
-  //   title: 'RedditSalesTracker',
-  //   image: '/images/content/reddit.svg',
-  //   role: 'Personal interest project',
-  //   duration: 'Jan 2023 - Present',
-  //   link: 'https://github.com/kajgrant/transittracker',
-  //   description: [
-  //     'Personal interest project to explore interactions with the Reddit API platform',
-  //     'Retrieves post statistics and data from over 1000 distinct sales-specific subreddits',
-  //     'Features optional arguments to control notification sounds, watch list, and frequency of query',
-  //     'Enhances the capacity to capitalize on time-sensitive sales opportunities with a real-time notification system',
-  //   ],
-  //   skills: ['Python', 'APIs'],
-  // },
 ];
 
 export default data;

@@ -2,6 +2,7 @@
   padding-inline: 10px;
   padding-bottom: 10px;
   margin-bottom: 20px;
+  transition: ease-in-out _duration(text);
 
   h2 {
     display: inline;
@@ -36,10 +37,29 @@
     padding-left: 25px;
   }
 
+  p {
+    padding-top: 5px;
+    padding-left: 10px;
+    line-height: 1.5;
+    font-weight: _font(weight-p);
+    font-size: _size(description);
+    color: var(--sub-text-color);
+  }
+
+  .skills {
+    opacity: 0;
+    padding-top: 20px;
+    margin-left: 10px;
+    transition: ease-in-out _duration(text);
+  }
+
   &:hover {
     border-radius: 5px;
-    transition-duration: _duration(text);
     background-color: var(--content-background);
+
+    .skills {
+      opacity: 1;
+    }
   }
 }
 

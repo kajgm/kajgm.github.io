@@ -5,17 +5,11 @@ const data = [
     duration: 'May 2022 - Dec 2022',
     image: '/images/content/sap.svg',
     link: 'https://www.sap.com/canada/index.html',
-    description: [
-      'Implemented a layered cache resiliency system involving several core microservices to ensure 99%+ uptime',
-      'Analyzed artifact build pipeline to expose regression-related variations between local and cloud deployments',
-      'Resolved a crucial ERP connection error by identifying an overlooked edge case related to the transfer of SQL ' +
-        'data between microservices, ensuring the on-time deployment of several essential features',
-      'Refactored core system dependencies and designed asynchronous logic to adhere to architectural standards',
-      'Converted core module to use asynchronous logic, resulting in a 2% reduction of system-wide loading times ',
-      'Created and maintained several automated Jest and Jasmine testing suites to achieve 99%+ code coverage',
-      'Led team-wide knowledge transfer sessions, reducing development time for several workflows by up to 95%',
-      'Verified proposed changes with remote Jenkins, local Node.js, and cloud-based Kubernetes environments',
-    ],
+    description: {
+      type: 'paragraph',
+      content:
+        'In the third year of my computer engineering degree, I opted to deeper into the realm of software development by joining the core infrastructure team at SAP Canda Inc. This Co-Op marked my initiation into handling large-scale code bases and contributing directly to projects. Throughout this experience, I garnered expertise in diverse areas, such as managing asynchronous webpack dependencies, implementing certificate generation and storage for Go configuration servers, creating automated testing suites using Jest and Jasmine, conducting Jenkins CI/CD analysis, overseeing version bump processes, orchestrating cloud deployments with Kubernetes and Docker, cross-microservice debugging, and so much more. I worked alongside both fellow students and senior engineers to deliver quality code following the agile methodology and concurrently managed the completion of countless Jira tickets. I led code reviews and even full-team meetings to seamlessly integrate improvements into existing workflows and explore new approaches.',
+    },
     skills: [
       'JavaScript',
       'Python',
@@ -42,15 +36,11 @@ const data = [
     image: '/images/content/sony.svg',
     invert: true,
     link: 'https://www.imageworks.com/',
-    description: [
-      'Resolved 200+ tickets relating to performance or configuration issues on production level Linux machines',
-      'Designed a project management system involving an SQL database, user-based permission sharing, cached' +
-        ' data retrieval, and integration with the google app suite to improve department productivity and efficiency',
-      'Reduced Dialogflow chatbot prompt failures by 87% and implemented an automated analytics dashboard',
-      'Created an application using less than 1% of system resources to safely reboot machines with large uptimes',
-      'Developed a Django app using the Jamf API to efficiently manage Apple devices and display usage statistics',
-      'Received a film credit for the Animated Film: The Sea Beast',
-    ],
+    description: {
+      type: 'paragraph',
+      content:
+        "During my second year of university, I received an opportunity to join the Systems Engineering Department at Sony Pictures Imageworks. Eager to be part of the immense artistic and technical talent responsible for bringing my favorite movies, like Spider-Man: Into the Spider-Verse, Lord of the Rings, and Men in Black, to life, I embraced the chance. My tenure at Sony revolved around adapting to a Unix-based environment, where I took on responsibilities involving the maintenance and troubleshooting of the organization's computing infrastructure. Working closely with senior engineers, I contributed to various projects aimed at enhancing both artistic and engineering capabilities. I had the privilege of witnessing multi-million-dollar projects progress through every stage of development, from lighting and texturing to animation and rigging. I even received a film credit for the amazing film: The Sea Beast.",
+    },
     skills: [
       'JavaScript',
       'Python',
@@ -63,7 +53,7 @@ const data = [
       'Jamf',
       'Django',
       'Dialogflow',
-      'Linux',
+      'Unix',
     ],
   },
 ];
