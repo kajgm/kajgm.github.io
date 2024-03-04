@@ -1,0 +1,1 @@
+export { headerData } from './header';
