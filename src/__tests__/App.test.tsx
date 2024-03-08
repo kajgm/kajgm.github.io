@@ -5,13 +5,12 @@
 import '@testing-library/react';
 import '@testing-library/jest-dom';
 import userEvent from '@testing-library/user-event';
-import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { act } from 'react-dom/test-utils';
-import App from '../App';
+import App from 'App';
 
 describe('renders the app', () => {
-  let container;
+  let container: HTMLDivElement;
 
   beforeEach(async () => {
     container = document.createElement('div');
@@ -23,7 +22,6 @@ describe('renders the app', () => {
 
   afterEach(() => {
     document.body.removeChild(container);
-    container = null;
     jest.clearAllMocks();
   });
 
@@ -36,15 +34,15 @@ describe('renders the app', () => {
   });
 
   it('should toggle darkmode', async () => {
-    const currentTheme = document.body.attributes.getNamedItem('theme').value;
+    const currentTheme = document.body.attributes.getNamedItem('theme')!.value;
     expect(currentTheme).toBe('light');
 
     const themeToggle = document.querySelector('#theme-toggle');
     expect(themeToggle).toBeInTheDocument();
 
-    await userEvent.click(themeToggle);
+    await userEvent.click(themeToggle!);
 
-    const toggledTheme = document.body.attributes.getNamedItem('theme').value;
+    const toggledTheme = document.body.attributes.getNamedItem('theme')!.value;
     expect(toggledTheme).toBe('dark');
   });
 });
