@@ -1,6 +1,8 @@
-import React from 'react';
+type ListProps = {
+  content: Array<string>;
+};
 
-export function List(content: any) {
+export function List({ content }: ListProps) {
   return (
     <ul>
       {content.map((description: string, index: number) => {

@@ -1,5 +1,4 @@
-import React from 'react';
-import { Section } from '@features/layout';
+import { Section } from 'features/layout';
 
 export function About() {
   return (

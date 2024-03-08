@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const DateTime = (props) => {
+export function DateTime(props: { timeZone: string }) {
   var [date, setDate] = useState(new Date());
 
   useEffect(() => {
@@ -20,6 +20,4 @@ const DateTime = (props) => {
       </p>
     </div>
   );
-};
-
-export default DateTime;
+}

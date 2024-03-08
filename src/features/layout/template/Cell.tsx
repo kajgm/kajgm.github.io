@@ -1,5 +1,4 @@
-import React from 'react';
-import { List, Paragraph } from '@features/layout';
+import { List, Paragraph } from 'features/layout';
 
 type cellData = {
   title: string;
@@ -8,21 +7,20 @@ type cellData = {
   image: string;
   invert?: boolean;
   link: string;
-  description: { type: string; content: any };
+  description?: string;
+  bulletpoints?: Array<string>;
   skills: Array<string>;
 };
 
-export function Cell({ title, role, duration, image, invert, link, description, skills }: cellData) {
-  let cellDescription;
+export function Cell({ title, role, duration, image, invert, link, description, bulletpoints, skills }: cellData) {
+  let cellDescription, cellBulletPoints;
+  console.log(title);
 
-  if (description && description.type) {
-    if (description.type == 'list') {
-      cellDescription = <List content={description.content} />;
-    } else if (description.type == 'paragraph') {
-      cellDescription = <Paragraph content={description.content} />;
-    }
-  } else {
-    cellDescription == null;
+  if (description) {
+    cellDescription = <Paragraph content={description} />;
+  }
+  if (bulletpoints) {
+    cellBulletPoints = <List content={bulletpoints} />;
   }
 
   return (
@@ -42,9 +40,8 @@ export function Cell({ title, role, duration, image, invert, link, description, 
           ) : null}
         </div>
       </section>
-
       {cellDescription}
-
+      {cellBulletPoints}
       <h3 className="skills">{'Relevant Skills: ' + skills.join(', ')}</h3>
     </div>
   );

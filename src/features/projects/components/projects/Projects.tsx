@@ -1,6 +1,5 @@
-import React from 'react';
-import { Cell, Section } from '@features/layout/';
-import { projectsData } from '@data/projects';
+import { Cell, Section } from 'features/layout/';
+import { projectsData } from 'data/projects';
 
 export function Projects() {
   return (

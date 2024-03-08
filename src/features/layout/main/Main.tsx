@@ -1,19 +1,18 @@
 import React from 'react';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { DarkModeSwitch } from 'react-toggle-dark-mode';
-import { Links } from '@features/ui';
-import { Header } from '@features/layout';
+import { Links } from 'features/ui';
+import { Header } from 'features/layout';
 
 type MainProps = {
-  title: string;
-  header: string;
-  subheader: string;
-  description: string;
-  location: string;
-  children: any;
+  title?: string;
+  header?: string;
+  subheader?: string;
+  description?: string;
+  children?: React.ReactNode;
 };
 
-export function Main({ title, header, subheader, description, location, children }: MainProps) {
+export function Main({ title, header, subheader, description, children }: MainProps) {
   const selectedTheme = localStorage.getItem('selectedTheme');
   const themeBool = selectedTheme === 'dark' ? true : false;
 
@@ -44,7 +43,7 @@ export function Main({ title, header, subheader, description, location, children
       <div id="wrapper">
         <div id="topbar">
           <Links />
-          <Header text={header} subtext={subheader}></Header>
+          <Header text={header} subheader={subheader}></Header>
         </div>
         {children}
       </div>

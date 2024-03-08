@@ -1,18 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { LocationTime } from '@features/ui';
-import { headerData } from '@data/header';
+import { LocationTime } from 'features/ui';
+import { headerData } from 'data/header';
 
-export function Header(props: { text: string; subtext: string }) {
+export function Header(props: { text?: string; subheader?: string }) {
   const text = props.text ? props.text : 'Kaj Grant-Mathiasen';
-  const subtext = props.subtext ? props.subtext : headerData.roles.join(' / ');
+  const subheader = props.subheader ? props.subheader : headerData.roles.join(' / ');
 
   return (
     <header id="header">
       <Link to="/">
         <h1 id="name-title">{text}</h1>
       </Link>
-      <p id="subheader">{subtext}</p>
+      <p id="subheader">{subheader}</p>
       <LocationTime />
     </header>
   );

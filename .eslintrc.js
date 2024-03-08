@@ -14,21 +14,15 @@ module.exports = {
     'jsx-a11y/href-no-hash': 'off',
     'jsx-a11y/no-static-element-interactions': 0,
     'linebreak-style': ['error', os.EOL === '\r\n' ? 'windows' : 'unix'],
-    'no-console': [
-      'error',
-      {
-        allow: ['warn', 'error', 'info'],
-      },
-    ],
     'no-underscore-dangle': 0,
     'react/destructuring-assignment': 0,
-    'react/function-component-definition': [2, { namedComponents: 'arrow-function' }],
     'react/jsx-filename-extension': [
       1,
       {
         extensions: ['.js', '.jsx'],
       },
     ],
+    'react/jsx-filename-extension': 'off',
     'react/jsx-no-useless-fragment': 0,
     'react/jsx-one-expression-per-line': 0,
     'react/jsx-props-no-spreading': 0,

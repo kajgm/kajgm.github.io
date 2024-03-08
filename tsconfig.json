@@ -11,16 +11,10 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve",
+    "jsx": "react-jsx",
     "incremental": true,
     "types": ["jest"],
-    "baseUrl": "./src",
-    "paths": {
-      "@features/*": ["features/*"],
-      "@styles/*": ["styles/*"],
-      "@typings/*": ["typings/*"],
-      "@data/*": ["data/*"]
-    },
+    "baseUrl": "src",
     "noEmit": true
   },
   "include": ["**/*.ts", "**/*.tsx"],
