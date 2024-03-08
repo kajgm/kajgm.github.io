@@ -16,7 +16,7 @@ describe('renders the app', () => {
     container = document.createElement('div');
     document.body.appendChild(container);
     await act(async () => {
-      await ReactDOM.createRoot(container).render(<App />);
+      ReactDOM.createRoot(container).render(<App />);
     });
   });
 
