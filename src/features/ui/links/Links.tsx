@@ -1,4 +1,3 @@
-import React from 'react';
 import { Logo } from 'features/ui';
 import { linksData } from 'data/links';
 
@@ -12,13 +11,13 @@ export function Links() {
   return (
     <div id="links">
       <Logo>KGM</Logo>
-      <section id="socials">
+      <div id="socials">
         {linksData.map((social: socialType) => (
           <a key={social.link} href={social.link}>
             <img key={social.title} src={social.image} className="social-icon dark-invert" alt={social.title} />
           </a>
         ))}
-      </section>
+      </div>
     </div>
   );
 }

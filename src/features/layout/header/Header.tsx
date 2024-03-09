@@ -14,9 +14,9 @@ export function Header(props: { text?: string; subheader?: string }) {
         <h1 id="name-title">{text}</h1>
       </Link>
       <p id="subheader">{subheader}</p>
-      <section id="location-time">
+      <div id="location-time">
         <Location {...locationData} /> <p>-</p> <Time timeZone={locationData.timeZone} />
-      </section>
+      </div>
     </header>
   );
 }
