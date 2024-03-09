@@ -1,5 +1,3 @@
-import { List, Paragraph } from 'features/layout';
-
 type cellData = {
   title: string;
   role: string;
@@ -17,10 +15,17 @@ export function Cell({ title, role, duration, image, invert, link, description, 
   console.log(title);
 
   if (description) {
-    cellDescription = <Paragraph content={description} />;
+    cellDescription = <p>{description}</p>;
   }
   if (bulletpoints) {
-    cellBulletPoints = <List content={bulletpoints} />;
+    cellBulletPoints = (
+      <ul>
+        {bulletpoints.map((description: string, index: number) => {
+          index++;
+          return <li key={index}>{description}</li>;
+        })}
+      </ul>
+    );
   }
 
   return (

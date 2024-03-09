@@ -1,4 +1,4 @@
-export * from './locationtime';
-export * from './datetime';
+export * from './location';
+export * from './time';
 export * from './links';
 export * from './logo';

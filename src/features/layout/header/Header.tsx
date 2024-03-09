@@ -1,7 +1,8 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
-import { LocationTime } from 'features/ui';
+import { Location } from 'features/ui';
+import { Time } from 'features/ui';
 import { headerData } from 'data/header';
+import { locationData } from 'data/location';
 
 export function Header(props: { text?: string; subheader?: string }) {
   const text = props.text ? props.text : 'Kaj Grant-Mathiasen';
@@ -13,7 +14,9 @@ export function Header(props: { text?: string; subheader?: string }) {
         <h1 id="name-title">{text}</h1>
       </Link>
       <p id="subheader">{subheader}</p>
-      <LocationTime />
+      <section id="location-time">
+        <Location {...locationData} /> <p>-</p> <Time timeZone={locationData.timeZone} />
+      </section>
     </header>
   );
 }

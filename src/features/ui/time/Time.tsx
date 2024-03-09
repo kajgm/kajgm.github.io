@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
-export function DateTime(props: { timeZone: string }) {
+export function Time(props: { timeZone: string }) {
   var [date, setDate] = useState(new Date());
 
   useEffect(() => {
@@ -13,7 +13,6 @@ export function DateTime(props: { timeZone: string }) {
   return (
     <div>
       <p>
-        -{' '}
         {date.toLocaleTimeString('en-US', {
           timeZone: props.timeZone ? props.timeZone : Intl.DateTimeFormat().resolvedOptions().timeZone,
         })}
