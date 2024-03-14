@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 
@@ -9,7 +8,7 @@ const PageNotFound = () => {
         <Helmet title="404 Not Found">
           <meta name="description" content="Hey! There's nothing here!" />
         </Helmet>
-        <h1>Page Not Found</h1>
+        <h1>Oops! There's nothing here...</h1>
         <p>
           How about we go{' '}
           <strong>
