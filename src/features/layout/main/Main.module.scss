@@ -1,0 +1,25 @@
+@use 'styles/misc';
+
+.wrapper {
+  margin: auto;
+  width: 1200px;
+  max-width: calc(95vw - 40px);
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.topbar {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 50px;
+  padding-bottom: 50px;
+  max-width: calc(95vw - 180px);
+
+  @media screen and (max-width: calc(95vw - 180px + misc.$offset)) {
+    & {
+      padding-left: 0px;
+    }
+  }
+}

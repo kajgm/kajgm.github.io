@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Main } from 'features/layout';
 import Index from './pages/Index';
 import PageNotFound from './pages/NotFound';
-import './static/css/main.scss';
+import 'styles/global.scss';
 
 const App = () => (
   <BrowserRouter>

@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import styles from './Logo.module.scss';
 
-//TODO: Improve logo animation
 export function Logo(props: { children: React.ReactNode }) {
   return (
-    <div id="logo">
+    <div className={styles.logo}>
       <Link to="/">
-        <div id="logo-bg">
-          <p id="logo-text">{props.children}</p>
+        <div className={styles.logoBg}>
+          <p className={styles.logoText}>{props.children}</p>
         </div>
       </Link>
     </div>

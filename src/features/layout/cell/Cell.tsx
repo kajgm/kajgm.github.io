@@ -1,3 +1,5 @@
+import styles from './Cell.module.scss';
+
 type cellData = {
   title: string;
   role: string;
@@ -12,7 +14,6 @@ type cellData = {
 
 export function Cell({ title, role, duration, image, invert, link, description, bulletpoints, skills }: cellData) {
   let cellDescription, cellBulletPoints;
-  console.log(title);
 
   if (description) {
     cellDescription = <p>{description}</p>;
@@ -29,12 +30,14 @@ export function Cell({ title, role, duration, image, invert, link, description, 
   }
 
   return (
-    <div className="cell">
-      <div className="cell-title">
+    <div className={styles.cell}>
+      <div className={styles.cellTitle}>
         <a href={link}>
-          {image ? <img src={image} className={'cell-icon' + (invert ? ' dark-invert' : '')} alt={title} /> : null}
+          {image ? (
+            <img src={image} className={styles.cellIcon + ' ' + (invert ? styles.darkInvert : '')} alt={title} />
+          ) : null}
         </a>
-        <div className="cell-header">
+        <div className={styles.cellHeader}>
           <a href={link}>
             <h2 className="underline">{title}</h2>
           </a>
@@ -47,7 +50,7 @@ export function Cell({ title, role, duration, image, invert, link, description, 
       </div>
       {cellDescription}
       {cellBulletPoints}
-      <h3 className="skills">{'Relevant Skills: ' + skills.join(', ')}</h3>
+      <h3 className={styles.skills}>{'Relevant Skills: ' + skills.join(', ')}</h3>
     </div>
   );
 }

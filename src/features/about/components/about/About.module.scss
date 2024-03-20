@@ -1,0 +1,53 @@
+@use 'styles/breakpoint';
+@use 'styles/duration';
+@use 'styles/font';
+
+#about {
+  font-size: font.$about;
+}
+
+#kaj-text {
+  margin: 0px;
+  display: inline-flex;
+  animation: bounce-text duration.$bounce ease infinite;
+
+  &:hover {
+    animation: none;
+  }
+
+  &:hover + #hidden-kaj {
+    opacity: 1;
+    display: inline;
+  }
+
+  @keyframes bounce-text {
+    0% {
+      transform: translateY(0px);
+    }
+    46% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+    56% {
+      transform: translateY(0px);
+    }
+    58% {
+      transform: translateY(-3px);
+    }
+    65% {
+      transform: translateY(0px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+}
+
+#hidden-kaj {
+  opacity: 0;
+  pointer-events: none;
+  font-size: font.$hidden-kaj;
+  transition: duration.$reveal;
+}

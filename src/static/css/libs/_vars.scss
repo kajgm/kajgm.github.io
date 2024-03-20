@@ -14,11 +14,6 @@ $rightPadding: 20px;
 $wrapperwidth: 1200px;
 $maxwrapperwidth: calc(95vw - $leftPadding - $rightPadding);
 
-//Content
-$contentheaderwidth: 150px;
-$contentwidth: 850px;
-$maxcontentwidth: $maxwrapperwidth;
-
 //Top Header
 $xswidth: 500px;
 $maxtopwidth: calc($maxwrapperwidth - 140px);

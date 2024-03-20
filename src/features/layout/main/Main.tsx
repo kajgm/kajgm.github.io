@@ -3,6 +3,7 @@ import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { DarkModeSwitch } from 'react-toggle-dark-mode';
 import { Links } from 'features/ui';
 import { Header } from 'features/layout';
+import styles from './Main.module.scss';
 
 type MainProps = {
   title?: string;
@@ -40,8 +41,8 @@ export function Main({ title, header, subheader, description, children }: MainPr
         id="theme-toggle"
       />
       {/*Future entry point of Navigation*/}
-      <div id="wrapper">
-        <div id="topbar">
+      <div className={styles.wrapper}>
+        <div className={styles.topbar}>
           <Links />
           <Header text={header} subheader={subheader}></Header>
         </div>

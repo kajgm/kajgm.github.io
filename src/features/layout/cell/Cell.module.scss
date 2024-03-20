@@ -1,0 +1,100 @@
+@use 'styles/duration';
+@use 'styles/font';
+
+.cell {
+  padding-inline: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  transition: ease-in-out duration.$text;
+
+  h2 {
+    display: inline;
+    vertical-align: middle;
+    color: var(--body-color);
+  }
+
+  h3 {
+    margin: 0px;
+    font-weight: font.$weight-heading;
+    padding-top: 5px;
+    font-style: italic;
+    font-size: font.$subtitle;
+    color: var(--sub-text-color);
+  }
+
+  li {
+    margin: 0px;
+    font-weight: font.$weight-li;
+    font-size: font.$description;
+    color: var(--content-text-color);
+    animation: fadein duration.$bullet;
+  }
+
+  li:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  ul {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    padding-left: 25px;
+  }
+
+  p {
+    padding-top: 5px;
+    padding-left: 10px;
+    line-height: 1.5;
+    font-weight: font.$weight-p;
+    font-size: font.$description;
+    color: var(--sub-text-color);
+  }
+
+  .skills {
+    opacity: 0;
+    padding-top: 10px;
+    margin-left: 10px;
+    transition: ease-in-out duration.$text;
+  }
+
+  &:hover {
+    border-radius: 5px;
+    background-color: var(--content-background);
+
+    .skills {
+      opacity: 1;
+    }
+  }
+}
+
+.cellTitle {
+  display: flex;
+  padding-top: 5px;
+}
+
+.cellHeader {
+  display: inline;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.darkInvert {
+  filter: var(--invert-filter);
+}
+
+.cellIcon {
+  top: 5px;
+  height: 30px;
+  padding-right: 20px;
+  width: auto;
+  display: inline;
+  position: relative;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

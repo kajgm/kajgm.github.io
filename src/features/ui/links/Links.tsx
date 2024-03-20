@@ -1,5 +1,6 @@
 import { Logo } from 'features/ui';
 import { linksData } from 'data/links';
+import styles from './Links.module.scss';
 
 type socialType = {
   title: string;
@@ -9,12 +10,17 @@ type socialType = {
 
 export function Links() {
   return (
-    <div id="links">
+    <div className={styles.links}>
       <Logo>KGM</Logo>
-      <div id="socials">
+      <div>
         {linksData.map((social: socialType) => (
           <a key={social.link} href={social.link}>
-            <img key={social.title} src={social.image} className="social-icon dark-invert" alt={social.title} />
+            <img
+              key={social.title}
+              src={social.image}
+              className={styles.socialIcon + ' ' + styles.darkInvert}
+              alt={social.title}
+            />
           </a>
         ))}
       </div>

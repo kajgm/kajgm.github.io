@@ -1,0 +1,25 @@
+.underline {
+  position: relative;
+  padding: 0em 0;
+  color: var(--body-color);
+  text-decoration: none;
+}
+
+.underline::after {
+  content: '';
+  position: absolute;
+  border-radius: 10px;
+  bottom: 0;
+  left: -1%;
+  width: 102%;
+  height: _size(underline);
+  background-color: var(--body-color);
+  opacity: 0;
+  transition: opacity _duration(transition), transform _duration(transition);
+}
+
+.underline:hover::after,
+.underline:focus::after {
+  opacity: 1;
+  transform: translate3d(0, _size(underline), 0);
+}
