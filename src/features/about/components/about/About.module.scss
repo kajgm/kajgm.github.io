@@ -2,11 +2,11 @@
 @use 'styles/duration';
 @use 'styles/font';
 
-#about {
+.about {
   font-size: font.$about;
 }
 
-#kaj-text {
+.kajText {
   margin: 0px;
   display: inline-flex;
   animation: bounce-text duration.$bounce ease infinite;
@@ -15,7 +15,7 @@
     animation: none;
   }
 
-  &:hover + #hidden-kaj {
+  &:hover + .hiddenKaj {
     opacity: 1;
     display: inline;
   }
@@ -45,7 +45,7 @@
   }
 }
 
-#hidden-kaj {
+.hiddenKaj {
   opacity: 0;
   pointer-events: none;
   font-size: font.$hidden-kaj;

@@ -1,11 +1,12 @@
 @use 'styles/breakpoint';
 @use 'styles/color';
 @use 'styles/font';
+@use 'styles/theme';
 
 .header {
   h1 {
     margin: 0px;
-    font-size: font.$main-header;
+    font-size: font.$main-header-small;
     color: var(--body-color);
     letter-spacing: font.$kerning-heading;
   }
@@ -15,13 +16,9 @@
     display: inline-flex;
   }
 
-  a:hover #location-icon {
-    filter: color.$redfilter;
-  }
-
-  @media screen and (max-width: breakpoint.$xswidth) {
+  @media (min-width: breakpoint.$xswidth) {
     h1 {
-      font-size: font.$main-header-small;
+      font-size: font.$main-header;
     }
   }
 

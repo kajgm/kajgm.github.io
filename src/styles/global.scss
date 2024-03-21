@@ -1,6 +1,7 @@
 @use 'styles/color';
 @use 'styles/duration';
 @use 'styles/font';
+@use 'styles/theme';
 
 body {
   margin: 0;
@@ -17,4 +18,30 @@ a {
 strong,
 b {
   font-weight: font.$weight-bold;
+}
+
+.underline {
+  position: relative;
+  padding: 0em 0;
+  color: var(--body-color);
+  text-decoration: none;
+}
+
+.underline::after {
+  content: '';
+  position: absolute;
+  border-radius: 10px;
+  bottom: 0;
+  left: -1%;
+  width: 102%;
+  height: font.$underline;
+  background-color: var(--body-color);
+  opacity: 0;
+  transition: opacity duration.$transition, transform duration.$transition;
+}
+
+.underline:hover::after,
+.underline:focus::after {
+  opacity: 1;
+  transform: translate3d(0, font.$underline, 0);
 }

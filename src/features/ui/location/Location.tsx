@@ -1,3 +1,5 @@
+import styles from './Location.module.scss';
+
 type LocationProps = {
   name: string;
   link: string;
@@ -7,9 +9,9 @@ type LocationProps = {
 
 export function Location(props: LocationProps) {
   return (
-    <a href={props.link} id="location-link">
-      <img src={props.image} id="location-icon" alt={props.name} />
-      <p id="location-text">{props.name}</p>
+    <a href={props.link}>
+      <img src={props.image} className={styles.locationIcon} alt={props.name} />
+      <p>{props.name}</p>
     </a>
   );
 }

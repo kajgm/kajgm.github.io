@@ -1,5 +1,7 @@
 @use 'styles/font';
 @use 'styles/misc';
+@use 'styles/theme';
+@use 'styles/breakpoint';
 
 .content {
   display: flex;
@@ -10,15 +12,16 @@
   h1 {
     margin: 0;
     width: 150px;
-    text-align: right;
+    text-align: left;
     padding-right: 130px;
     padding-bottom: 20px;
     color: var(--body-color);
     font-size: font.$content-header;
   }
-  @media screen and (max-width: calc(1200px + misc.$offset)) {
+  @media (min-width: breakpoint.$mdwidth) {
     h1 {
-      text-align: left;
+      text-align: right;
+      display: block;
     }
   }
 }

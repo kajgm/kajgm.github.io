@@ -1,4 +1,5 @@
 @use 'styles/misc';
+@use 'styles/breakpoint';
 
 .wrapper {
   margin: auto;
@@ -13,13 +14,13 @@
 .topbar {
   display: flex;
   flex-wrap: wrap;
-  padding-left: 50px;
+  padding-left: 0px;
   padding-bottom: 50px;
   max-width: calc(95vw - 180px);
 
-  @media screen and (max-width: calc(95vw - 180px + misc.$offset)) {
+  @media (min-width: breakpoint.$mdwidth) {
     & {
-      padding-left: 0px;
+      padding-left: 50px;
     }
   }
 }

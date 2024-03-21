@@ -1,11 +1,12 @@
 import { Section } from 'features/layout';
+import styles from './About.module.scss';
 
 export function About() {
   return (
     <Section title="About">
-      <p id="about">
-        Hi, I'm <strong id="kaj-text">Kaj</strong>.{' '}
-        <i id="hidden-kaj"> - pronounced like Kai (and rhymes with pie 🥧) </i>
+      <p className={styles.about}>
+        Hi, I'm <strong className={styles.kajText}>Kaj</strong>.{' '}
+        <i className={styles.hiddenKaj}> - pronounced like Kai (and rhymes with pie 🥧) </i>
         <br></br>
         <br></br>I'm a recent Computer Engineering graduate based in Vancouver, BC and Toronto, ON. <br></br>I'm
         passionate about the <strong>entire</strong> stack... from computer architecture, to reliable back-end
