@@ -6,7 +6,7 @@
   padding-inline: 10px;
   padding-bottom: 10px;
   margin-bottom: 20px;
-  transition: ease-in-out duration.$text;
+  transition: ease-in-out duration.$xs;
 
   h2 {
     display: inline;
@@ -28,7 +28,7 @@
     font-weight: font.$weight-li;
     font-size: font.$description;
     color: var(--content-text-color);
-    animation: fadein duration.$bullet;
+    animation: fadein duration.$md;
   }
 
   li:not(:last-child) {
@@ -54,7 +54,7 @@
     opacity: 0;
     padding-top: 10px;
     margin-left: 10px;
-    transition: ease-in-out duration.$text;
+    transition: ease-in-out duration.$xs;
   }
 
   &:hover {

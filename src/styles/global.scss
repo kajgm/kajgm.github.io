@@ -7,7 +7,7 @@ body {
   margin: 0;
   font-family: font.$family;
   background-color: var(--body-background);
-  transition: background-color duration.$transition ease-in-out;
+  transition: background-color duration.$xxs ease-in-out;
 }
 
 a {
@@ -37,7 +37,7 @@ b {
   height: font.$underline;
   background-color: var(--body-color);
   opacity: 0;
-  transition: opacity duration.$transition, transform duration.$transition;
+  transition: opacity duration.$xxs, transform duration.$xxs;
 }
 
 .underline:hover::after,
