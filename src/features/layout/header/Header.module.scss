@@ -6,7 +6,7 @@
 .header {
   h1 {
     margin: 0px;
-    font-size: font.$main-header-small;
+    font-size: font.$xl;
     color: var(--body-color);
     letter-spacing: font.$kerning-heading;
   }
@@ -18,13 +18,13 @@
 
   @media (min-width: breakpoint.$xswidth) {
     h1 {
-      font-size: font.$main-header;
+      font-size: font.$xxl;
     }
   }
 
   > p {
     margin: 0px;
-    font-size: font.$description;
+    font-size: font.$sm;
     font-weight: 500;
     padding-bottom: 5px;
     color: var(--content-text-color);
@@ -41,7 +41,7 @@
     filter: var(--invert-filter);
   }
   p {
-    font-size: font.$subtitle;
+    font-size: font.$xs;
     font-weight: 500;
     color: var(--sub-text-color);
     padding-left: 5px;

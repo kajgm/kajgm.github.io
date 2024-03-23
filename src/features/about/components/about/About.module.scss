@@ -3,7 +3,7 @@
 @use 'styles/font';
 
 .about {
-  font-size: font.$about;
+  font-size: font.$md;
 }
 
 .kajText {
@@ -48,6 +48,6 @@
 .hiddenKaj {
   opacity: 0;
   pointer-events: none;
-  font-size: font.$hidden-kaj;
+  font-size: font.$xxs;
   transition: duration.$sm;
 }
