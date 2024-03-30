@@ -5,9 +5,7 @@ import { Experience } from 'features/experience';
 
 const Index = () => {
   return (
-    <Main
-      description={"Hi I'm Kaj. I'm a recent Computer Engineering graduate based in Vancouver, Canada. Let's talk!"}
-    >
+    <Main>
       <About />
       <Projects />
       <Experience />

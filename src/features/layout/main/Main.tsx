@@ -16,14 +16,14 @@ type MainProps = {
 export function Main({ title, header, subheader, description, children }: MainProps) {
   const selectedTheme = localStorage.getItem('selectedTheme');
   const themeBool = selectedTheme === 'dark' ? true : false;
-
   const [isDarkMode, setDarkMode] = React.useState(themeBool);
+  const themeStr = isDarkMode ? 'dark' : 'light';
 
   const toggleDarkMode = (checked: boolean) => {
     setDarkMode(checked);
   };
 
-  const themeStr = isDarkMode ? 'dark' : 'light';
+  //make theme persistent in local storage
   document.querySelector('body')!.setAttribute('theme', themeStr);
   localStorage.setItem('selectedTheme', themeStr);
 

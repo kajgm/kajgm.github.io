@@ -34,7 +34,7 @@ b {
   bottom: 0;
   left: -1%;
   width: 102%;
-  height: font.$underline;
+  height: 0.1em;
   background-color: var(--body-color);
   opacity: 0;
   transition: opacity duration.$xxs, transform duration.$xxs;
@@ -43,5 +43,5 @@ b {
 .underline:hover::after,
 .underline:focus::after {
   opacity: 1;
-  transform: translate3d(0, font.$underline, 0);
+  transform: translate3d(0, 0.1em, 0);
 }
