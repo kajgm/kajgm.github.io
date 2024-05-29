@@ -58,7 +58,7 @@ export const projectsData = [
   {
     title: 'TransitTracker',
     image: '/images/content/translinkbuses.svg',
-    role: 'Personal interest project',
+    role: 'Personal Interest Project',
     duration: 'Feb 2023 - Present',
     link: 'https://github.com/kajgrant/transittracker',
     bulletpoints: [
