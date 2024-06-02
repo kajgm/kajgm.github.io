@@ -1,4 +1,4 @@
-# kajgrant.github.io &middot; [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/ConorMurphy21/StrikeOrSike/blob/master/LICENSE) [![Node.js CI](https://github.com/kajgrant/kajgrant.github.io/actions/workflows/node.js.yml/badge.svg)](https://github.com/kajgrant/kajgrant.github.io/actions/workflows/node.js.yml) ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
+# kajgrant.github.io &middot; [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/kajgrant/kajgrant.github.io/blob/master/LICENSE) [![Node.js CI](https://github.com/kajgrant/kajgrant.github.io/actions/workflows/node.js.yml/badge.svg)](https://github.com/kajgrant/kajgrant.github.io/actions/workflows/node.js.yml) ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
 
 A simple personal portfolio website: [kajgm.com](https://kajgm.com/)
 
