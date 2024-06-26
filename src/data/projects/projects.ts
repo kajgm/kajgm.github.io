@@ -19,7 +19,7 @@ export const projectsData = [
     invert: true,
     role: 'Personal Interest Project',
     duration: 'May 2024 - Present',
-    link: 'https://github.com/kajgrant/transittracker',
+    link: 'https://github.com/kajgrant/stocktracker',
     bulletpoints: [
       'A full-stack stock and cryptocurrency price tracker focusing on minimal design principles',
       'Intended for use on a 3.5" raspberry pi screen or within a web browser',
