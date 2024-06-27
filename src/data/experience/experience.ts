@@ -5,8 +5,10 @@ export const experienceData = [
     duration: 'May 2022 - Dec 2022',
     image: '/images/content/sap.svg',
     link: 'https://www.sap.com/canada/index.html',
-    description:
-      'In the third year of my computer engineering degree, I opted to further develop my software engineering skills by joining the core infrastructure team at SAP Canada Inc. This Co-Op marked my initiation into handling large-scale code bases and contributing directly to globally recognized products. Throughout this experience, I garnered expertise in diverse areas, such as managing asynchronous webpack dependencies, implementing certificate generation and storage for Go-based configuration servers, creating automated testing suites using Jest and Jasmine, conducting Jenkins CI/CD analysis, overseeing version bump processes, orchestrating cloud deployments with Kubernetes and Docker, cross-microservice debugging, and so much more. I worked alongside both fellow students and senior engineers to deliver quality code following the agile methodology and concurrently managed the completion of countless Jira tickets. I led code reviews and even full-team meetings to seamlessly integrate improvements into existing workflows and explore new approaches.',
+    description: [
+      "In the third year of my computer engineering degree, I chose to futher develop my software engineering expertise and joined the core infrastructure team at SAP Canada Inc. This was my first real taste of working on large-scale code bases and contributing to products used around the world. I was immersed in a wide range of challenges, from juggling asynchronous webpack dependencies to building certificate generation and storage for Go-based configuration servers. I also built automated testing suites using Jest and Jasmine, analyzed Jenkins CI/CD pipelines, managed version bumps, orchestrated cloud deployments with Kubernetes and Docker, and even dove into cross-microservice debugging. And that's just the tip of the iceberg!",
+      "I was fortunate to collaborate with both fellow Co-Ops and experienced engineers, following agile methodologies and delivering quality code. I tackled countless Jira tickets, led code reviews, and even ran full team meetings to smoothly incorporate enhancements into existing workflows and brainstorm new approaches. This Co-Op was an incredible learning experience, and I'm proud of the impact I made on the team and the products we delivered.",
+    ],
     skills: [
       'JavaScript',
       'TypeScript',
@@ -36,12 +38,12 @@ export const experienceData = [
     invert: true,
     link: 'https://www.imageworks.com/',
     description:
-      "During my second year of university, I received an opportunity to join the Systems Engineering Department at Sony Pictures Imageworks. Eager to be part of the immense artistic and technical talent responsible for bringing my favorite movies, like Spider-Man: Into the Spider-Verse, Lord of the Rings, and Men in Black, to life, I embraced the chance. My time at Sony revolved around adapting to a Unix-based environment where I took on responsibilities involving the maintenance and troubleshooting of the organization's computing infrastructure. Working closely with senior engineers, I contributed to various projects aimed at enhancing both artistic and engineering capabilities. I had the privilege of witnessing multi-million-dollar projects progress through every stage of development, from lighting and texturing to animation and rigging. I even received a film credit for the amazing film: The Sea Beast.",
+      "During my second year of university, I received an opportunity to join the Systems Engineering Department at Sony Pictures Imageworks. Eager to be part of the immense artistic and technical talent responsible for media like Spider-Man: Into the Spider-Verse, Lord of the Rings, or Men in Black, I embraced the chance. My time at Sony revolved around solving various challenges in a Unix-based environment where I took on responsibilities involving the maintenance and troubleshooting of the organization's computing infrastructure. Working closely with senior engineers, I contributed to various projects aimed at enhancing both artistic and technical capabilities. I had the privilege of witnessing multi-million-dollar projects progress through every stage of development, from lighting and texturing to animation and rigging. I even received a film credit for the amazing film: The Sea Beast.",
     skills: [
       'JavaScript',
       'Python',
       'SQL',
-      'C++',
+      'C',
       'HTML',
       'CSS',
       'Google Apps Script',

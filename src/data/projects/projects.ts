@@ -1,19 +1,5 @@
 export const projectsData = [
   {
-    title: 'Chairable, by Roll Technology',
-    image: '/images/content/rolltech.svg',
-    role: 'SFU Engineering Capstone',
-    duration: 'May 2023 - Dec 2023',
-    link: 'https://github.com/kajgrant/rolltech',
-    bulletpoints: [
-      'Designed a modular attachment for office chairs using a spherical wheel for enhanced powered movement',
-      'Led a team of 5 students to produce a minimum viable product and publicly demonstrate system capabilities',
-      'Built an enclosed electrical circuit with 14+ motor control, communication, logic, and safety elements',
-      'Devised a mechanical system with machined steel and 3D printed components to control a 2200W motor',
-    ],
-    skills: ['C++', 'SolidWorks', 'KiCad', 'Soldering', 'Electrical Design', 'Photoshop'],
-  },
-  {
     title: 'StockTracker',
     image: '/images/content/stocktracker.svg',
     invert: true,
@@ -27,6 +13,20 @@ export const projectsData = [
       'Retrives data from the Coinbase Websocket and Finanical Modeling Prep REST API platforms',
     ],
     skills: ['TypeScript', 'Vue', 'Vite', 'Node.js', 'Docker', 'Websockets', 'APIs'],
+  },
+  {
+    title: 'Chairable, by Roll Technology',
+    image: '/images/content/rolltech.svg',
+    role: 'SFU Engineering Capstone',
+    duration: 'May 2023 - Dec 2023',
+    link: 'https://github.com/kajgrant/rolltech',
+    bulletpoints: [
+      'Designed a modular attachment for office chairs using a spherical wheel for enhanced powered movement',
+      'Led a team of 5 students to produce a minimum viable product and publicly demonstrate system capabilities',
+      'Built an enclosed electrical circuit with 14+ motor control, communication, logic, and safety elements',
+      'Devised a mechanical system with machined steel and 3D printed components to control a 2200W motor',
+    ],
+    skills: ['C++', 'SolidWorks', 'KiCad', 'Soldering', 'Electrical Design', 'Photoshop'],
   },
   {
     title: 'CUDA & FPGA Accelerated Gaussian Elimination Algorithm',

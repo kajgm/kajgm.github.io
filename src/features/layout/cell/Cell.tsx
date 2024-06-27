@@ -7,7 +7,7 @@ type cellData = {
   image: string;
   invert?: boolean;
   link: string;
-  description?: string;
+  description?: string | string[];
   bulletpoints?: Array<string>;
   skills: Array<string>;
 };
@@ -16,7 +16,18 @@ export function Cell({ title, role, duration, image, invert, link, description, 
   let cellDescription, cellBulletPoints;
 
   if (description) {
-    cellDescription = <p>{description}</p>;
+    if (Array.isArray(description)) {
+      cellDescription = (
+        <div>
+          {description.map((para: string, index: number) => {
+            index++;
+            return <p key={index}>{para}</p>;
+          })}
+        </div>
+      );
+    } else if (typeof description == 'string') {
+      cellDescription = <p>{description}</p>;
+    }
   }
   if (bulletpoints) {
     cellBulletPoints = (
