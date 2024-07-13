@@ -1,6 +1,6 @@
 {
   "name": "kajgrant.github.io",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "author": "Kaj Grant-Mathiasen",
   "homepage": "https://kajgm.com/",
   "license": "MIT",
@@ -9,66 +9,30 @@
     "type": "git",
     "url": "https://github.com/kajgrant/kajgrant.github.io.git"
   },
-  "engines": {
-    "node": ">=16.x"
-  },
-  "keywords": [
-    "Kaj Grant-Mathiasen",
-    "website"
-  ],
+  "private": true,
   "scripts": {
-    "predeploy": "npm run build && react-snap",
-    "deploy": "gh-pages -d build --cname kajgm.com",
-    "start": "react-scripts start",
-    "lint": "eslint \"**/*.js\"",
-    "build": "rimraf ./build && react-scripts build",
-    "test": "npx jest"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
-    "@types/react": "^18.2.62",
-    "@types/react-dom": "^18.2.19",
-    "normalize.css": "^8.0.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-helmet-async": "^2.0.4",
-    "react-responsive": "^9.0.2",
-    "react-router-dom": "^6.21.1",
-    "react-scripts": "^5.0.1",
-    "react-toggle-dark-mode": "^1.1.1"
+    "@nextui-org/react": "^2.4.2",
+    "framer-motion": "^11.3.2",
+    "next": "14.2.5",
+    "next-themes": "^0.3.0",
+    "react": "^18",
+    "react-dom": "^18"
   },
   "devDependencies": {
-    "@babel/core": "^7.24.0",
-    "@babel/eslint-parser": "^7.23.10",
-    "@babel/preset-env": "^7.24.0",
-    "@babel/preset-react": "^7.23.3",
-    "@babel/preset-typescript": "^7.23.3",
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^14.1.2",
-    "@testing-library/user-event": "^14.5.2",
-    "babel-jest": "^29.7.0",
-    "eslint": "^8.56.0",
-    "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-react": "^7.33.2",
-    "gh-pages": "^6.1.1",
-    "prettier": "2.8.1",
-    "react-snap": "0.2.0",
-    "rimraf": "^5.0.5",
-    "sass": "^1.69.7",
-    "sass-loader": "^14.0.0",
-    "ts-loader": "^9.5.1",
-    "typescript": "3.2.1",
-    "webpack": "^5.90.1"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.5",
+    "postcss": "^8",
+    "react-toggle-dark-mode": "^1.1.1",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
   }
 }

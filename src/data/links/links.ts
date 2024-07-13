@@ -1,9 +1,17 @@
 export const linksData = [
-  { title: 'Mail', link: 'mailto:kajgrant@gmail.com', image: '/images/content/email.svg' },
   {
-    title: 'LinkedIn',
-    link: 'https://www.linkedin.com/in/kaj-grant-mathiasen/',
-    image: '/images/content/linkedin.svg',
+    title: "Mail",
+    link: "mailto:kajgrant@gmail.com",
+    image: "/images/content/email.svg",
   },
-  { title: 'Github', link: 'https://github.com/kajgrant', image: '/images/content/github.svg' },
+  {
+    title: "LinkedIn",
+    link: "https://www.linkedin.com/in/kaj-grant-mathiasen/",
+    image: "/images/content/linkedin.svg",
+  },
+  {
+    title: "Github",
+    link: "https://github.com/kajgrant",
+    image: "/images/content/github.svg",
+  },
 ];
