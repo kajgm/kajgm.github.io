@@ -10,6 +10,7 @@
     "url": "https://github.com/kajgrant/kajgrant.github.io.git"
   },
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev",
     "deploy": "gh-pages -d build --cname kajgm.com",
