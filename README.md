@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# kajgrant.github.io &middot; [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/kajgrant/kajgrant.github.io/blob/master/LICENSE) [![Node.js CI](https://github.com/kajgrant/kajgrant.github.io/actions/workflows/node.js.yml/badge.svg)](https://github.com/kajgrant/kajgrant.github.io/actions/workflows/node.js.yml) ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
 
-## Getting Started
+A simple personal portfolio website: [kajgm.com](https://kajgm.com/)
 
-First, run the development server:
+## Developed With
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- [Next.js](https://nextjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Jest](https://jestjs.io/)
+
+## Prerequisites
+
+Please ensure node is installed:
+
+- [Node >= 18.18.0](https://nodejs.org/en/download)
+
+## Installation
+
+Follow these steps to install and run the development environment:
+
+1. Clone the repository
+
+```
+git clone git@github.com:kajgrant/kajgrant.github.io.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install node modules
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+cd kajgrant.github.io/
+npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Running development server
 
-## Learn More
+To start the development server use the following command:
 
-To learn more about Next.js, take a look at the following resources:
+```
+npm run dev
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Your default browser will automatically open to the development server homepage.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+> The address should be [http://localhost:3000/](http://localhost:3000/)
 
-## Deploy on Vercel
+## Building Static Resources
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+To build the static resources for local or custom CDN deployment, run the following commands:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```
+npm run build
+```
+
+This will generate a static version which can be found in `kajgrant.github.io/.next/`.
+
+## Deployment
+
+To build and deploy the static content, head over to the Actions tab. Then select the `Deploy to Github Pages` tab and execute the `workflow_dispatch` event trigger.
