@@ -11,21 +11,21 @@ on:
   workflow_dispatch:
 
 jobs:
-  # lint:
-  #   runs-on: ${{ matrix.os }}
-  #   timeout-minutes: 5
-  #   strategy:
-  #     matrix:
-  #       os: [ubuntu-latest, windows-latest, macos-latest]
-  #   steps:
-  #     - uses: actions/checkout@v4
-  #     - uses: actions/setup-node@v3
-  #       with:
-  #         node-version-file: ".nvmrc"
-  #         cache: "npm"
-  #     - run: npm ci
-  #     - name: Lint
-  #       run: npm run lint
+  lint:
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 5
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v3
+        with:
+          node-version-file: ".nvmrc"
+          cache: "npm"
+      - run: npm ci
+      - name: Lint
+        run: npm run lint
 
   build:
     runs-on: ${{ matrix.os }}
