@@ -15,6 +15,7 @@
     "dev": "next dev",
     "deploy": "gh-pages -d build --cname kajgm.com",
     "build": "next build",
+    "export": "next export",
     "start": "next start",
     "lint": "next lint",
     "test": "jest",
