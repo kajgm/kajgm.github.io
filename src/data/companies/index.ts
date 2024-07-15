@@ -1,1 +1,0 @@
-export { companiesData } from "./companies";

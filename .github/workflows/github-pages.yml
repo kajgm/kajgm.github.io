@@ -15,7 +15,7 @@ permissions:
 # Disable pages deployment concurrency
 # https://docs.github.com/en/actions/using-jobs/using-concurrency
 concurrency:
-  group: 'pages'
+  group: "pages"
   cancel-in-progress: false
 
 jobs:
@@ -31,12 +31,12 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version-file: '.nvmrc'
-          cache: 'npm'
+          node-version-file: ".nvmrc"
+          cache: "npm"
       - name: Install
         run: npm ci
-      - name: Build and render
-        run: npm run predeploy
+      - name: Build
+        run: npm run build
       - name: Deploy to gh-pages branch
         run: |
           git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
@@ -48,7 +48,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
-          path: 'build'
+          path: "build"
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2

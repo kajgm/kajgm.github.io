@@ -38,7 +38,7 @@ export default function RootLayout({
       <body
         className={
           `${roboto.variable} ${roboto.className} ${pMarker.variable} ` +
-          "dark:bg-gradient-to-br dark:from-neutral-950 dark:to-neutral-900 bg-gradient-to-tr from-neutral-300 to-white"
+          "dark:bg-gradient-to-bl dark:from-neutral-950 dark:to-neutral-800 bg-white h-full min-h-screen overflow-hidden"
         }
       >
         <NextUIProvider>
