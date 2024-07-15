@@ -1,1 +1,0 @@
-export { headerData } from './header';
