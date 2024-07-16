@@ -4,7 +4,10 @@ export function Content() {
       <div className="flex">
         <div className="mx-auto">
           <a href={"https://canonical.com/"}>
-            <svg className="w-16 h-16" viewBox="0 0 100 100">
+            <svg
+              className="w-16 h-16 group-hover:drop-shadow-xl duration-500 group-hover:duration-500 group-hover:ease-in-out transition-all group-hover:scale-110"
+              viewBox="0 0 100 100"
+            >
               <circle fill="#f47421" cy="50" cx="50" r="45" />
               <circle
                 fill="none"
@@ -27,7 +30,7 @@ export function Content() {
       </div>
       <div className="flex desktop:opacity-0 group-hover:opacity-100 transition-opacity duration-1000 ease-in-out">
         <div className="mx-auto">
-          <p className="ml-5 desktop:ml-0 font-medium text-light-content-text-color dark:text-dark-content-text-color">
+          <p className="ml-5 mr-5 desktop:ml-0 desktop:mr-0 font-medium text-light-content-text-color dark:text-dark-content-text-color transition duration-500">
             Currently a Cloud Support Associate Engineer @ <b>Canonical</b>
           </p>
         </div>

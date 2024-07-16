@@ -14,7 +14,7 @@ export function Time(props: { timeZone: string }) {
 
   return (
     <div>
-      <p className="text-md font-medium text-light-sub-text-color dark:text-dark-sub-text-color">
+      <p className="text-md font-medium text-light-sub-text-color dark:text-dark-sub-text-color transition duration-500">
         {date.toLocaleTimeString("en-US", {
           timeZone: props.timeZone
             ? props.timeZone

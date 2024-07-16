@@ -27,7 +27,7 @@ const config: Config = {
     screens: {
       mobile: "480px",
       tablet: "640px",
-      desktop: "1024px",
+      desktop: "1200px",
     },
   },
   variants: {
