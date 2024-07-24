@@ -1,5 +1,5 @@
 {
-  "name": "kajgrant.github.io",
+  "name": "kajgm.github.io",
   "version": "4.0.0",
   "author": "Kaj Grant-Mathiasen",
   "homepage": "https://kajgm.com/",
@@ -7,7 +7,7 @@
   "description": "Personal portfolio website",
   "repository": {
     "type": "git",
-    "url": "https://github.com/kajgrant/kajgrant.github.io.git"
+    "url": "https://github.com/kajgm/kajgm.github.io.git"
   },
   "private": true,
   "type": "module",

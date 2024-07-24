@@ -1,4 +1,4 @@
-# kajgrant.github.io &middot; [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/kajgrant/kajgrant.github.io/blob/master/LICENSE) [![Node.js CI](https://github.com/kajgrant/kajgrant.github.io/actions/workflows/node.js.yml/badge.svg)](https://github.com/kajgrant/kajgrant.github.io/actions/workflows/node.js.yml) ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
+# kajgm.github.io &middot; [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/kajgm/kajgm.github.io/blob/master/LICENSE) [![Node.js CI](https://github.com/kajgm/kajgm.github.io/actions/workflows/node.js.yml/badge.svg)](https://github.com/kajgm/kajgm.github.io/actions/workflows/node.js.yml) ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
 
 A simple personal portfolio website: [kajgm.com](https://kajgm.com/)
 
@@ -21,13 +21,13 @@ Follow these steps to install and run the development environment:
 1. Clone the repository
 
 ```
-git clone git@github.com:kajgrant/kajgrant.github.io.git
+git clone git@github.com:kajgm/kajgm.github.io.git
 ```
 
 2. Install node modules
 
 ```
-cd kajgrant.github.io/
+cd kajgm.github.io/
 npm install
 ```
 
@@ -51,7 +51,7 @@ To build the static resources for local or custom CDN deployment, run the follow
 npm run build
 ```
 
-This will generate a static version which can be found in `kajgrant.github.io/.next/`.
+This will generate a static version which can be found in `kajgm.github.io/.next/`.
 
 ## Deployment
 
