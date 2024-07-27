@@ -40,7 +40,7 @@ jobs:
           npm ci
           npm run build
           touch out/.nojekyll
-          echo "www.kajgm.com" > out/CNAME
+          echo "kajgm.com" > out/CNAME
 
       - name: Deploy to gh-pages branch
         run: |
