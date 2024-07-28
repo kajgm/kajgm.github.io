@@ -1,4 +1,4 @@
-name: Deploy to Github Pages
+name: publish
 
 on:
   # Enable Manual deployments
@@ -8,9 +8,9 @@ on:
 # Required Permissions
 # https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#permissions
 permissions:
-  id-token: write # This is required for requesting the JWT
-  contents: write # This is required for actions/checkout
-  pages: write # Required for deployment
+  contents: read
+  pages: write
+  id-token: write
 
 # Disable pages deployment concurrency
 # https://docs.github.com/en/actions/using-jobs/using-concurrency
@@ -19,25 +19,21 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-20.04
-    timeout-minutes: 10
+  build:
+    runs-on: ubuntu-latest
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
       - name: Setup Node
-        uses: actions/setup-node@v3
-        with:
-          node-version-file: ".nvmrc"
-          cache: "npm"
+        uses: ./.github/workflows/setup-node
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
 
       - name: Build
         run: |
-          npm ci
           npm run build
           touch out/.nojekyll
           echo "kajgm.com" > out/CNAME
@@ -49,14 +45,20 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v3
-
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@v3
         with:
-          path: "out"
+          path: "./out"
 
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    runs-on: ubuntu-latest
+    needs: build
+
+    steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v4
