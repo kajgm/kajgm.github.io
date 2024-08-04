@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { Location } from "./location";
-import { Time } from "./time";
+import { Location } from "./Location";
+import { Time } from "./Time";
 import { brushData } from "@/data/svg/brush";
 
 export function Header() {
