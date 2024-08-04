@@ -28,7 +28,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
         <meta
           name="google-site-verification"
@@ -38,7 +38,7 @@ export default function RootLayout({
       <body
         className={
           `${roboto.variable} ${roboto.className} ${pMarker.variable} ` +
-          "dark:bg-gradient-to-bl dark:from-neutral-950 dark:to-neutral-800 bg-white h-full min-h-screen overflow-hidden"
+          "dark:bg-neutral-900 bg-white h-full min-h-screen overflow-hidden"
         }
       >
         <NextUIProvider>

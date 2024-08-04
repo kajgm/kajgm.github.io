@@ -29,7 +29,7 @@ export function ThemeToggle() {
       }}
       onChange={toggleDarkMode}
       size={40}
-      id="theme-toggle"
+      data-testid="theme-toggle"
     />
   );
 }

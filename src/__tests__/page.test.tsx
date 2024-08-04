@@ -3,9 +3,11 @@ import { render, screen } from "@testing-library/react";
 import Page from "../app/page";
 
 describe("Main Page", () => {
-  it("Renders the proper title and content text", () => {
+  beforeEach(() => {
     render(<Page />);
+  });
 
+  it("Renders the proper title and content text", () => {
     const timeRegEx = /([0-9]+(:[0-9]+)+)\s[AP]M/i;
 
     const logo = screen.getByTestId("logo");
@@ -18,7 +20,7 @@ describe("Main Page", () => {
     expect(logo.innerHTML).toEqual("KGM");
     expect(heading.innerHTML).toEqual("Kaj Grant-Mathiasen");
     expect(subheader.innerHTML).toEqual(
-      "Computer Engineer / Cloud Engineer / Full-Stack Developer"
+      "Computer Engineer / Cloud Support Engineer / Full-Stack Developer"
     );
     expect(location.innerHTML).toContain("Vancouver, BC. Canada");
     expect(time.innerHTML).toMatch(timeRegEx);

@@ -22,7 +22,7 @@ export function Header() {
           className="z-10 relative text-md font-medium pb-1 text-light-sub-text-color dark:text-dark-sub-text-color transition duration-500"
           data-testid="subheader"
         >
-          Computer Engineer / Cloud Engineer / Full-Stack Developer
+          Computer Engineer / Cloud Support Engineer / Full-Stack Developer
         </p>
         <div className="flex flex-wrap">
           <Location
