@@ -1,7 +1,7 @@
-export function Location(props: { location: string; locLink: string }) {
-  const { location, locLink } = props;
+export function Location(props: { location: string }) {
+  const { location } = props;
   return (
-    <a href={locLink} className="flex flex-wrap group">
+    <a className="flex flex-wrap">
       <svg
         className="mt-1 w-4 h-4 fill-light-sub-text-color group-hover:fill-red-800 dark:fill-dark-sub-text-color dark:group-hover:fill-red-800 group-hover:transition-color group-hover:duration-500 group-hover:ease-in-out ease-in-out transition duration-500"
         viewBox="0 0 395.71 395.71"

@@ -17,23 +17,22 @@ export function Header() {
           <path d={brushData} />
         </svg>
       </Link>
-      <div className="pl-1">
+      <div className="z-10 relative pl-1">
         <p
-          className="z-10 relative text-md font-medium pb-1 text-light-sub-text-color dark:text-dark-sub-text-color transition duration-500"
+          className="text-md font-medium pb-1 text-light-sub-text-color dark:text-dark-sub-text-color transition duration-500"
           data-testid="subheader"
         >
           Computer Engineer / Cloud Support Engineer / Full-Stack Developer
         </p>
-        <div className="flex flex-wrap">
-          <Location
-            location="Vancouver, BC. Canada"
-            locLink="https://en.wikipedia.org/wiki/Vancouver"
-          />{" "}
-          <p className="text-md font-medium px-1 text-light-sub-text-color dark:text-dark-sub-text-color transition duration-500">
-            -
-          </p>{" "}
-          <Time timeZone="America/Vancouver" />
-        </div>
+        <a href="https://en.wikipedia.org/wiki/Vancouver" className="group">
+          <div className="flex flex-wrap">
+            <Location location="Vancouver, BC. Canada" />{" "}
+            <p className="text-md font-medium px-1 text-light-sub-text-color dark:text-dark-sub-text-color transition duration-500">
+              -
+            </p>{" "}
+            <Time timeZone="America/Vancouver" />
+          </div>
+        </a>
       </div>
     </div>
   );
