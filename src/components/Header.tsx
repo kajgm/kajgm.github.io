@@ -26,11 +26,11 @@ export function Header() {
         </p>
         <a href="https://en.wikipedia.org/wiki/Vancouver" className="group">
           <div className="flex flex-wrap">
-            <Location location="Vancouver, BC. Canada" />{" "}
+            <Location location="Toronto, ON. Canada" />{" "}
             <p className="text-md font-medium px-1 text-light-sub-text-color dark:text-dark-sub-text-color transition duration-500">
               -
             </p>{" "}
-            <Time timeZone="America/Vancouver" />
+            <Time timeZone="America/Toronto" />
           </div>
         </a>
       </div>
