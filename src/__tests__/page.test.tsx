@@ -22,7 +22,7 @@ describe("Main Page", () => {
     expect(subheader.innerHTML).toEqual(
       "Computer Engineer / Cloud Support Engineer / Full-Stack Developer"
     );
-    expect(location.innerHTML).toContain("Vancouver, BC. Canada");
+    expect(location.innerHTML).toContain("Toronto, ON. Canada");
     expect(time.innerHTML).toMatch(timeRegEx);
     expect(content.innerHTML).toEqual(
       "Currently an Associate Cloud Support Engineer @ <b>Canonical</b>"
