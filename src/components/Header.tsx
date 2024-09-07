@@ -24,7 +24,7 @@ export function Header() {
         >
           Computer Engineer / Cloud Support Engineer / Full-Stack Developer
         </p>
-        <a href="https://en.wikipedia.org/wiki/Vancouver" className="group">
+        <a href="https://wikipedia.org/wiki/Toronto" className="group">
           <div className="flex flex-wrap">
             <Location location="Toronto, ON. Canada" />{" "}
             <p className="text-md font-medium px-1 text-light-sub-text-color dark:text-dark-sub-text-color transition duration-500">
