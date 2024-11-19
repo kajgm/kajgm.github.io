@@ -32,7 +32,7 @@ export function Content() {
         <div className="flex desktop:opacity-0 group-hover:opacity-100 transition-opacity duration-1000 ease-in-out">
           <div className="mx-auto">
             <p
-              className="ml-5 mr-5 desktop:ml-0 desktop:mr-0 font-medium text-light-content-text-color dark:text-dark-content-text-color transition duration-500"
+              className="ml-5 mr-5 desktop:ml-0 desktop:mr-0 font-medium text-light-content-text-color dark:text-dark-content-text-color transition duration-500 text-center"
               data-testid="content"
             >
               Currently an Associate Cloud Support Engineer @ <b>Canonical</b>
