@@ -2,7 +2,10 @@ import { kubernetesData1, kubernetesData2 } from "@/data/svg/kubernetes";
 
 export function Kubernetes() {
   return (
-    <svg className="h-16 w-16" viewBox="0 0 722.846 701.966">
+    <svg
+      className="h-12 w-12 hover:drop-shadow-xl duration-500 hover:duration-500 hover:ease-in-out transition-all hover:scale-110"
+      viewBox="0 0 722.846 701.966"
+    >
       <path
         d={kubernetesData1}
         fill="#326ce5"
