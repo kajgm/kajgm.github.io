@@ -1,32 +1,14 @@
+import { Canonical } from "./img/Canonical";
+import { Kubernetes } from "./img/Kubernetes";
+import { OpenStack } from "./img/OpenStack";
+
 export function Content() {
   return (
     <div className="relative top-14">
       <div className="group w-fit mx-auto space-y-5">
         <div className="flex">
           <div className="mx-auto">
-            <a href={"https://canonical.com/"}>
-              <svg
-                className="w-16 h-16 group-hover:drop-shadow-xl duration-500 group-hover:duration-500 group-hover:ease-in-out transition-all group-hover:scale-110"
-                viewBox="0 0 100 100"
-              >
-                <circle fill="#f47421" cy="50" cx="50" r="45" />
-                <circle
-                  fill="none"
-                  stroke="#ffffff"
-                  strokeWidth="8.55"
-                  cx="50"
-                  cy="50"
-                  r="21.825"
-                />
-                <g id="friend">
-                  <circle fill="#f47421" cx="19.4" cy="50" r="8.4376" />
-                  <path stroke="#f47421" strokeWidth="3.2378" d="M67,50H77" />
-                  <circle fill="#ffffff" cx="19.4" cy="50" r="6.00745" />
-                </g>
-                <use xlinkHref="#friend" transform="rotate(120,50,50)" />
-                <use xlinkHref="#friend" transform="rotate(240,50,50)" />
-              </svg>
-            </a>
+            <Canonical />
           </div>
         </div>
         <div className="flex desktop:opacity-0 group-hover:opacity-100 transition-opacity duration-1000 ease-in-out">
@@ -38,6 +20,12 @@ export function Content() {
               Currently an Associate Cloud Support Engineer @ <b>Canonical</b>
             </p>
           </div>
+        </div>
+      </div>
+      <div className="group w-fit mx-auto space-y-5">
+        <div className="flex flex-wrap mx-auto mt-8 space-x-8 items-center">
+          <Kubernetes />
+          <OpenStack />
         </div>
       </div>
     </div>

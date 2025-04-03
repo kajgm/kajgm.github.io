@@ -19,7 +19,8 @@ const pMarker = Permanent_Marker({
 
 export const metadata: Metadata = {
   title: "Kaj Grant-Mathiasen",
-  description: "Kaj Grant-Mathiasen - Cloud Support Engineer @ Canonical",
+  description:
+    "Kaj Grant-Mathiasen - Associate Cloud Support Engineer @ Canonical",
 };
 
 export default function RootLayout({
@@ -29,12 +30,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head>
-        <meta
-          name="google-site-verification"
-          content="jeyvrEOo_8tr-0MBDz4_ic_g5ijVib97tXqPLmJ7TDc"
-        />
-      </head>
       <body
         className={
           `${roboto.variable} ${roboto.className} ${pMarker.variable} ` +
