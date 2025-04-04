@@ -1,10 +1,7 @@
-export function Canonical() {
+export function Canonical(props: { className: string }) {
   return (
     <a href="https://canonical.com/" target="_blank">
-      <svg
-        className="w-16 h-16 group-hover:drop-shadow-xl duration-500 group-hover:duration-500 group-hover:ease-in-out transition-all group-hover:scale-110"
-        viewBox="0 0 100 100"
-      >
+      <svg className={props.className} viewBox="0 0 100 100">
         <circle fill="#f47421" cy="50" cx="50" r="45" />
         <circle
           fill="none"

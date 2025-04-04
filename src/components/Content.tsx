@@ -3,12 +3,14 @@ import { Kubernetes } from "./img/Kubernetes";
 import { OpenStack } from "./img/OpenStack";
 
 export function Content() {
+  const certificationClass =
+    "hover:drop-shadow-xl duration-500 hover:duration-500 hover:ease-in-out transition-all hover:scale-110";
   return (
     <div className="relative top-14">
       <div className="group w-fit mx-auto space-y-5">
         <div className="flex">
           <div className="mx-auto">
-            <Canonical />
+            <Canonical className="w-16 h-16 group-hover:drop-shadow-xl duration-500 group-hover:duration-500 group-hover:ease-in-out transition-all group-hover:scale-110" />
           </div>
         </div>
         <div className="desktop:opacity-0 group-hover:opacity-100 transition-opacity duration-1000 ease-in-out">
@@ -28,13 +30,13 @@ export function Content() {
                 target="_blank"
               >
                 <div className="text-center">
-                  <Kubernetes />
+                  <Kubernetes className={"h-12 w-12 " + certificationClass} />
                   <b className="relative top-1">CKA</b>
                 </div>
               </a>
               <a href="https://www.openstack.org/coa/" target="_blank">
                 <div className="text-center mt-1">
-                  <OpenStack />
+                  <OpenStack className={"h-11 w-11 " + certificationClass} />
                   <b className="relative top-1">COA</b>
                 </div>
               </a>
