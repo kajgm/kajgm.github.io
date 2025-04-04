@@ -5,7 +5,11 @@ export function Location(props: { location: string }) {
   const { location } = props;
   return (
     <div className="flex flex-wrap">
-      <a href="https://wikipedia.org/wiki/Toronto" className="group flex">
+      <a
+        className="group flex"
+        href="https://wikipedia.org/wiki/Toronto"
+        target="_blank"
+      >
         <a className="flex flex-wrap">
           <Pin />
           <p

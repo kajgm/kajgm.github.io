@@ -20,19 +20,25 @@ export function Content() {
               Currently an Associate Cloud Support Engineer @ <b>Canonical</b>
             </p>
           </div>
-          <div className="flex flex-wrap w-fit mx-auto mt-8 space-x-8 items-center">
-            <a href="https://training.linuxfoundation.org/certification/certified-kubernetes-administrator-cka/">
-              <div className="text-center">
-                <Kubernetes />
-                <b className="relative top-1">CKA</b>
-              </div>
-            </a>
-            <a href="https://www.openstack.org/coa/">
-              <div className="text-center mt-1">
-                <OpenStack />
-                <b className="relative top-1">COA</b>
-              </div>
-            </a>
+          <div className="w-fit mx-auto mt-6 text-center">
+            <p>Certifications</p>
+            <div className="flex flex-wrap w-fit mx-auto mt-2 space-x-8 items-center">
+              <a
+                href="https://training.linuxfoundation.org/certification/certified-kubernetes-administrator-cka/"
+                target="_blank"
+              >
+                <div className="text-center">
+                  <Kubernetes />
+                  <b className="relative top-1">CKA</b>
+                </div>
+              </a>
+              <a href="https://www.openstack.org/coa/" target="_blank">
+                <div className="text-center mt-1">
+                  <OpenStack />
+                  <b className="relative top-1">COA</b>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
       </div>
