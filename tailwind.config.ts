@@ -25,8 +25,8 @@ const config: Config = {
       },
     },
     screens: {
-      mobile: "480px",
-      tablet: "640px",
+      mobile: "640px",
+      tablet: "920px",
       desktop: "1200px",
     },
   },
