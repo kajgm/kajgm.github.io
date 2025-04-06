@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <main className="flex flex-col overflow-scroll">
       <ThemeToggle />
-      <div className="mx-auto py-5 tablet:pt-40 desktop:pt-72 h-screen">
+      <div className="mx-auto py-5 tablet:pt-40 desktop:pt-60 h-screen">
         <div className="flex flex-wrap ml-5 mr-5 desktop:ml-0 desktop:mr-0">
           <div className="mt-3 w-24 mr-20 mb-12 flex flex-wrap">
             <Logo>KGM</Logo>
