@@ -33,7 +33,7 @@ export default function RootLayout({
       <body
         className={
           `${roboto.variable} ${roboto.className} ${pMarker.variable} ` +
-          "dark:bg-neutral-900 bg-white"
+          "dark:bg-neutral-900 bg-white overflow-hidden"
         }
       >
         <NextUIProvider>
