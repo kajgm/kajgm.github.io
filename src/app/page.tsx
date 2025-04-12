@@ -11,7 +11,7 @@ export default function Home() {
     "w-5 h-5 fill-black hover:fill-red-800 dark:fill-white dark:hover:fill-red-800 transition-color hover:transition-color duration-500 hover:duration-500 hover:ease-in-out transform transition hover:scale-125";
 
   return (
-    <main className="flex flex-col overflow-scroll tablet:overflow-hidden">
+    <main className="flex flex-col overflow-auto">
       <ThemeToggle />
       <div className="mx-auto py-5 tablet:pt-40 desktop:pt-60 h-screen">
         <div className="flex flex-wrap ml-5 mr-5 desktop:ml-0 desktop:mr-0">
