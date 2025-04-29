@@ -29,13 +29,17 @@ export function Content() {
               target="_blank"
             >
               <div className="text-center">
-                <Kubernetes className={"h-12 w-12 " + certificationClass} />
-                <b className="relative top-1">CKA</b>
+                <Kubernetes
+                  className={"mx-auto h-12 w-12 " + certificationClass}
+                />
+                <b className="relative top-1">CKA CKAD</b>
               </div>
             </a>
             <a href="https://www.openstack.org/coa/" target="_blank">
               <div className="text-center mt-1">
-                <OpenStack className={"h-11 w-11 " + certificationClass} />
+                <OpenStack
+                  className={"mx-auto h-11 w-11 " + certificationClass}
+                />
                 <b className="relative top-1">COA</b>
               </div>
             </a>
