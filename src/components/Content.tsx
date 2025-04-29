@@ -24,10 +24,7 @@ export function Content() {
         <div className="mx-auto mt-6 text-center">
           <p>Certifications</p>
           <div className="flex flex-wrap w-fit mx-auto mt-2 space-x-8 items-center">
-            <a
-              href="https://training.linuxfoundation.org/certification/certified-kubernetes-administrator-cka/"
-              target="_blank"
-            >
+            <a href="https://kubernetes.io/" target="_blank">
               <div className="text-center">
                 <Kubernetes
                   className={"mx-auto h-12 w-12 " + certificationClass}
@@ -35,7 +32,7 @@ export function Content() {
                 <b className="relative top-1">CKA CKAD</b>
               </div>
             </a>
-            <a href="https://www.openstack.org/coa/" target="_blank">
+            <a href="https://www.openstack.org/" target="_blank">
               <div className="text-center mt-1">
                 <OpenStack
                   className={"mx-auto h-11 w-11 " + certificationClass}
