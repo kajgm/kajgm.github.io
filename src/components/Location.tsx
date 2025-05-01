@@ -10,8 +10,8 @@ export function Location(props: { location: string }) {
         href="https://wikipedia.org/wiki/Toronto"
         target="_blank"
       >
-        <a className="flex flex-wrap">
-          <Pin className="mt-0.5 w-4 h-4 fill-light-sub-text-color group-hover:fill-red-800 dark:fill-dark-sub-text-color dark:group-hover:fill-red-800 group-hover:transition-color group-hover:duration-500 group-hover:ease-in-out ease-in-out transition duration-500" />
+        <a className="flex flex-wrap items-center">
+          <Pin className="w-4 h-4 fill-light-sub-text-color group-hover:fill-red-800 dark:fill-dark-sub-text-color dark:group-hover:fill-red-800 group-hover:transition-color group-hover:duration-500 group-hover:ease-in-out ease-in-out transition duration-500" />
           <p
             className="m-0 text-md font-medium pl-1 text-light-sub-text-color dark:text-dark-sub-text-color transform transition duration-500"
             data-testid="location"
