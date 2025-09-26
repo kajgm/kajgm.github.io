@@ -31,7 +31,7 @@ export function Content() {
                   className={"mx-auto h-12 w-12 " + certificationClass}
                 />
                 <div className="w-12">
-                  <b className="relative top-1">CKA CKAD</b>
+                  <b className="relative top-1">CKA CKAD CKS</b>
                 </div>
               </div>
             </a>
