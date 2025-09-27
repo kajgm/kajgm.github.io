@@ -22,10 +22,11 @@ export function ThemeToggle() {
     <DarkModeSwitch
       checked={theme == "dark"}
       style={{
-        margin: "0px",
-        position: "absolute",
+        marginLeft: "auto",
+        position: "relative",
         right: "50px",
-        top: "50px",
+        top: "80px",
+        marginTop: "-30px",
       }}
       onChange={toggleDarkMode}
       size={40}
