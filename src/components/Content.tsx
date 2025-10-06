@@ -25,22 +25,22 @@ export function Content() {
         <div className="mx-auto mt-6 text-center">
           <p>Certifications</p>
           <div className="flex flex-wrap w-fit mx-auto mt-2 space-x-8 items-center">
-            <a href="https://kubernetes.io/" target="_blank">
-              <div className="text-center max-h-10">
-                <Kubernetes
-                  className={"mx-auto h-12 w-12 " + certificationClass}
-                />
-                <div className="w-12">
-                  <b className="relative top-1">CKA CKAD CKS</b>
-                </div>
-              </div>
-            </a>
             <a href="https://www.openstack.org/" target="_blank">
               <div className="text-center mt-3 max-h-10">
                 <OpenStack
                   className={"mx-auto h-10 w-10 " + certificationClass}
                 />
                 <b className="relative top-1">COA</b>
+              </div>
+            </a>
+            <a href="https://kubernetes.io/" target="_blank">
+              <div className="text-center max-h-10">
+                <Kubernetes
+                  className={"mx-auto h-12 w-12 " + certificationClass}
+                />
+                <div className="w-12">
+                  <b className="relative top-1">CKA CKAD CKS KCNA KCSA</b>
+                </div>
               </div>
             </a>
             <a href="https://aws.amazon.com/" target="_blank">
