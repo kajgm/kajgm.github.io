@@ -7,7 +7,7 @@ export function Location(props: { location: string }) {
     <div className="flex flex-wrap">
       <a
         className="group flex"
-        href="https://wikipedia.org/wiki/Toronto"
+        href="https://www.youtube.com/watch?v=nmCm3jrYR74"
         target="_blank"
       >
         <a className="flex flex-wrap items-center">
