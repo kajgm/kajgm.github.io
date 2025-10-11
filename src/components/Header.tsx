@@ -24,7 +24,8 @@ export function Header() {
           >
             <span
               className={
-                "bg-left-bottom bg-gradient-to-r from-light-sub-text-color to-light-sub-text-color dark:from-dark-sub-text-color dark:to-dark-sub-text-color bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-700 ease-out"
+                textStyleClass +
+                " bg-left-bottom bg-gradient-to-r from-light-sub-text-color to-light-sub-text-color dark:from-dark-sub-text-color dark:to-dark-sub-text-color bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-700 ease-out"
               }
             >
               Kubestronaut
