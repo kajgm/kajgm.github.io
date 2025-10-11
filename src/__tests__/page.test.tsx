@@ -20,7 +20,7 @@ describe("Main Page", () => {
     expect(logo.innerHTML).toEqual("KGM");
     expect(heading.innerHTML).toEqual("Kaj Grant-Mathiasen");
     expect(subheader.innerHTML).toEqual(
-      "Computer Engineer / Cloud Support Engineer / Full-Stack Developer"
+      "Computer Engineer / Cloud Engineer / Full-Stack Developer / "
     );
     expect(location.innerHTML).toContain("Toronto, ON. Canada");
     expect(time.innerHTML).toMatch(timeRegEx);
