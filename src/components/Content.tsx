@@ -9,7 +9,7 @@ export function Content() {
   return (
     <div className="group mx-auto space-y-5">
       <div className="flex">
-        <div className="mx-auto">
+        <div className="mx-auto animate-spin-slow">
           <Canonical className="w-16 h-16 group-hover:drop-shadow-xl duration-500 group-hover:duration-500 group-hover:ease-in-out transition-all group-hover:scale-110" />
         </div>
       </div>

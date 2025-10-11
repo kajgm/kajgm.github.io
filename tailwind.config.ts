@@ -23,6 +23,9 @@ const config: Config = {
         roboto: ["var(--font-roboto)"],
         pmarker: ["var(--font-permanent-marker)"],
       },
+      animation: {
+        "spin-slow": "spin 8s linear infinite",
+      },
     },
     screens: {
       mobile: "640px",

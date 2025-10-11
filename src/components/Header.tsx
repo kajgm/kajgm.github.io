@@ -4,7 +4,7 @@ import { Brush } from "./img/Brush";
 
 export function Header() {
   const textStyleClass =
-    "text-md font-medium text-light-sub-text-color dark:text-dark-sub-text-color";
+    "text-md font-medium text-light-sub-text-color dark:text-dark-sub-text-color transition-all";
   return (
     <div className="relative overflow-clip">
       <Link className="peer" href="/">
@@ -21,11 +21,12 @@ export function Header() {
           <a
             className="group transition-all duration-500 ease-in-out"
             href="https://www.cncf.io/training/kubestronaut/?p=kaj-grant-mathiasen"
+            target="_blank"
           >
             <span
               className={
                 textStyleClass +
-                " bg-left-bottom bg-gradient-to-r from-light-sub-text-color to-light-sub-text-color dark:from-dark-sub-text-color dark:to-dark-sub-text-color bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-700 ease-out"
+                " bg-left-bottom bg-gradient-to-r from-light-sub-text-color to-light-sub-text-color dark:from-dark-sub-text-color dark:to-dark-sub-text-color bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] duration-700 ease-out"
               }
             >
               Kubestronaut
