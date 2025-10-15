@@ -15,7 +15,7 @@ export default function Home() {
       <ThemeToggle />
       <div className="mx-auto py-5 tablet:pt-40 desktop:pt-60 h-screen">
         <div className="flex flex-wrap ml-5 mr-5 desktop:ml-0 desktop:mr-0">
-          <div className="mt-3 w-24 mr-20 mb-12 flex flex-wrap">
+          <div className="mt-3 w-24 mr-20 mb-10 flex flex-wrap">
             <Logo>KGM</Logo>
             <div className="flex flex-wrap mx-auto mt-3 space-x-3">
               <Mail className={iconClass} />
