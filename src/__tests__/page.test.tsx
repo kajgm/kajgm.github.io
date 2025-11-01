@@ -24,8 +24,6 @@ describe("Main Page", () => {
     );
     expect(location.innerHTML).toContain("Toronto, ON. Canada");
     expect(time.innerHTML).toMatch(timeRegEx);
-    expect(content.innerHTML).toEqual(
-      "Currently an Associate Cloud Support Engineer @ <b>Canonical</b>"
-    );
+    expect(content.innerHTML).toEqual("Cloud Engineer I @ <b>Canonical</b>");
   });
 });
