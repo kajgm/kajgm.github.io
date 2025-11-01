@@ -23,7 +23,7 @@ export function Content() {
             }
             data-testid="content"
           >
-            Currently an Associate Cloud Support Engineer @ <b>Canonical</b>
+            Cloud Engineer I @ <b>Canonical</b>
           </p>
         </div>
         <div className="mx-auto mt-6 text-center">
