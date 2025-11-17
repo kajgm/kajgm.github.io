@@ -8,7 +8,7 @@ export function Header() {
   return (
     <div className="relative overflow-clip">
       <Link className="peer" href="/">
-        <h1 className="mt-1 desktop:mt-0 mr-10 z-10 relative text-7xl desktop:text-8xl font-bold pb-2 text-light-text-color hover:[text-shadow:_8px_6px_12px_rgb(0_0_0_/_30%)] dark:text-dark-text-color transition-all duration-500">
+        <h1 className="mt-1 desktop:mt-0 z-10 relative text-7xl desktop:text-8xl font-bold pb-2 text-light-text-color hover:[text-shadow:_8px_6px_12px_rgb(0_0_0_/_30%)] dark:text-dark-text-color transition-all duration-500">
           Kaj Grant-Mathiasen
         </h1>
       </Link>
