@@ -28,9 +28,9 @@ export function Content() {
         </div>
         <div className="mx-auto mt-6 text-center">
           <p className={textClass + " font-medium"}>Certifications</p>
-          <div className="flex flex-wrap w-fit mx-auto mt-2 space-x-8 items-center">
+          <div className="flex flex-wrap w-fit mx-auto mt-3 space-x-8">
             <a href="https://www.openstack.org/" target="_blank">
-              <div className="text-center mt-3 max-h-10">
+              <div className="text-center mt-2">
                 <OpenStack
                   className={"mx-auto h-10 w-10 " + certificationClass}
                 />
@@ -38,7 +38,7 @@ export function Content() {
               </div>
             </a>
             <a href="https://kubernetes.io/" target="_blank">
-              <div className="text-center max-h-10">
+              <div className="text-center">
                 <Kubernetes
                   className={"mx-auto h-12 w-12 " + certificationClass}
                 />
@@ -50,7 +50,7 @@ export function Content() {
               </div>
             </a>
             <a href="https://aws.amazon.com/" target="_blank">
-              <div className="text-center mt-3 max-h-10">
+              <div className="text-center mt-2">
                 <AWS className={"mx-auto h-10 w-12 " + certificationClass} />
                 <b className={textClass + " relative top-1"}>CCP</b>
               </div>

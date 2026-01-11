@@ -29,7 +29,7 @@ const config: Config = {
     },
     screens: {
       mobile: "640px",
-      tablet: "920px",
+      tablet: "883px",
       desktop: "1200px",
     },
   },
