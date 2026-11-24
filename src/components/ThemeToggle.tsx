@@ -1,16 +1,15 @@
 "use client";
 
 import { useTheme } from "next-themes";
-import { useEffect, useState } from "react";
+import { useSyncExternalStore } from "react";
 import { DarkModeSwitch } from "react-toggle-dark-mode";
 
-export function ThemeToggle() {
-  const [mounted, setMounted] = useState(false);
-  const { theme, setTheme } = useTheme();
+const noop = () => () => {};
 
-  useEffect(() => {
-    setMounted(true);
-  }, []);
+export function ThemeToggle() {
+  // false during prerender/hydration, true on the client: theme is unknown until then
+  const mounted = useSyncExternalStore(noop, () => true, () => false);
+  const { theme, setTheme } = useTheme();
 
   if (!mounted) return null;
 
