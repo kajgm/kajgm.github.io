@@ -1,0 +1,355 @@
+/* The painted sky: a day sky in light mode, a late sunset in dark mode. --pp-* shade the clouds (five tones from
+   shadow to light, haze for far clouds, light direction, light strength at base and top); --pr-* colour the racks
+   and cables. scene.ts reads them, so the clouds follow the theme. */
+:root {
+  --text: #000;
+  --sub: #14304f;
+  --line: rgba(20, 50, 90, 0.3);
+  --bg: #eaf5fd;
+  --accent: #b91c1c;
+  --aws-ink: #252f3e;
+  --star: #18181b;
+  --pp-0: #5f86c2; --pp-1: #8fb1de; --pp-2: #c3d8f1; --pp-3: #e9f1fb; --pp-4: #ffffff;
+  --pp-haze: #a9d6f5; --pp-light: -0.45 -0.9; --pp-lift: 0.55 0.6;
+  --pr-k: #4b566c; --pr-h: #e7ecf3; --pr-s: #98a3b6; --pr-f: #3e4759; --pr-c: #c4ccd9; --pr-d: #dde3ec;
+  --pr-v: #8a95a8; --pr-p: #2f3645; --pr-led: #22c55e; --pr-act: #ef4444; --pr-actoff: #7f3b3b; --pr-blink: #f59e0b;
+  --pr-pk: #ffffff; --pr-red: #b91c1c; --pr-violet: #6d28d9; --pr-gray: #5b6474; --pr-steel: #7d8ea8; --pr-plug: #d6dde7;
+  --sky: linear-gradient(#2f7fd0, #64aee8 25%, #a9d6f5 60%, #e6f5fe);
+  background: var(--bg);
+}
+.dark {
+  --text: #fff;
+  --sub: #cfc3dd;
+  --line: rgba(230, 200, 255, 0.2);
+  --bg: #120c1e;
+  --accent: #ef4444;
+  --aws-ink: #fff;
+  --star: #fff;
+  --pp-0: #1b1229; --pp-1: #33203f; --pp-2: #55294d; --pp-3: #8a3a4f; --pp-4: #cf6f4e;
+  --pp-haze: #3a2244; --pp-light: 0.55 0.85; --pp-lift: 0.9 -0.35;
+  --pr-k: #3a2e4a; --pr-h: #4b3a5a; --pr-s: #8a5560; --pr-f: #100c17; --pr-c: #2c2340; --pr-d: #463857;
+  --pr-v: #191223; --pr-p: #08060c; --pr-led: #4ade80; --pr-act: #ef4444; --pr-actoff: #3f1a20; --pr-blink: #fbbf24;
+  --pr-pk: #ffd9b8; --pr-red: #b91c1c; --pr-violet: #7c3aed; --pr-gray: #3c3346; --pr-steel: #5a4a63; --pr-plug: #9c8a99;
+  --sky: radial-gradient(120% 55% at 50% 100%, rgba(214, 96, 60, 0.34), rgba(150, 50, 70, 0.2) 38%, transparent 70%),
+    linear-gradient(#06050d, #120c22 38%, #2a1534 68%, #4a1d33);
+}
+body {
+  background: var(--sky);
+}
+
+/* ---------- backdrop: stars and the cloud scene ---------- */
+.backdrop {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+.hits-layer {
+  z-index: 3;
+}
+.sky {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  fill: var(--star);
+}
+html:not(.dark) .sky {
+  display: none;
+}
+.sky circle {
+  opacity: var(--o, 0.5);
+}
+.sky .tw {
+  animation: twinkle var(--d, 5s) ease-in-out infinite alternate;
+  animation-delay: var(--dl, 0s);
+}
+@keyframes twinkle {
+  to {
+    opacity: calc(var(--o, 0.5) * 0.5);
+  }
+}
+.sky .taken {
+  opacity: 0 !important;
+  animation: none;
+  transition: opacity 0.4s;
+}
+.meteor {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 120px;
+  height: 2px;
+  border-radius: 2px;
+  transform-origin: 0 50%;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0));
+}
+.sat {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  background: #fff;
+  opacity: 0.8;
+  box-shadow: 0 0 3px rgba(255, 255, 255, 0.6);
+}
+/* 1900px wide: the layout is the middle 1300px, the rest is room for the clouds to drift on wide screens */
+.pscene {
+  position: absolute;
+  left: 50%;
+  bottom: -60px;
+  width: 1900px;
+  height: 380px;
+  transform: translateX(-50%);
+}
+.pscene canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  image-rendering: pixelated;
+}
+.pscene-hits {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 1900px;
+  height: 320px;
+  transform: translateX(-50%);
+  z-index: 3;
+  pointer-events: none;
+}
+.pscene-hits button {
+  position: absolute;
+  pointer-events: auto;
+  border: 0;
+  padding: 0;
+  background: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.pscene-hits button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+@media (max-width: 760px) {
+  .pscene {
+    width: 1425px;
+    height: 285px;
+    bottom: -45px;
+  }
+  .pscene-hits {
+    width: 1425px;
+    height: 240px;
+  }
+}
+
+/* ---------- Canonical, and the certification constellation it reveals ---------- */
+.work {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 28px;
+}
+.canon {
+  display: block;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  animation: canon-spin 8s linear infinite;
+}
+@keyframes canon-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.canon a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.canon svg {
+  transition: transform 0.5s, filter 0.5s;
+}
+.canon:hover svg,
+.canon:focus-within svg {
+  transform: scale(1.12);
+}
+.dark .canon:hover svg,
+.dark .canon:focus-within svg {
+  filter: drop-shadow(0 6px 10px rgb(0 0 0 / 0.35));
+}
+.role {
+  color: var(--text);
+  font-weight: 500;
+}
+.caption {
+  color: var(--sub);
+  font-size: 13px;
+  font-weight: 500;
+  text-align: center;
+}
+.reveal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+}
+@media (hover: hover) and (pointer: fine) {
+  .reveal {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.25s, visibility 0s 0.25s;
+  }
+  .reveal.on {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.25s;
+  }
+}
+.chart {
+  display: block;
+  width: 100%;
+  max-width: 760px;
+  height: auto;
+  overflow: visible;
+}
+.chart-m {
+  display: none;
+  max-width: 380px;
+}
+@media (max-width: 700px) {
+  .chart-d {
+    display: none;
+  }
+  .chart-m {
+    display: block;
+  }
+}
+.link {
+  stroke: var(--sub);
+  stroke-opacity: 0.5;
+  stroke-width: 1;
+  stroke-dasharray: calc(var(--l) * 1px);
+  stroke-dashoffset: calc(var(--l) * 1px);
+  animation: draw 0.5s ease-out forwards;
+  animation-delay: calc(var(--i) * 80ms + 200ms);
+}
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+.node {
+  animation: pop 0.45s cubic-bezier(0.2, 0.8, 0.3, 1.3) both;
+  animation-delay: calc(var(--i) * 80ms);
+  transform-box: fill-box;
+  transform-origin: center;
+}
+@keyframes pop {
+  from {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+}
+.flying .node {
+  animation-delay: calc(var(--i) * 80ms + 650ms);
+}
+.flying .link {
+  animation-delay: calc(var(--i) * 80ms + 850ms);
+}
+.halo {
+  fill: url(#glow);
+}
+html:not(.dark) .halo {
+  display: none;
+}
+.badge {
+  fill: var(--bg);
+  stroke: var(--line);
+  stroke-width: 1.25;
+  transition: stroke 0.2s;
+}
+.node:hover .badge,
+.node:focus-visible .badge {
+  stroke: var(--accent);
+}
+.node:focus-visible {
+  outline: none;
+}
+.ic-aws {
+  color: var(--aws-ink);
+}
+.code {
+  font-size: 11.5px;
+  font-weight: 600;
+  fill: var(--text);
+  text-anchor: middle;
+  letter-spacing: 0.02em;
+}
+.node.major .code {
+  font-size: 13.5px;
+  font-weight: 700;
+}
+.node.major .badge {
+  stroke-width: 1.75;
+}
+.node.minor .code {
+  font-size: 10px;
+  fill: var(--sub);
+}
+.tip {
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.15s;
+}
+.tip.on {
+  opacity: 1;
+}
+.tip rect {
+  fill: var(--bg);
+  stroke: var(--line);
+  stroke-width: 1;
+}
+.tip text {
+  font-size: 12px;
+  font-weight: 500;
+  fill: var(--text);
+  text-anchor: middle;
+}
+.flyers {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  overflow: hidden;
+  pointer-events: none;
+}
+.flyer {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 4px;
+  height: 4px;
+  margin: -2px 0 0 -2px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 0 6px 2px rgba(255, 255, 255, 0.7);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sky .tw,
+  .canon,
+  .node,
+  .link {
+    animation: none;
+  }
+  .link {
+    stroke-dashoffset: 0;
+  }
+}

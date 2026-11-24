@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Roboto, Permanent_Marker } from "next/font/google";
 import { ThemeProvider as NextThemesProvider } from "next-themes";
 import "./globals.css";
+import "./sky.css";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -32,7 +33,7 @@ export default function RootLayout({
       <body
         className={
           `${roboto.variable} ${roboto.className} ${pMarker.variable} ` +
-          "dark:bg-neutral-900 bg-white overflow-hidden"
+          "relative min-h-screen overflow-x-hidden"
         }
       >
         <NextThemesProvider attribute="class" defaultTheme="dark">
