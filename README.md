@@ -1,27 +1,35 @@
-# kajgm.github.io &middot; [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/kajgm/kajgm.github.io/blob/master/LICENSE) [![Node.js CI](https://github.com/kajgm/kajgm.github.io/actions/workflows/node.js.yml/badge.svg)](https://github.com/kajgm/kajgm.github.io/actions/workflows/node.js.yml) ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
+# kajgm.github.io &middot; ![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg) [![Node.js CI](https://github.com/kajgm/kajgm.github.io/actions/workflows/node.js.yml/badge.svg)](https://github.com/kajgm/kajgm.github.io/actions/workflows/node.js.yml) ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
 
-A simple personal portfolio website: [kajgm.com](https://kajgm.com/)
+A personal portfolio website: [kajgm.com](https://kajgm.com/)
+
+## The page
+
+- A pixel-art sky behind the page: a day sky in light mode, a late sunset with twinkling stars in dark mode.
+- Painted pixel clouds (a WebGL shader) rise in from below on load and drift with a shared wind. Three server
+  racks float on the centre cloud; click a rack to send a packet down its cables.
+- Hovering the Canonical logo shows the certifications as a constellation, with a new pattern each time
+  (always shown on touch screens). Each badge links to its certification body.
+- Clicking the title sends a shooting star.
+- Reduced motion shows still frames.
+
+The sky lives in `src/components/SkyScene.tsx` and `src/components/sky/`, styled by `src/app/sky.css`.
 
 ## Developed With
 
-- [Next.js](https://nextjs.org/)
+- [Next.js](https://nextjs.org/) (static export)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Jest](https://jestjs.io/)
 
 ## Prerequisites
 
-Please ensure node is installed:
-
-- [Node >= 18.18.0](https://nodejs.org/en/download)
+- [Node 26](https://nodejs.org/en/download) (pinned in `.nvmrc`; `nvm use` picks it up)
 
 ## Installation
-
-Follow these steps to install and run the development environment:
 
 1. Clone the repository
 
 ```
-git clone git@github.com:kajgm/kajgm.github.io.git
+git clone https://github.com/kajgm/kajgm.github.io.git
 ```
 
 2. Install node modules
@@ -31,28 +39,30 @@ cd kajgm.github.io/
 npm install
 ```
 
-## Running development server
+## Development
 
-To start the development server use the following command:
+Start the development server, then open [http://localhost:3000/](http://localhost:3000/):
 
 ```
 npm run dev
 ```
 
-Your default browser will automatically open to the development server homepage.
+Run the tests and the linter:
 
-> The address should be [http://localhost:3000/](http://localhost:3000/)
+```
+npm test
+npm run lint
+```
 
 ## Building Static Resources
-
-To build the static resources for local or custom CDN deployment, run the following commands:
 
 ```
 npm run build
 ```
 
-This will generate a static version which can be found in `kajgm.github.io/.next/`.
+The static site is written to `out/`.
 
 ## Deployment
 
-To build and deploy the static content, head over to the Actions tab. Then select the `Deploy to Github Pages` tab and execute the `workflow_dispatch` event trigger.
+The site deploys to GitHub Pages by hand: in the Actions tab, select the `publish` workflow and run it
+(`workflow_dispatch`).
