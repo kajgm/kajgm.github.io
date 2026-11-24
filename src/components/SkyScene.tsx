@@ -30,8 +30,14 @@ const STARS = Array.from({ length: 90 }, () => {
 export function SkyScene() {
   const sky = useRef<SVGSVGElement>(null), scene = useRef<HTMLDivElement>(null), hits = useRef<HTMLDivElement>(null);
   useEffect(() => {
-    const stopScene = startScene(scene.current!, hits.current!), stopNight = startNight(sky.current!);
-    return () => { stopScene(); stopNight(); };
+    const stopNight = startNight(sky.current!);
+    // WebGL setup blocks the main thread for a few hundred ms, so wait for the page's fade-in to finish first.
+    let stopScene: (() => void) | null = null, gone = false;
+    const fade = document.querySelector(".fade-in")?.getAnimations?.()[0];
+    (fade?.finished ?? Promise.resolve()).catch(() => {}).then(() => {
+      if (!gone) stopScene = startScene(scene.current!, hits.current!);
+    });
+    return () => { gone = true; stopScene?.(); stopNight(); };
   }, []);
   return (
     <>
@@ -42,9 +48,13 @@ export function SkyScene() {
           ))}
         </svg>
         <div ref={scene} className="pscene">
-          <canvas className="ps-cables" />
           <canvas className="ps-back" />
-          <canvas className="ps-art" />
+          <div className="ps-server">
+            <canvas className="ps-cables" />
+            <canvas className="ps-sback" />
+            <canvas className="ps-art" />
+            <canvas className="ps-sfront" />
+          </div>
           <canvas className="ps-front" />
         </div>
       </div>

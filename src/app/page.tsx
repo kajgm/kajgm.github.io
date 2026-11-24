@@ -15,7 +15,7 @@ export default function Home() {
     <>
       <SkyScene />
       {/* room at the bottom for the cloud scene */}
-      <main className="relative z-[2] flex min-h-screen flex-col pb-[240px]">
+      <main className="fade-in relative z-[2] flex min-h-screen flex-col pb-[240px]">
         <ThemeToggle />
         <div className="mx-auto py-5 tablet:pt-[14vh] desktop:pt-[16vh]">
           <div className="flex flex-wrap ml-5 mr-5 desktop:ml-0 desktop:mr-0">

@@ -264,10 +264,14 @@ const INKS = ["k", "h", "s", "f", "c", "d", "v", "p", "led", "act", "actoff", "b
 export function startScene(root: HTMLElement, hits: HTMLElement): () => void {
   if (typeof window.matchMedia !== "function") return () => {};
   const q = (c: string) => root.querySelector<HTMLCanvasElement>("." + c)!;
+  // The server cloud, its racks and cables sit in their own layer (.ps-server) so they can float by whole screen
+  // pixels instead of 4px art cells.
+  const serverLayer = root.querySelector<HTMLElement>(".ps-server")!;
   const cablesCv = q("ps-cables"), backCv = q("ps-back"), artCv = q("ps-art"), frontCv = q("ps-front");
+  const sBackCv = q("ps-sback"), sFrontCv = q("ps-sfront");
   const cablesG = cablesCv.getContext("2d"), artG = artCv.getContext("2d");
   if (!cablesG || !artG) return () => {};
-  for (const c of [cablesCv, backCv, artCv, frontCv]) { c.width = COLS; c.height = ROWS; }
+  for (const c of [cablesCv, backCv, artCv, frontCv, sBackCv, sFrontCv]) { c.width = COLS; c.height = ROWS; }
 
   // palette and light from CSS (they change with the theme)
   const css = (n: string) => getComputedStyle(document.body).getPropertyValue(n).trim();
@@ -288,13 +292,15 @@ export function startScene(root: HTMLElement, hits: HTMLElement): () => void {
   const themeWatch = new MutationObserver(readPal);
   themeWatch.observe(document.documentElement, { attributes: true, attributeFilter: ["class"] });
 
-  let drawBack: Draw | null = null, drawFront: Draw | null = null;
+  let drawBack: Draw | null = null, drawFront: Draw | null = null, drawSBack: Draw | null = null, drawSFront: Draw | null = null;
   try {
     drawBack = renderer(backCv, () => pal);
     drawFront = renderer(frontCv, () => pal);
+    drawSBack = renderer(sBackCv, () => pal);
+    drawSFront = renderer(sFrontCv, () => pal);
   } catch (e) {
     console.warn("painted clouds disabled:", (e as Error).message);
-    drawBack = drawFront = null;
+    drawBack = drawFront = drawSBack = drawSFront = null;
   }
 
   // The server cloud, and supporting clouds around it, all low in the scene so nothing rises above the
@@ -429,18 +435,34 @@ export function startScene(root: HTMLElement, hits: HTMLElement): () => void {
     }
   }
 
+  // On load everything rises from below the scene: the server cloud (with its racks and cables) first, then
+  // the clouds around it, the far hazy ones last. rise(delay) is how many cells a part still has to go.
+  const RISE_CELLS = 85, RISE_S = 1.4; // 85 cells starts every cloud fully below the scene
+  const RISE_DELAY = new Map<Cloud, number>([[bigL, 0.35], [bigR, 0.45], [puff, 0.55], [hazeL, 0.7], [hazeR, 0.75]]);
+  let t0 = -1;
+  const rise = (t: number, delay: number) => {
+    const p = Math.min(1, Math.max(0, (t - t0 - delay) / RISE_S));
+    return still ? 0 : Math.round(RISE_CELLS * (1 - p) ** 3); // ease-out cubic
+  };
+
   // t drives packets and lights; ct drives the clouds, wind and sway, and stays still with reduced motion.
   function frame(t: number, dt: number) {
+    if (t0 < 0) t0 = t;
     const ct = still ? 0 : t, w = wind(ct);
-    const bob = Math.round(Math.sin(ct * 0.7) * 1.2); // the server cloud floats up and down by a pixel
-    if (drawBack && drawFront) {
+    // the server cloud floats up and down by a few screen pixels, one pixel at a time
+    serverLayer.style.transform = `translateY(${Math.round(Math.sin(ct * 0.7) * 5)}px)`;
+    const bob = rise(t, 0);
+    if (drawBack && drawFront && drawSBack && drawSFront) {
       const lift = bob * CELL, off = offsets(w);
       // the same cloud is drawn again in front of the racks, below a line that slowly rises over them and
       // settles back (~18 s); the rack bottoms always stay tucked into the cloud
       const sv = place(server, CX, BASE + lift, SERVER_H, 0, ct), cut = 160 + lift + 8 * Math.sin(ct * 0.35);
-      const at = (list: Cloud[]) => list.flatMap((c) => place(c.blobs, c.x + off.get(c)!, c.base, c.h, c.haze, ct));
-      drawBack([...sv, ...at([bigL, bigR, hazeL, hazeR])], ct);
-      drawFront([...sv, ...at([puff])], ct, cut);
+      const at = (list: Cloud[]) => list.flatMap((c) =>
+        place(c.blobs, c.x + off.get(c)!, c.base + rise(t, RISE_DELAY.get(c)!) * CELL, c.h, c.haze, ct));
+      drawBack(at([bigL, bigR, hazeL, hazeR]), ct);
+      drawSBack(sv, ct);
+      drawSFront(sv, ct, cut);
+      drawFront(at([puff]), ct);
     }
     updatePackets(t, dt);
     drawCables(cablesG!, ct, bob, w);

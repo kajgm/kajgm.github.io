@@ -1,6 +1,11 @@
 // The certification constellation: a new pattern every time it loads. On desktop it loads when the Canonical
 // logo is hovered or focused and hides after leaving the section; on touch screens it is always shown.
 
+const URLS: Record<string, string> = {
+  openstack: "https://www.openstack.org/",
+  kubernetes: "https://kubernetes.io/",
+  aws: "https://aws.amazon.com/",
+};
 export const CERTS: [code: string, icon: string, name: string][] = [
   ["COA", "openstack", "Certified OpenStack Administrator"],
   ["CKA", "kubernetes", "Certified Kubernetes Administrator"],
@@ -52,33 +57,12 @@ function draw(svg: SVGSVGElement, vertical: boolean) {
   }
   order.forEach(([code, icon, name], i) => {
     const [x, y] = pts[i], { tier, r, icon: s, label } = size(code);
-    h += `<a class="node ${tier}" href="#" style="--i:${i}" aria-label="${name}"><title>${name}</title>` +
+    h += `<a class="node ${tier}" href="${URLS[icon]}" target="_blank" rel="noopener" style="--i:${i}" aria-label="${name}">` +
       `<circle class="halo" cx="${x}" cy="${y}" r="${r * 1.8}"/><circle class="badge" cx="${x}" cy="${y}" r="${r}"/>` +
       `<use class="ic-${icon}" href="#i-${icon}" x="${x - s / 2}" y="${y - s / 2}" width="${s}" height="${s}"/>` +
       `<text class="code" x="${x}" y="${y + label}">${code}</text></a>`;
   });
-  // One shared tooltip, drawn last so it sits above every badge.
-  svg.innerHTML = h + '<g class="tip"><rect rx="4" height="24"/><text></text></g>';
-  const tip = svg.querySelector(".tip")!, box = tip.querySelector("rect")!, label = tip.querySelector("text")!;
-  svg.querySelectorAll(".node").forEach((node, i) => {
-    const [x, y] = pts[i], below = y + size(order[i][0]).label + 8;
-    const on = () => {
-      label.textContent = order[i][2];
-      const w = label.getComputedTextLength() + 18;
-      box.setAttribute("x", String(x - w / 2));
-      box.setAttribute("y", String(below));
-      box.setAttribute("width", String(w));
-      label.setAttribute("x", String(x));
-      label.setAttribute("y", String(below + 16));
-      tip.classList.add("on");
-    };
-    const off = () => tip.classList.remove("on");
-    node.addEventListener("click", (e) => e.preventDefault());
-    node.addEventListener("mouseenter", on);
-    node.addEventListener("focus", on);
-    node.addEventListener("mouseleave", off);
-    node.addEventListener("blur", off);
-  });
+  svg.innerHTML = h;
 }
 
 // Each certification arrives from a star in the background: a nearby star lifts off and flies to its badge,
