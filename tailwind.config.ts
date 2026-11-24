@@ -10,18 +10,15 @@ const config: Config = {
     extend: {
       colors: {
         "light-text-color": "black",
-        "light-sub-text-color": "#4b4b4b",
+        "light-sub-text-color": "#14304f",
         "light-content-text-color": "#303030",
         "dark-text-color": "white",
-        "dark-sub-text-color": "#c5c5c5",
+        "dark-sub-text-color": "#cfc3dd",
         "dark-content-text-color": "#d6d6d6",
       },
       fontFamily: {
         roboto: ["var(--font-roboto)"],
         pmarker: ["var(--font-permanent-marker)"],
-      },
-      animation: {
-        "spin-slow": "spin 8s linear infinite",
       },
     },
     screens: {
