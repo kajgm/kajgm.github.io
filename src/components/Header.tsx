@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { Location } from "./Location";
-import { Brush } from "./img/Brush";
 
 export function Header() {
   const textStyleClass =
@@ -12,7 +11,6 @@ export function Header() {
           Kaj Grant-Mathiasen
         </h1>
       </Link>
-      <Brush className="z-0 absolute -mt-36 ml-24 rotate-3 transition-all duration-700 opacity-0 dark:desktop:peer-hover:opacity-100 dark:fill-red-900 w-[700px] h-[200px]" />
       <div className="z-10 relative pl-1">
         <div className="pb-1">
           <span className={textStyleClass} data-testid="subheader">

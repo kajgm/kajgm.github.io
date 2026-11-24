@@ -19,8 +19,7 @@ const pMarker = Permanent_Marker({
 
 export const metadata: Metadata = {
   title: "Kaj Grant-Mathiasen",
-  description:
-    "Kaj Grant-Mathiasen - Associate Cloud Support Engineer @ Canonical",
+  description: "Kaj Grant-Mathiasen - Cloud Support Engineer I @ Canonical",
 };
 
 export default function RootLayout({
