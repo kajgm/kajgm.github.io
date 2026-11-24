@@ -10,11 +10,11 @@
   --aws-ink: #252f3e;
   --star: #18181b;
   --pp-0: #5f86c2; --pp-1: #8fb1de; --pp-2: #c3d8f1; --pp-3: #e9f1fb; --pp-4: #ffffff;
-  --pp-haze: #a9d6f5; --pp-light: -0.45 -0.9; --pp-lift: 0.55 0.6;
+  --pp-haze: #d4e8f8; --pp-light: -0.45 -0.9; --pp-lift: 0.55 0.6;
   --pr-k: #4b566c; --pr-h: #e7ecf3; --pr-s: #98a3b6; --pr-f: #3e4759; --pr-c: #c4ccd9; --pr-d: #dde3ec;
   --pr-v: #8a95a8; --pr-p: #2f3645; --pr-led: #22c55e; --pr-act: #ef4444; --pr-actoff: #7f3b3b; --pr-blink: #f59e0b;
   --pr-pk: #ffffff; --pr-red: #b91c1c; --pr-violet: #6d28d9; --pr-gray: #5b6474; --pr-steel: #7d8ea8; --pr-plug: #d6dde7;
-  --sky: linear-gradient(#2f7fd0, #64aee8 25%, #a9d6f5 60%, #e6f5fe);
+  --sky: linear-gradient(#9cc9ec, #cfe5f7 25%, #f1f8fe 55%, #fff);
   background: var(--bg);
 }
 .dark {
@@ -104,6 +104,10 @@ html:not(.dark) .sky {
   width: 1900px;
   height: 380px;
   transform: translateX(-50%);
+}
+.ps-server {
+  position: absolute;
+  inset: 0;
 }
 .pscene canvas {
   position: absolute;
@@ -251,6 +255,12 @@ html:not(.dark) .sky {
   animation-delay: calc(var(--i) * 80ms);
   transform-box: fill-box;
   transform-origin: center;
+  transition: transform 0.25s ease-out, filter 0.25s;
+}
+.node:hover,
+.node:focus-visible {
+  transform: scale(1.15);
+  filter: drop-shadow(0 0 6px var(--accent));
 }
 @keyframes pop {
   from {
@@ -304,24 +314,15 @@ html:not(.dark) .halo {
   font-size: 10px;
   fill: var(--sub);
 }
-.tip {
-  pointer-events: none;
-  opacity: 0;
-  transition: opacity 0.15s;
+/* Page content fades in on load. */
+.fade-in {
+  animation: fade-in 0.8s ease-out both;
 }
-.tip.on {
-  opacity: 1;
-}
-.tip rect {
-  fill: var(--bg);
-  stroke: var(--line);
-  stroke-width: 1;
-}
-.tip text {
-  font-size: 12px;
-  font-weight: 500;
-  fill: var(--text);
-  text-anchor: middle;
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
 }
 .flyers {
   position: absolute;
@@ -345,6 +346,7 @@ html:not(.dark) .halo {
 @media (prefers-reduced-motion: reduce) {
   .sky .tw,
   .canon,
+  .fade-in,
   .node,
   .link {
     animation: none;
