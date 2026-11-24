@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Roboto, Permanent_Marker } from "next/font/google";
-import { NextUIProvider } from "@nextui-org/react";
 import { ThemeProvider as NextThemesProvider } from "next-themes";
 import "./globals.css";
 
@@ -36,11 +35,9 @@ export default function RootLayout({
           "dark:bg-neutral-900 bg-white overflow-hidden"
         }
       >
-        <NextUIProvider>
-          <NextThemesProvider attribute="class" defaultTheme="dark">
-            {children}
-          </NextThemesProvider>
-        </NextUIProvider>
+        <NextThemesProvider attribute="class" defaultTheme="dark">
+          {children}
+        </NextThemesProvider>
       </body>
     </html>
   );

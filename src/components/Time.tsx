@@ -3,14 +3,12 @@
 import { useState, useEffect } from "react";
 
 export function Time(props: { timeZone: string }) {
-  var [date, setDate] = useState(new Date());
+  const [date, setDate] = useState(new Date());
 
   useEffect(() => {
-    var timer = setInterval(() => setDate(new Date()), 1000);
-    return function cleanup() {
-      clearInterval(timer);
-    };
-  });
+    const timer = setInterval(() => setDate(new Date()), 1000);
+    return () => clearInterval(timer);
+  }, []);
 
   return (
     <div>
